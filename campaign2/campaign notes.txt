@@ -1,0 +1,116 @@
+Veres Bertalan - Spy with the Orionis Federation
+
+Svein Gunderson - The contact who wants to find Veres Bertalan. Will contact the players as soon as they connect with the local net. Expects Veres in-system, has no leads among net-connected habs. 40,000cr
+
+Christian Ericksen - Archaeologist, has a dig funded on Olhusilles, can provide coordinates to a brown dwarf in 1119 that the party can refuel from. 10 tons cargo, three assistants, needs guards for one month as well. He has posted an ad on the local net. 193,000cr
+
+Anabela Kosi - Local warlord/trade magnate. Has Veres to maintain an advantage over her fellow warlords, is feeding him incorrect information to pass back to Orionis.
+
+
+
+
+
+
+Vladas (M) - Programmer, implanted, +2
+Anthony (M) - Army, has gone a bit soft, +1
+Wei (F) - Doctor, +2
+Nada (F) - Scout, implanted, +2
+Rahul (M) - Manager, implanted, +1
+Bari (M) - Wet Navy, retired +2
+
+
+
+Need hooks for Bari's family.
+Extra hooks for pirate activity.
+Account for pirates losing 
+
+
+Ship to Iyewy - 10 x 5-ton crates, secret, 100,000cr on delivery. Receiver will attempt to swindle and avoid payment.
+
+
+
+Sceynus appears to be a nexus of slaver activity, black market orbital complex. More traffic than indicated.
+Smeste is a new colony that relies on slave labor, this is where they will find Bari's family.
+	669-7
+	Xuplu = B 537
+	Fonis = B 537
+Fonis and Xuplu have created this colony as a farming/manufacturing hub.
+
+
+
+Derelict in Ceyama (Count Sabik, 2000-ton freighter, J2, M1) contains a TL-16 warbot.
+
+This warbot is a seed plant from a long dead polity that will slowly self-proliferate on trickle power.
+Every four weeks the number of bots will double until the ship is finally scavenged beyond useful
+parts, which will eventually yield 26 bots. These bots do not have jump capability and will not
+leave the system. This warbot type is known by the Empire, they can provide information and will
+actually send a strike force into the frontier in order to contain the problem, which will definitely
+cause a ruckus in the frontier. The Empire will reward 100,000CR for this information.
+
+There is a 9+ chance that one of the warbots will have moved to another system by the time the players
+return to Ceyama.
+
+
+
+
+Novák Valentin - Pirate group leader
+
+Nidesiri - Religious group, neo-luddite, mostly self-sufficient. Pirates also have a listening station in the remains of the asteroid base.
+
+Sceynus - Financier (swindle) Missions: find lost person
+Queen of Libra - Large Freighter (2000 tons) - Dorthe Hansen left on this ship. Destination Fonis
+
+Sceynus - Mahdi Behdad - Slave buyer
+
+Sceynus - Researcher (honest) Missions: steal cargo (45K, 20K in advance)
+
+
+
+
+Cargo Mission
+- Cargo destination is Scawei. It will be in the hanger for ~3 weeks before delivery, ship has already left but paid for berthing. After 3 weeks it will have been removed to an equatorial facility which will take some tracking down.
+- Cargo is overseen by port security, bypass 12+. Moving it to another berth will be suspicious and regardless of timing will be noticed. During the heist here a damaged ship will crash into a berth, causing the port to lockdown for several hours during which time the player's ship will be attacked by the owners of the cargo.
+- If cargo is at equatorial facility stealing it will require B&E, both physical and computer. Facility security is fairly heavy, perhaps twenty at any given time.
+
+
+Find Lost Person Mission
+- Dorthe intends to go past Fonis but will be detained there unless the players get to her first.
+- If the players get to her first she will be receptive to them. Eventual destination is Karus, she carries information regarding the slaver network.
+- If she is detained the information will be lost but she can still provide the location of Smeste, as well as a few other names in the network.
+- The players can bring her back or potentially drop her off at Whenidesiea where she can catch a ship across the gap. She will resist being brought back to Sceynus.
+- She will be guarded in either case, covertly by five agents on the freighter, or overtly by station security on Fonis.
+
+
+
+Easu Ritonga
+Julien Mustel
+Ursule Delaney
+
+
+
+Full tank at Auvifle
+200 ton Fat Trader in dark orbit around third gas giant, Loyal Ascension of Taurus. Turret and crew area suffered massive damage, need a plate over the hole before it can jump. Cargo bay suffered minor damage.
+In the low berths:
+	Slaver Captain - Serapina Saulinskiene
+	Slaver Pilot - Sibille Devere
+	Slaver Thug - Sarvan Kakran
+26 tons of cargo in two 10 ton and two 3 ton containers.
+10 tons aluminum
+10 tons new manufactured goods
+3 tons flavored water
+3 tons specialized parts (unknown) - contracted cargo
+
+
+Unospo - Research station above a medieval world, offers fueling service to keep the lights on.
+
+
+Players managed to rescue Dorthe but the firefight was pretty epic. Also retrieved the data. Drone was used.
+
+Cesar Juárez
+
+Cralarn is C, not X.
+
+Baron Zekreet
+Samir Ghazali of Eknope has put a 500K bounty on the players IFF.
+
+Timo Hari - Shasta's agent 

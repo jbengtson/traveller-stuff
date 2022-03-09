@@ -1,0 +1,1472 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>System Viewer</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/seedrandom/3.0.5/seedrandom.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.9/dist/js/bootstrap-select.min.js"></script>
+		<script type="text/javascript" src="traveller_utilities.js"></script>
+		<script type="text/javascript" src="npcs.js"></script>
+		<script type="text/javascript" src="viewer_planets.js"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.9/dist/css/bootstrap-select.min.css">
+		<style>
+			body {
+				background-color: #ddd
+			}
+			.item-wrapper, .item-title, .item-desc {
+				min-width: 100%;
+			}
+			.item-wrapper {
+				margin-bottom: 10px;
+			}
+			.item-title {
+				font-weight: bold;
+			}
+			.extension {
+				text-align: center;
+				cursor: pointer;
+			}
+			.heading {
+				font-style: italic;
+			}
+			.patron-container, .cargo-container, .ship-container {
+				border-bottom: 1px solid #b8b8b8;
+			}
+			.float-box {
+				float: right;
+			}
+		</style>
+	</head>
+	<body>
+        <div class="container">
+            <div id="selector-row" class="row" style="margin-top: 20px; margin-bottom: 20px;">
+				<div class="col">
+					<span class="bold">Select a system: </span>
+					<select id="system-select" class="selectpicker" data-live-search="true">
+					</select>
+				</div>
+				<div class="col">
+					<button id="system-roll" type="button" class="btn btn-primary">Reroll System</button>
+					<button id="reaction-roll" type="button" class="btn btn-primary">Reaction Roll</button>
+					<button id="traits-roll" type="button" class="btn btn-primary">Quick Traits</button>
+					<div id="temp-msg" class="float-box"></div>
+				</div>
+            </div>
+			<div id="data-row" class="row" style="min-height: 100%;">
+				<div id="system-data" class="col">
+				</div>
+				<div id="traffic-data" class="col">
+				</div>
+			</div>
+        </div>
+	</body>
+	<script>
+		var sysDict = {};
+		var gConst = 6.67408E-11;
+		var gEarth = 9.80665;
+		var dEarth = 5.51;
+		
+		$(document).ready(function() {
+			buildSystemDictionary();
+			buildSystemSelector();
+			$('#system-select').on('change', function() {
+				var sys = sysDict[$('#system-select').val()];
+				displaySystem(sys);
+				populateRandomSystemElements(sys);
+				$('[data-toggle="tooltip"]').tooltip();
+			});
+			$('#system-roll').on('click', function() {
+				Math.seedrandom();
+				var sys = sysDict[$('#system-select').val()];
+				sys.sysRandom = rand(1000000000) + sys.remarks;
+				populateRandomSystemElements(sys);
+			});
+			$('#reaction-roll').on('click', function() {
+				$("#temp-msg").html(reactionRoll());
+			});
+			$('#traits-roll').on('click', function() {
+				$("#temp-msg").html(getNPCTrait() + ", " + getNPCTrait());
+			});
+		});
+		
+		function reactionRoll() {
+			var res = roll(6) + roll(6);
+			switch(res) {
+				case 2:
+					return "Hostile";
+				case 3: case 4:
+					return "Unfriendly";
+				case 5: case 6:
+					return "Neutral, uncertain";
+				case 7: case 8: case 9:
+					return "Indifferent, uninterested";
+				case 10: case 11: case 12:
+					return "Friendly, helpful";
+				default:
+					return "Friendly, helpful";
+			}
+		}
+		
+		function displaySystem(elem) {
+			var cont = $('#system-data');
+			// ensure data is always generated the same for a given system
+			Math.seedrandom(elem.column + elem.row + elem.name + elem.subsector);
+			
+			cont.empty();
+			cont.append('<h3>' + elem.name + ' (Subsector ' + elem.subsector + ' ' + elem.column + elem.row + ')</h3>');
+/*
+			row = '<div class="item-wrapper row">';
+			row += '<div class="col"><div class="item-title extension" data-toggle="tooltip" data-placement="right" title="Importance Extension">Importance</div><div class="item-desc extension">{' + getImportance(elem) + '}</div></div>';
+			row += '<div class="col"><div class="item-title extension" data-toggle="tooltip" data-placement="right" data-html="true" title="Economic Extension<br/>(Resources)(Labor)(Infrastructure)(Efficiency)">Economic</div><div class="item-desc extension">' + getEconomy(elem) + '</div></div>';
+			row += '<div class="col"><div class="item-title extension" data-toggle="tooltip" data-placement="right" data-html="true" title="Cultural Extension<br/>(Heterogeneity)(Acceptance)(Strangeness)(Symbols)">Cultural</div><div class="item-desc extension">' + getCulture(elem) + '</div></div>';
+			row += '</div>';
+			cont.append(row);
+*/
+			row = '<div class="item-wrapper row">';
+			row += '<div class="col-3"><div class="item-title">Primary</div><div class="item-desc">' + elem.stars + '</div></div>';
+			row += '<div class="col-9"><div class="item-title">Orbit</div><div class="item-desc">' + getOrbit(elem) + '</div></div>';
+			row += '</div>';
+			cont.append(row);
+
+			cont.append('<div class="item-wrapper row"><div class="col"><div class="item-title">Starport ' + elem.port + '</div><div class="item-desc">' + getStarport(elem) + '</div></div></div>');
+
+			row = '<div class="item-wrapper row">';
+			row += '<div class="col"><div class="item-title">Travel Zone</div><div class="item-desc">' + getTravelZone(elem) + '</div></div>';
+			row += '<div class="col"><div class="item-title">Gas Giants</div><div class="item-desc">' + elem.gasgiants + '</div></div>';
+			row += '<div class="col"><div class="item-title">Asteroid Belts</div><div class="item-desc">' + elem.asteroidbelts + '</div></div>';
+			row += '</div>';
+			cont.append(row);
+			
+			row = '<div class="item-wrapper row">';
+			row += '<div class="col"><div class="item-title">Bases</div><div class="item-desc">' + getBases(elem) + '</div></div>';
+			row += '<div class="col"><div class="item-title">Remarks</div><div class="item-desc">' + getRemarks(elem) + '</div></div>';
+			row += '</div>';
+			cont.append(row);
+
+			row = '<div class="item-wrapper row">';
+			row += '<div class="col"><div class="item-title">Size ' + uwpElem(elem.size) + '</div><div class="item-desc">' + getSize(elem) + '</div></div>';
+			row += '<div class="col"><div class="item-title">Hydrosphere ' + uwpElem(elem.hydrosphere)+ '</div><div class="item-desc">' + getHydrosphere(elem) + '</div></div>';
+			row += '<div class="col"><div class="item-title">Population ' + uwpElem(elem.population)+ '</div><div class="item-desc">' + getPopulation(elem) + '</div></div>';
+			row += '</div>';
+			cont.append(row);
+
+			row = '<div class="item-wrapper row">';
+			row += '<div class="col"><div class="item-title">Atmosphere ' + uwpElem(elem.atmosphere)+ '</div><div class="item-desc">' + getAtmosphere(elem) + '</div></div>';
+			row += '</div>';
+			cont.append(row);
+
+			cont.append('<div class="item-wrapper"><div class="item-title">Government ' + uwpElem(elem.government)+ '</div><div class="item-desc">' + getGovernment(elem) + '</div></div>');
+			cont.append('<div class="item-wrapper"><div class="item-title">Law Level ' + uwpElem(elem.law)+ '</div><div class="item-desc">' + getLawLevel(elem) + '</div></div>');
+			cont.append('<div class="item-wrapper"><div class="item-title">Tech Level ' + uwpElem(elem.techlevel)+ '</div><div class="item-desc">' + getTechLevel(elem) + '</div></div>');
+
+			if(elem.population > 0) {
+				cont.append('<div class="item-wrapper row"><div class="item-title col">Societal Specifics</div>' + getSociety(elem) + '</div>');
+			}
+			row = '<div class="item-wrapper row"><div class="item-title col">Mainworld Specifics</div>';
+			row += '<div class="col-4 heading">Temperature</div><div class="col-8">' + temperatureRange(elem) + '</div>';
+			row += '<div class="col-4 heading">Cloud Cover</div><div class="col-8">' + cloudCover(elem) + '</div>';
+			row += '<div class="col-4 heading">Foliage</div><div class="col-8">' + foliage(elem) + '</div>';
+			row += '</div>';
+			cont.append(row);
+		}
+		
+		function foliage(elem) {
+			// Finally, the main starlight this planet encounters will be a big factor
+			if(elem.atmosphere < 2 || elem.atmosphere === 10 || elem.atmosphere === 11 || elem.atmosphere == 12 || elem.atmosphere == 15) {
+				// No foliage possible.
+				return "None";
+			}
+
+			// High hydrographics will affect scatter and absorption, based on temperature.
+			var foliage = elem.temperature - elem.hydrosphere;
+
+			// Thin atmospheres will scatter and absorb less, dense more.
+			if(elem.atmosphere < 4) {
+				// Very thin atmosphere.
+				foliage += 6;
+			}
+			if(elem.atmosphere == 4 || elem.atmosphere == 5 || elem.atmosphere == 14) {
+				// Thin atmosphere.
+				foliage += 3;
+			}
+			if(elem.atmosphere == 6 || elem.atmosphere == 7 || elem.atmosphere == 13) {
+				// Standard atmosphere
+				foliage += 0;
+			}
+			if(elem.atmosphere == 8 || elem.atmosphere == 9) {
+				// Dense atmosphere
+				foliage -= 4;
+			}
+
+			foliage += fullStarlightWeight(elem);
+
+			if(foliage < -14) {
+				return "Black";
+			} else if(foliage < -10) {
+				return "Purple";
+			} else if(foliage < -6) {
+				return "Violet";
+			} else if(foliage < -2) {
+				return "Dark green";
+			} else if(foliage < 4) {
+				return "Green";
+			} else if(foliage < 8) {
+				return "Light green";
+			} else if(foliage < 13) {
+				return "Orange";
+			} else if(foliage < 17) {
+				return "Yellow";
+			} else {
+				return "Light yellow/white";
+			}
+		}
+
+		function fullStarlightWeight(elem) {
+			// Starlight is an important factor as well
+			if(elem.stars.includes('/')) {
+				// Binary system, average the values.
+				var str = elem.stars.split('/');
+				return Math.ceil((starlightWeight(str[0].substr(0, 1)) + starlightWeight(str[1].substr(0, 1))) / 2);
+			} else {
+				// Single star system.
+				return starlightWeight(elem.stars.substr(0, 1));
+			}
+		}
+
+		function starlightWeight(type) {
+			if(type == 'M') {
+				return -5;
+			}
+			if(type == 'K') {
+				return -2;
+			}
+			if(type == 'G') {
+				return 0;
+			}
+			if(type == 'F') {
+				return 3;
+			}
+			if(type == 'A') {
+				return 6;
+			}
+			return 10;
+		}
+
+		function temperatureRange(elem) {
+			if(elem.atmosphere < 2) {
+				return "Airless (< -60F/-51C to > 177F/81C)";
+			}
+			if(elem.temperature < 3) {
+				return "Frozen (< -60F/-51C)";
+			} else if(elem.temperature < 5) {
+				return "Cold (-60F/-51F to 32F/0C)";
+			} else if(elem.temperature < 10) {
+				return "Temperate (32F/0C to 86F/30C)";
+			} else if(elem.temperature < 12) {
+				return "Hot (87F/31C to 176F/80C)";
+			} else {
+				return "Roasting (> 177F/81C)";
+			}
+		}
+
+		function cloudCover(elem) {
+			if(elem.atmosphere < 2 || elem.atmosphere == 14) {
+				// No clouds possible.
+				return "0%";
+			}
+			if(elem.atmosphere == 15) {
+				return "Varies";
+			}
+
+			var cloudBase = elem.atmosphere + elem.temperature + elem.hydrosphere + fullStarlightWeight(elem);
+			cloudBase = Math.floor((cloudBase * 2.5) * ((rand(10) + 95) * 0.01));
+			if(cloudBase > 100) { cloudBase = 100; }
+
+			return cloudBase + "%";
+		}
+
+		function populateRandomSystemElements(elem) {
+			var cont = $('#traffic-data');
+			// This is random data every time.
+			Math.seedrandom(elem.sysRandom);
+
+			cont.empty();
+			cont.append('<h3>Current Information</h3>');
+
+			cont.append('<div class="item-wrapper"><div class="item-title">Starship Traffic</div><div class="item-desc">' + getShipTraffic(elem) + '</div><div class="item-desc">Importance {' + getImportance(elem) + '}</div></div>');
+			cont.append('<div class="item-wrapper"><div class="item-title">In Port</div><div class="item-desc">' + getInPort(elem) + '</div></div>');
+			cont.append('<div class="item-wrapper"><div class="item-title">Potential Patrons</div><div class="item-desc">' + getPatrons(elem) + '</div></div>');
+			cont.append('<div class="item-wrapper"><div class="item-title">Contract Cargos</div><div class="item-desc">' + niceSystemCargos(elem) + '</div></div>');
+			cont.append('<div class="item-wrapper"><div class="item-title">Hooks</div><div class="item-desc">' + 'placeholder' + '</div></div>');
+		}
+		
+		function uwp(elem) {
+			return elem.port + uwpElem(elem.size) + uwpElem(elem.atmosphere) + uwpElem(elem.hydrosphere) +
+				uwpElem(elem.population) + uwpElem(elem.government) + uwpElem(elem.law) + "-" + uwpElem(elem.techlevel);
+		}
+		
+		function surfaceGravity(size) {
+			// This is a weird one because a planet's position in the system may determine density.
+			// Assume a density close to Earth and randomize.
+			var sizem = size * 1000;
+			var dense = ((rand(40) + 75) * 0.01) * dEarth * 1000; // gives kg/m^3
+			var vol = (4 / 3) * Math.PI * Math.pow(sizem * 0.5, 3); // volume in m^3
+			var kg = vol * dense;
+			return (((gConst * kg) / Math.pow(sizem * 0.5, 2)) / gEarth).toFixed(2);
+		}
+		
+		function getImportance(elem) {
+			var imp = 0;
+			if(elem.port == 'A' || elem.port == 'B') {
+				imp += 1;
+			}
+			if(elem.port == 'D' || elem.port == 'E' || elem.port == 'X') {
+				imp -= 1;
+			}
+			if(elem.tech > 15) {
+				imp += 1;
+			}
+			if(elem.tech > 9) {
+				imp += 1;
+			}
+			if(elem.tech < 9) {
+				imp -= 1;
+			}
+			if(elem.remarks.includes('Ag') || elem.remarks.includes('Ga')) {
+				imp += 1;
+			}
+			if(elem.remarks.includes('Hi')) {
+				imp += 1;
+			}
+			if(elem.remarks.includes('In')) {
+				imp += 1;
+			}
+			if(elem.remarks.includes('Ri')) {
+				imp += 1;
+			}
+			if(elem.population < 7) {
+				imp -= 1;
+			}
+			if(elem.basenaval && elem.basescout) {
+				imp += 1;
+			}
+			return imp;
+		}
+		
+		function getEconomy(elem) {
+			var ext = '';
+			var resrc = roll(6) + roll(6);
+			if(elem.techlevel > 7) {
+				resrc += elem.gasgiants + elem.asteroidbelts;
+			}
+			var labor = elem.population - 1;
+			var infra = 0;
+			if(elem.population > 0 && elem.population < 4) {
+				infra = getImportance(elem);
+			}
+			if(elem.population > 3 && elem.population < 7) {
+				infra = getImportance(elem) + roll(6);
+			}
+			if(elem.population > 6) {
+				infra = getImportance(elem) + roll(6) + roll(6);
+			}
+			var eff = flux();
+			if(elem.population < 1) { eff = 0; }
+			var ru = resrc * (labor < 1 ? 1 : labor) * (infra < 1 ? 1 : infra) * (eff === 0 ? 1 : eff);
+			
+			return "(" + uwpElem(resrc) + uwpElem(labor) + uwpElem(infra) + (eff > 0 ? "+" : "") + eff + ") RU: " + ru;
+		}
+
+		function getCulture(elem) {
+			if(elem.population < 1) { return "0000"; }
+			var h = elem.population + flux();
+			if(h < 1) { h = 1; }
+			var a = elem.population + getImportance(elem);
+			if(a < 1) { a = 1; }
+			var st = 5 + flux();
+			if(st < 1) { st = 1; }
+			var sy = elem.techlevel + flux();
+			if(sy < 1) { sy = 1; }
+			return "[" + uwpElem(h) + uwpElem(a) + uwpElem(st) + uwpElem(sy) + "]";
+		}
+
+		function getStarport(elem) {
+			var elements = "";
+			switch(elem.port) {
+			case 'A':
+				elements += "Excellent - Cost x" + roll(6) + ", premium, covered, open";
+				if(elem.population > 6) {
+					elements += ", highport";
+				}
+				break;
+			case 'B':
+				elements += "Good - Cost x" + roll(6) + ", premium, covered, open";
+				if(elem.population > 7) {
+					elements += ", highport";
+				}
+				break;
+			case 'C':
+				elements += "Fair - Cost x" + roll(6) + ", covered, open";
+				if(elem.population > 8) {
+					elements += ", highport";
+				}
+				break;
+			case 'D':
+				elements += "Poor - Cost x" + roll(6) + ", open";
+				break;
+			case 'E':
+				elements += "Frontier - No cost";
+				break;
+			default:
+				elements += "None";
+				break;
+			}
+			return elements;
+		}
+		
+		function getSize(elem) {
+			switch(elem.size) {
+			case 0:
+				return "Asteroid or orbital complex";
+			case 1:
+				var sizekm = (rand(20) + 90) * 0.01 * 1600;
+				var size = sizekm.toFixed(0).replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1,');
+				return size + "km (" + surfaceGravity(sizekm) + "g)";
+			case 2:
+				var sizekm = (rand(20) + 90) * 0.01 * 3200;
+				var size = sizekm.toFixed(0).replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1,');
+				return size + "km (" + surfaceGravity(sizekm) + "g)";
+			case 3:
+				var sizekm = (rand(20) + 90) * 0.01 * 4800;
+				var size = sizekm.toFixed(0).replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1,');
+				return size + "km (" + surfaceGravity(sizekm) + "g)";
+			case 4:
+				var sizekm = (rand(20) + 90) * 0.01 * 6400;
+				var size = sizekm.toFixed(0).replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1,');
+				return size + "km (" + surfaceGravity(sizekm) + "g)";
+			case 5:
+				var sizekm = (rand(20) + 90) * 0.01 * 8000;
+				var size = sizekm.toFixed(0).replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1,');
+				return size + "km (" + surfaceGravity(sizekm) + "g)";
+			case 6:
+				var sizekm = (rand(20) + 90) * 0.01 * 9600;
+				var size = sizekm.toFixed(0).replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1,');
+				return size + "km (" + surfaceGravity(sizekm) + "g)";
+			case 7:
+				var sizekm = (rand(20) + 90) * 0.01 * 11200;
+				var size = sizekm.toFixed(0).replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1,');
+				return size + "km (" + surfaceGravity(sizekm) + "g)";
+			case 8:
+				var sizekm = (rand(20) + 90) * 0.01 * 12800;
+				var size = sizekm.toFixed(0).replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1,');
+				return size + "km (" + surfaceGravity(sizekm) + "g)";
+			case 9:
+				var sizekm = (rand(20) + 90) * 0.01 * 14400;
+				var size = sizekm.toFixed(0).replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1,');
+				return size + "km (" + surfaceGravity(sizekm) + "g)";
+			case 10:
+				var sizekm = (rand(20) + 90) * 0.01 * 16000;
+				var size = sizekm.toFixed(0).replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1,');
+				return size + "km (" + surfaceGravity(sizekm) + "g)";
+			default:
+				return "Asteroid or orbital complex";
+			}
+		}
+		
+		function getAtmosphere(elem) {
+			var result = "";
+			switch(elem.atmosphere) {
+			case 0:
+				result = "None (requires vacc suit)";
+				break;
+			case 1:
+				var press = (rand(99) + 1) * 0.001;
+				result = "Trace (" + press.toFixed(2) + " atm, requires vacc suit)";
+				break;
+			case 2:
+				var press = (rand(42) + 1) * 0.01;
+				result = "Very Thin, Tainted (" + press.toFixed(2) + " atm, requires respirator and filter)";
+				break;
+			case 3:
+				var press = (rand(42) + 1) * 0.01;
+				result = "Very Thin (" + press.toFixed(2) + " atm, requires respirator)";
+				break;
+			case 4:
+				var press = (rand(27) + 44) * 0.01;
+				result = "Thin, Tainted (" + press.toFixed(2) + " atm, requires filter)";
+				break;
+			case 5:
+				var press = (rand(27) + 44) * 0.01;
+				result = "Thin (" + press.toFixed(2) + " atm)";
+				break;
+			case 6:
+				var press = (rand(78) + 71) * 0.01;
+				result = "Standard (" + press.toFixed(2) + " atm)";
+				break;
+			case 7:
+				var press = (rand(78) + 71) * 0.01;
+				result = "Standard, tainted (" + press.toFixed(2) + " atm, requires filter)";
+				break;
+			case 8:
+				var press = (rand(99) + 150) * 0.01;
+				result = "Dense (" + press.toFixed(2) + " atm)";
+				break;
+			case 9:
+				var press = (rand(99) + 150) * 0.01;
+				result = "Dense, tainted (" + press.toFixed(2) + " atm, requires filter)";
+				break;
+			case 10:
+				result = "Exotic (requires air supply)";
+				break;
+			case 11:
+				result = "Corrosive (requires environmental suit)";
+				break;
+			case 12:
+				result = "Insidious (requires specialized environmental suit)";
+				break;
+			case 13:
+				var press = (rand(200) + 250) * 0.01;
+				result = "Very Dense (" + press.toFixed(2) + " atm, requires special gear except at high altitudes)";
+				break;
+			case 14:
+				var press = (rand(27) + 44) * 0.01;
+				result = "Thin (" + press.toFixed(2) + " atm, requires special gear except in lowland atmosphere pools)";
+				break;
+			case 15:
+				var press = (rand(200) + 71) * 0.01;
+				result = "Unusual (" + press.toFixed(2) + " atm, requires special gear)";
+				break;
+			}
+			return result + " Composition: " + getAtmosphereComposition(elem);
+		}
+
+		function getAtmosphereComposition(elem) {
+			switch(elem.atmosphere) {
+			case 0: case 1:
+				return "none";
+			case 2: case 4: case 7: case 9:
+				// tainted
+				return "breathable nitrogen/oxygen mix tainted by " + getTaint();
+			case 3: case 5: case 6: case 8: case 13: case 14: case 15:
+				// generally breathable
+				return "breathable nitrogen/oxygen mix";
+			case 10:
+				var die = roll(6) + roll(6);
+				switch(die) {
+				case 2: case 5: case 7: case 9: case 11: case 12:
+					return "human-incompatible mixture including " + getIrritant() + " at " + getPressure().toFixed(2) + " atm";
+				}
+				return "human-incompatible mixture at " + getPressure().toFixed(2) + " atm";
+			case 11:
+				return "corrosive due to " + getCorrosive();
+			case 12:
+				return "insidious due to " + getInsidious();
+			default:
+				return "";
+			}
+		}
+		
+		function getTaint() {
+			var die = roll(6) + roll(6);
+			switch(die) {
+			case 2: case 12:
+				return "pollutants";
+			case 3: case 11:
+				return "a harmful gas mixture";
+			case 4:
+				return "high oxygen";
+			case 5: case 7: case 9:
+				return "harmful microbes";
+			case 6: case 8:
+				return "sulfur compounds";
+			case 10:
+				return "low oxygen";
+			}
+			return "";
+		}
+		
+		function getIrritant() {
+			var die = roll(6) + roll(6);
+			switch(die) {
+			case 2: case 12:
+				return "exotic nitrogen products";
+			case 3: case 11:
+				return "ammonia";
+			case 5: case 7: case 9:
+				return "nitrogen/methane produced hydrocarbons and semi-organics";
+			case 6: case 8:
+				return "sulfur compounds";
+			case 4: case 10:
+				return "chlorine";
+			}
+			return "";
+		}
+		
+		function getCorrosive() {
+			var result = "";
+			var press = getPressure();
+			if(press > 10.0) {
+				result = "pressure effects";
+			} else {
+				var die = roll(6) + roll(6);
+				if(die < 6) {
+					result = "flourine";
+				} else if(die > 8) {
+					result = "exotic nitrogen products";
+				} else {
+					result = "sulfur compounds";
+				}
+			}
+			return result + " at " + (rand(450) + 50).toFixed(2) + "&deg;C and " + press.toFixed(2) + " atm";
+		}
+		
+		function getInsidious() {
+			var die = roll(6) + roll(6);
+			switch(die) {
+			case 2: case 3: case 7: case 11: case 12:
+				return "hydrogen at " + ((rand(1000) + 250) * 0.01).toFixed(2) + " atm";
+			case 4: case 10:
+				var die2 = roll(6) + roll(6);
+				if(die2 > 10 || die2 < 4) {
+					return "extreme radiation sources - " + (rand(40) + 1).toFixed(2) + " Sv/h";
+				} else {
+					return "radiation sources - " + (rand(250) + 50).toFixed(2) + " mSv/h";
+				}
+			case 5: case 6: case 8: case 9:
+				// Corrosive cranked up
+				var result = "pressure effects of ";
+				var press = getPressure() + 10;
+				var die2 = roll(6) + roll(6);
+
+				if(die2 < 6) {
+					result += "flourine";
+				} else if(die2 > 8) {
+					result += "exotic nitrogen products";
+				} else {
+					result += "sulfur compounds";
+				}
+				
+				return result + " at " + (rand(1000) + 100).toFixed(2) + "&deg;C and " + press.toFixed(2) + " atm";
+			}
+			return "really fucked up";
+		}
+		
+		function getPressure() {
+			var die = roll(6) + roll(6);
+			switch(die) {
+			case 2: case 3:
+				return (rand(42) + 1) * 0.01;
+			case 4: case 5:
+				return (rand(27) + 44) * 0.01;
+			case 6: case 7:
+				return (rand(78) + 71) * 0.01;
+			case 8: case 9:
+				return (rand(99) + 150) * 0.01;
+			case 10: case 11: case 12:
+				var die2 = roll(6) + roll(6);
+				var press = (rand(1000) + 250) * 0.01;
+				if(die2 > 10) {
+					press += rand(740); // ultra-dense
+				}
+				return press;
+			}
+			return 0.0;
+		}
+		
+		function getHydrosphere(elem) {
+			switch(elem.hydrosphere) {
+			case 0:
+				if(elem.atmosphere === 0) {
+					return "Airless (0%)";
+				} else {
+					var hydro = (Math.random() * 5).toFixed(1);
+					return "Desert (" + hydro + "%)";
+				}
+			case 1:
+				var hydro = (Math.random() * 10 + 5).toFixed(1);
+				return "Arid (" + hydro + "%)";
+			case 2:
+				var hydro = (Math.random() * 10 + 15).toFixed(1);
+				return "Small seas (" + hydro + "%)";
+			case 3:
+				var hydro = (Math.random() * 10 + 25).toFixed(1);
+				return "Small seas and oceans (" + hydro + "%)";
+			case 4:
+				var hydro = (Math.random() * 10 + 35).toFixed(1);
+				return "Wet (" + hydro + "%)";
+			case 5:
+				var hydro = (Math.random() * 10 + 45).toFixed(1);
+				return "Large oceans (" + hydro + "%)";
+			case 6:
+				var hydro = (Math.random() * 10 + 55).toFixed(1);
+				return "Large oceans (" + hydro + "%)";
+			case 7:
+				var hydro = (Math.random() * 10 + 65).toFixed(1);
+				return "Earthlike (" + hydro + "%)";
+			case 8:
+				var hydro = (Math.random() * 10 + 75).toFixed(1);
+				return "Mostly ocean (" + hydro + "%)";
+			case 9:
+				var hydro = (Math.random() * 10 + 85).toFixed(1);
+				return "Small islands and archipelagos (" + hydro + "%)";
+			case 10:
+				var hydro = (Math.random() * 5 + 95).toFixed(1);
+				return "Water world (" + hydro + "%)";
+			}
+		}
+		
+		function getPopulation(elem) {
+			if(elem.population === 0) {
+				return "0 (unknown)";
+			}
+			var basepop = Number("1e" + elem.population.toString());
+			var modpop = basepop * Math.random() + basepop * (elem.populationmult < 1 ? 1 : elem.populationmult);
+			return modpop.toFixed(0).replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1,');
+		}
+		
+		function getGovernment(elem) {
+			switch(elem.government) {
+			case 0:
+				return '<span class="heading">None:</span> No government structure. In many cases, family bonds predominate.';
+			case 1:
+				return '<span class="heading">Company/corporation:</span> Ruling functions are assumed by a company managerial elite, and most citizenry are company employees or dependants.';
+			case 2:
+				return '<span class="heading">Participating democracy:</span> Ruling functions are reached by the advice and consent of the citizenry directly.';
+			case 3:
+				return '<span class="heading">Self-perpetuating oligarchy:</span> Ruling functions are performed by a restricted minority, with little or no input from the mass of citizenry.';
+			case 4:
+				return '<span class="heading">Representative democracy:</span> Ruling functions are performed by elected representatives.';
+			case 5:
+				return '<span class="heading">Feudal technocracy:</span> Ruling functions are performed by specific individuals for persons who agree to be ruled by them. Relationships are based on the performance of technical activities which are mutually beneficial.';
+			case 6:
+				return '<span class="heading">Captive government:</span> Ruling functions are performed by an imposed leadership answerable to an outside group. A colony or conquered area.';
+			case 7:
+				return '<span class="heading">Balkanisation:</span> No central authority exists; rival governments complete for control. Law level refers to the government nearest the starport.';
+			case 8:
+				return '<span class="heading">Civil service bureaucracy:</span> Ruling functions are performed by government agencies employing individuals selected for their expertise.';
+			case 9:
+				return '<span class="heading">Impersonal Bureaucracy:</span> Ruling functions are performed by agencies which have become insulated from the governed citizens.';
+			case 10:
+				return '<span class="heading">Charismatic dictator:</span> Ruling functions are performed by agencies directed by a single leader who enjoys the overwhelming confidence of the citizens.';
+			case 11:
+				return '<span class="heading">Non-charismatic leader:</span> A previous charismatic dictator has been replaced by a leader through normal channels.';
+			case 12:
+				return '<span class="heading">Charismatic oligarchy:</span> Ruling functions are performed by a select group of members of an organisation or class which enjoys the overwhelming confidence of the citizenry.';
+			case 13:
+				return '<span class="heading">Religious dictatorship:</span> Ruling functions are performed by a religious organisation without regard to the specific individual needs of the citizenry.';
+			case 14:
+				return '<span class="heading">Religious autocracy:</span> Government by a single religious leader having absolute power over the citizenry.';
+			case 15:
+				return '<span class="heading">Totalitarian oligarchy:</span> Government by an all-powerful minority which maintains absolute control through widespread coercion and oppression.';
+			default:
+				return "Unknown";
+			}
+		}
+		
+		function getLawLevel(elem) {
+			switch(elem.law) {
+			case 0:
+				return "No Law.<br/>No restrictions.";
+			case 1:
+				return 'Low Law.<br/>' +
+				'<span class="heading">Weapons:</span> Poison gas, explosives, undetectable weapons, WMDs.<br/>' +
+				'<span class="heading">Drugs:</span> Highly addictive and dangerous narcotics.<br/>' + 
+				'<span class="heading">Information:</span> Intellect programs.<br/>' + 
+				'<span class="heading">Technology:</span> Dangerous technologies such as nanotechnology.<br/>' + 
+				'<span class="heading">Travellers:</span> Visitors must contact planetary authorities by radio, landing is permitted anywhere.<br/>' + 
+				'<span class="heading">Psionics:</span> Dangerous talents must be registered.';
+			case 2:
+				return 'Low Law.<br/>' +
+				'<span class="heading">Weapons:</span> Portable energy weapons (except ship-mounted weapons).<br/>' +
+				'<span class="heading">Drugs:</span> Highly addictive narcotics.<br/>' +
+				'<span class="heading">Information:</span> Agent programs.<br/>' +
+				'<span class="heading">Technology:</span> Alien technology.<br/>' +
+				'<span class="heading">Travellers:</span> Visitors must report passenger manifest, landing is permitted anywhere.<br/>' +
+				'<span class="heading">Psionics:</span> All psionic powers must be registered; use of dangerous powers forbidden.';
+			case 3:
+				return 'Low Law.<br/>' +
+				'<span class="heading">Weapons:</span> Heavy weapons.<br/>' +
+				'<span class="heading">Drugs:</span> Combat drugs.<br/>' +
+				'<span class="heading">Information:</span> Intrusion programs.<br/>' +
+				'<span class="heading">Technology:</span> Alien technology.<br/>' +
+				'<span class="heading">Travellers:</span> Landing only at starport or other authorised sites.<br/>' +
+				'<span class="heading">Psionics:</span> Use of telepathy restricted to government-approved telepaths.';
+			case 4:
+				return 'Moderate Law.<br/>' +
+				'<span class="heading">Weapons:</span> Light assault weapons and submachine guns.<br/>' +
+				'<span class="heading">Drugs:</span> Addictive narcotics.<br/>' + 
+				'<span class="heading">Information:</span> Intrusion programs.<br/>' + 
+				'<span class="heading">Technology:</span> Alien technology.<br/>' + 
+				'<span class="heading">Travellers:</span> Landing only at starport.<br/>' + 
+				'<span class="heading">Psionics:</span> Use of teleportation and clairvoyance restricted.';
+			case 5:
+				return 'Moderate Law.<br/>' +
+				'<span class="heading">Weapons:</span> Personal concealable weapons.<br/>' +
+				'<span class="heading">Drugs:</span> Addictive narcotics.<br/>' + 
+				'<span class="heading">Information:</span> Intrusion programs.<br/>' + 
+				'<span class="heading">Technology:</span> TL 15 items.<br/>' + 
+				'<span class="heading">Travellers:</span> Landing only at starport.<br/>' + 
+				'<span class="heading">Psionics:</span> Use of all psionic powers restricted to government psionicists.';
+			case 6:
+				return 'Moderate Law.<br/>' +
+				'<span class="heading">Weapons:</span> All firearms except pistols, shotguns, and stunners; carrying weapons discouraged.<br/>' +
+				'<span class="heading">Drugs:</span> Fast and Slow drugs.<br/>' + 
+				'<span class="heading">Information:</span> Intrusion programs.<br/>' + 
+				'<span class="heading">Technology:</span> TL 13 items.<br/>' + 
+				'<span class="heading">Travellers:</span> Landing only at starport, visitors must register all business.<br/>' + 
+				'<span class="heading">Psionics:</span> Possession of psionic drugs banned.';
+			case 7:
+				return 'Moderate Law.<br/>' +
+				'<span class="heading">Weapons:</span> Pistols.<br/>' +
+				'<span class="heading">Drugs:</span> All narcotics.<br/>' + 
+				'<span class="heading">Information:</span> Security programs.<br/>' + 
+				'<span class="heading">Technology:</span> TL 11 items.<br/>' + 
+				'<span class="heading">Travellers:</span> Citizens must register offworld travel, visitors must register all business.<br/>' + 
+				'<span class="heading">Psionics:</span> Use of psionics forbidden.';
+			case 8:
+				return 'High Law.<br/>' +
+				'<span class="heading">Weapons:</span> Shotguns.<br/>' +
+				'<span class="heading">Drugs:</span> All narcotics.<br/>' + 
+				'<span class="heading">Information:</span> Expert programs.<br/>' + 
+				'<span class="heading">Technology:</span> TL 9 items.<br/>' + 
+				'<span class="heading">Travellers:</span> Visits discouraged; Excessive contact with citizens forbidden.<br/>' + 
+				'<span class="heading">Psionics:</span> Psionic-related technology banned.';
+			case 9:
+				return 'High Law.<br/>' +
+				'<span class="heading">Weapons:</span> All bladed weapons, stunners.<br/>' +
+				'<span class="heading">Drugs:</span> All narcotics.<br/>' + 
+				'<span class="heading">Information:</span> Recent news from offworld, restricted press.<br/>' + 
+				'<span class="heading">Technology:</span> TL 7 items.<br/>' + 
+				'<span class="heading">Travellers:</span> Citizens may not leave planet; visitors may not leave starport.<br/>' + 
+				'<span class="heading">Psionics:</span> All psionics.';
+			case 10:
+				return 'Extreme Law.<br/>' +
+				'<span class="heading">Weapons:</span> Any weapons.<br/>' +
+				'<span class="heading">Drugs:</span> Anagathics. Unregistered medicinal drugs.<br/>' + 
+				'<span class="heading">Information:</span> Library programs, unfiltered data about other worlds. Free speech curtailed.<br/>' + 
+				'<span class="heading">Technology:</span> TL 7 items.<br/>' + 
+				'<span class="heading">Travellers:</span> Landing permitted only to approved governmental agents.<br/>' + 
+				'<span class="heading">Psionics:</span> All psionics.';
+			case 11:
+				return 'Extreme Law.<br/>' +
+				'<span class="heading">Weapons:</span> Any weapons.<br/>' +
+				'<span class="heading">Drugs:</span> Anagathics. Unregistered medicinal drugs.<br/>' + 
+				'<span class="heading">Information:</span> Information technology, any non-critical data from offworld, personal media.<br/>' + 
+				'<span class="heading">Technology:</span> TL 5 items.<br/>' + 
+				'<span class="heading">Travellers:</span> No offworlders permitted, rigid control of civilian movement.<br/>' + 
+				'<span class="heading">Psionics:</span> All psionics.';
+			case 12:
+				return 'Extreme Law.<br/>' +
+				'<span class="heading">Weapons:</span> Any weapons.<br/>' +
+				'<span class="heading">Drugs:</span> All drugs.<br/>' + 
+				'<span class="heading">Information:</span> Any data from offworld. No free press. Unrestricted invasion of privacy.<br/>' + 
+				'<span class="heading">Technology:</span> TL 3 items.<br/>' + 
+				'<span class="heading">Travellers:</span> No offworlders permitted, rigid control of civilian movement.<br/>' + 
+				'<span class="heading">Psionics:</span> All psionics.';
+			case 13:
+				return 'Extreme Law.<br/>' +
+				'<span class="heading">Weapons:</span> Any weapons.<br/>' +
+				'<span class="heading">Drugs:</span> All drugs.<br/>' + 
+				'<span class="heading">Information:</span> Any data from offworld. No free press. Unrestricted invasion of privacy.<br/>' + 
+				'<span class="heading">Technology:</span> TL 3 items.<br/>' + 
+				'<span class="heading">Travellers:</span> No offworlders permitted, rigid control of civilian movement.<br/>' + 
+				'<span class="heading">Psionics:</span> All psionics.';
+			case 14:
+				return 'Extreme Law.<br/>' +
+				'<span class="heading">Weapons:</span> Any weapons.<br/>' +
+				'<span class="heading">Drugs:</span> All drugs.<br/>' + 
+				'<span class="heading">Information:</span> Any data from offworld. No free press. Unrestricted invasion of privacy.<br/>' + 
+				'<span class="heading">Technology:</span> TL 3 items.<br/>' + 
+				'<span class="heading">Travellers:</span> No offworlders permitted, rigid control of civilian movement.<br/>' + 
+				'<span class="heading">Psionics:</span> All psionics.';
+			default:
+				return 'Extreme Law.<br/>' +
+				'<span class="heading">Weapons:</span> Any weapons.<br/>' +
+				'<span class="heading">Drugs:</span> All drugs.<br/>' + 
+				'<span class="heading">Information:</span> Any data from offworld. No free press. Unrestricted invasion of privacy.<br/>' + 
+				'<span class="heading">Technology:</span> All personal items.<br/>' + 
+				'<span class="heading">Travellers:</span> No offworlders permitted, no civilian movement permitted.<br/>' + 
+				'<span class="heading">Psionics:</span> All psionics.';
+			}
+		}
+		
+		function getTechLevel(elem) {
+			switch(elem.techlevel) {
+			case 0:
+				return "Pre-Industrial (primitive, stone-age)";
+			case 1:
+				return "Pre-Industrial (bronze, iron, middle-ages)";
+			case 2:
+				return "Pre-Industrial (printing press, circa 1600 CE)";
+			case 3:
+				return "Pre-Industrial (basic science, circa 1800 CE)";
+			case 4:
+				return "Industrial (internal combustion, circa 1900 CE)";
+			case 5:
+				return "Industrial (mass production, circa 1930 CE)";
+			case 6:
+				return "Pre-Stellar (nuclear power, circa 1950 CE)";
+			case 7:
+				return "Early Spacefaring (miniaturized electronics, circa 1970 CE)";
+			case 8:
+				return "Spacefaring (room-temperature superconductors, circa 2030 CE)";
+			case 9:
+				return "Early Stellar (fusion power, circa 2100 CE)";
+			case 10:
+				return "Early Stellar (jump drive)";
+			case 11:
+				return "Average Stellar (large starships)";
+			case 12:
+				return "Average Stellar (sophisticed robots)";
+			case 13:
+				return "Average Stellar (holographic storage medium, average Imperium)";
+			case 14:
+				return "High Stellar (anti-grav cities)";
+			case 15:
+				return "High Stellar (anagathics normal)";
+			default:
+				return "High Stellar (above Imperial norm)";
+			}
+		}
+		
+		function getTravelZone(elem) {
+			if(elem.travelzone === 'A') {
+				return "Amber";
+			}
+			if(elem.travelzone === 'R') {
+				return "Red";
+			}
+			return "Green";
+		}
+		
+		function getBases(elem) {
+			bases = [];
+			if(elem.basenaval) {
+				bases.push("Naval");
+			}
+			if(elem.basescout) {
+				bases.push("Scout");
+			}
+			if(elem.baseresearch) {
+				bases.push("Research Station");
+			}
+			if(elem.basetas) {
+				bases.push("Traveller's Aid Society");
+			}
+			if(elem.baseconsulate) {
+				bases.push("Imperial Consulate");
+			}
+			if(elem.basepirate) {
+				bases.push("Pirate");
+			}
+			if(bases.length === 0) {
+				return "None";
+			}
+			return bases.join(', ');
+		}
+		
+		function getRemarks(elem) {
+			result = "";
+			if(elem.remarks.includes("Ag")) {
+				if(result.length) {
+					result += ", ";
+				}
+				result += "<span title=\"Agricultural worlds are dedicated to farming and food production. Often, they are divided into vast semi-feudal estates.\">Agricultural</span>";
+			}
+			if(elem.remarks.includes("As")) {
+				if(result.length) {
+					result += ", ";
+				}
+				result += "<span title=\"Asteroids are usually mining colonies, but can also be orbital factories or colonies.\">Asteroid</span>";
+			}
+			if(elem.remarks.includes("Ba")) {
+				if(result.length) {
+					result += ", ";
+				}
+				result += "<span title=\"Barren worlds are uncolonised and empty.\">Barren</span>";
+			}
+			if(elem.remarks.includes("De")) {
+				if(result.length) {
+					result += ", ";
+				}
+				result += "<span title=\"Desert worlds are dry and barely habitable.\">Desert</span>";
+			}
+			if(elem.remarks.includes("Fl")) {
+				if(result.length) {
+					result += ", ";
+				}
+				result += "<span title=\"Fluid Oceans are worlds where the surface liquid is something other than water, and so are incompatible with Earth-derived life.\">Fluid Oceans</span>";
+			}
+			if(elem.remarks.includes("Ga")) {
+				if(result.length) {
+					result += ", ";
+				}
+				result += "<span title=\"Garden worlds are Earth-like.\">Garden</span>";
+			}
+			if(elem.remarks.includes("Hi")) {
+				if(result.length) {
+					result += ", ";
+				}
+				result += "<span title=\"High Population worlds have a population in the billions.\">High Population</span>";
+			}
+			if(elem.remarks.includes("Ht")) {
+				if(result.length) {
+					result += ", ";
+				}
+				result += "<span title=\"High Technology worlds are among the most technologically advanced in the Imperium.\">High Technology</span>";
+			}
+			if(elem.remarks.includes("IC")) {
+				if(result.length) {
+					result += ", ";
+				}
+				result += "<span title=\"Ice-Capped worlds have most of their surface liquid frozen in polar ice caps, and are cold and dry.\">Ice-Capped</span>";
+			}
+			if(elem.remarks.includes("In")) {
+				if(result.length) {
+					result += ", ";
+				}
+				result += "<span title=\"Industrial worlds are dominated by factories and cities.\">Industrial</span>";
+			}
+			if(elem.remarks.includes("Lo")) {
+				if(result.length) {
+					result += ", ";
+				}
+				result += "<span title=\"Low Population worlds have a population of only a few thousand or less.\">Low Population</span>";
+			}
+			if(elem.remarks.includes("Lt")) {
+				if(result.length) {
+					result += ", ";
+				}
+				result += "<span title=\"Low Technology worlds are pre-industrial and cannot produce advanced goods.\">Low Technology</span>";
+			}
+			if(elem.remarks.includes("Na")) {
+				if(result.length) {
+					result += ", ";
+				}
+				result += "<span title=\"Non-Agricultural worlds are too dry or barren to support their populations using conventional food production.\">Non-Agricultural</span>";
+			}
+			if(elem.remarks.includes("NI")) {
+				if(result.length) {
+					result += ", ";
+				}
+				result += "<span title=\"Non-Industrial worlds are too low-population to maintain an industrial base.\">Non-Industrial</span>";
+			}
+			if(elem.remarks.includes("Po")) {
+				if(result.length) {
+					result += ", ";
+				}
+				result += "<span title=\"Poor worlds lack resources, viable land or suffi cient population to be anything other than marginal colonies.\">Poor</span>";
+			}
+			if(elem.remarks.includes("Ri")) {
+				if(result.length) {
+					result += ", ";
+				}
+				result += "<span title=\"Rich worlds are blessed with a stable government and viable biosphere, making them economic powerhouses.\">Rich</span>";
+			}
+			if(elem.remarks.includes("Va")) {
+				if(result.length) {
+					result += ", ";
+				}
+				result += "<span title=\"Vacuum worlds have no atmosphere.\">Vacuum</span>";
+			}
+			if(elem.remarks.includes("Wa")) {
+				if(result.length) {
+					result += ", ";
+				}
+				result += "<span title=\"Water Worlds are nearly entirely water-ocean.\">Water World</span>";
+			}
+			return result;
+		}
+		
+		function getOrbit(elem) {
+			var elements = "";
+			var orbit = flux();
+			var sat = flux();
+			var gg = flux();
+			if(elem.size < 2 && elem.atmosphere < 1) {
+				if(sat < -1) {
+					elements += "Far satellite"
+					if(gg < 1) {
+						elements += " of a gas giant";
+					} else {
+						elements += " of a large planet";
+					}
+				} else if(sat < 2) {
+					elements += "Close satellite"
+					if(gg < 1) {
+						elements += " of a gas giant";
+					} else {
+						elements += " of a large planet";
+					}
+				} else if(sat < 4) {
+					elements += "Binary planet";
+				} else {
+					elements += "Planet";
+				}
+
+				/* UWP Temperature Zones
+				0  - Kuiper Belt				Outer Habitable Zone
+				1  - Outer Planetary Zone		Outer Habitable Zone
+				2  - Outer Planetary Zone		Outer Habitable Zone
+				3  - Outer Planetary Zone		Outer Habitable Zone
+				4  - Outer Habitable Zone		Outer Habitable Zone
+				5  - Outer Habitable Zone		Habitable Zone
+				6  - Habitable Zone				Habitable Zone
+				7  - Habitable Zone				Habitable Zone
+				8  - Habitable Zone				Habitable Zone
+				9  - Habitable Zone				Habitable Zone
+				10 - Inner Habitable Zone		Habitable Zone
+				11 - Inner Habitable Zone		Inner Habitable Zone
+				12 - Inner Planetary Zone		Inner Habitable Zone
+				13 - Inner Planetary Zone		Inner Habitable Zone
+				14 - Inner Planetary Zone		Inner Habitable Zone
+				15 - Sungrazer					Inner Habitable Zone
+				*/
+				
+				if(elem.temperature < 1) {
+					elements += ", kuiper belt object";
+				} else if(elem.temperature < 4) {
+					elements += ", outer planetary zone";
+				} else if(elem.temperature < 6) {
+					elements += ", outer habitable zone";
+				} else if(elem.temperature < 10) {
+					elements += ", habitable zone";
+				} else if(elem.temperature < 12) {
+					elements += ", inner habitable zone";
+				} else if(elem.temperature < 15) {
+					elements += ", inner planetary zone";
+				} else {
+					elements += ", sungrazer";
+				}
+			} else {
+				if(sat < -3) {
+					elements += "Far satellite"
+					if(gg < 1) {
+						elements += " of a gas giant";
+					} else {
+						elements += " of a large planet";
+					}
+				} else if(sat < -2) {
+					elements += "Close satellite"
+					if(gg < 1) {
+						elements += " of a gas giant";
+					} else {
+						elements += " of a large planet";
+					}
+				} else {
+					elements += "Planet"
+				}
+				
+				if(elem.temperature < 5) {
+					elements += ", outer habitable zone (Tundra, cold)";
+					elem.remarks += ' Tr';
+				} else if(elem.temperature < 11) {
+					elements += ", habitable zone (Temperate)";
+				} else {
+					elements += ", inner habitable zone (Tropical, hot)";
+					elem.remarks += ' Tu';
+				}
+			}
+			return elements;
+		}
+		
+		function getSociety(elem) {
+			var prog = getProgressiveness(elem);
+			var agg = getAggressiveness(elem);
+			var ext = getExtensiveness(elem, prog, agg);
+
+			var result = '<div class="col-4 heading">Progressiveness</div>';
+			result += '<div class="col-8 attitude">' + prog + '</div>';
+			result += '<div class="shim"></div>';
+			result += '<div class="col-4 heading">Aggressiveness</div>';
+			result += '<div class="col-8 attitude">' + agg + '</div>';
+			result += '<div class="shim"></div>';
+			result += '<div class="col-4 heading">Extensiveness</div>';
+			result += '<div class="col-8 attitude">' + ext + '</div>';
+		
+			return result;
+		}
+		
+		function getProgressiveness(elem) {
+			var result = 'Attitude: ';
+			var die = roll(6) + roll(6);
+			if(elem.population >= 6) { die++; }
+			if(elem.population >= 9) { die++; }
+			if(elem.law >= 10) { die++; }
+			
+			if(die < 4) {
+				result = 'Radical';
+			} else if(die < 7) {
+				result = 'Progressive';
+			} else if(die < 9) {
+				result = 'Measured';
+			} else if(die < 12) {
+				result = 'Conservative';
+			} else {
+				result = 'Reactionary';
+			}
+			
+			result += ', Action: ';
+			var die = roll(6) + roll(6);
+			if(result.includes('Conservative')) { die += 3; }
+			if(result.includes('Reactionary')) { die += 6; }
+			if(elem.law >= 10) { die++; }
+			
+			if(die < 6) {
+				result += 'Enterprising';
+			} else if(die < 10) {
+				result += 'Advancing';
+			} else if(die < 13) {
+				result += 'Indifferent';
+			} else {
+				result += 'Stagnant';
+			}
+			
+			return result;
+		}
+		
+		function getAggressiveness(elem) {
+			var result = 'Attitude: ';
+			var die = roll(6) + roll(6);
+			if(elem.law >= 10) { die++; }
+			
+			if(die < 4) {
+				result = 'Expansionistic';
+			} else if(die < 7) {
+				result = 'Competitive';
+			} else if(die < 11) {
+				result = 'Unaggressive';
+			} else {
+				result = 'Passive';
+			}
+			
+			result += ', Action: ';
+			var die = roll(6) + roll(6);
+			if(result.includes('Expansionistic')) { die -= 2; }
+			if(result.includes('Competitive')) { die -= 1; }
+			if(result.includes('Passive')) { die += 2; }
+			if(elem.law >= 10) { die++; }
+			
+			if(die < 5) {
+				result += 'Militant';
+			} else if(die < 9) {
+				result += 'Neutral';
+			} else if(die < 12) {
+				result += 'Peaceable';
+			} else {
+				result += 'Conciliatory';
+			}
+			
+			return result;
+		}
+		
+		function getExtensiveness(elem, prog, agg) {
+			var result = 'Global: ';
+			var die = roll(6) + roll(6);
+			if(elem.government <= 2) { die++; }
+			if(elem.government == 7) { die += 4; }
+			if(elem.government == 15) { die -= 1; }
+			if(agg.includes('Passive')) { die += 2; }
+			if(elem.law <= 4) { die += 1; }
+			if(elem.law >= 10) { die -= 1; }
+			
+			if(die < 4) {
+				result += 'Monolithic';
+			} else if(die < 7) {
+				result += 'Harmonious';
+			} else if(die < 9) {
+				result += 'Mixed';
+			} else if(die < 12) {
+				result += 'Discordant';
+			} else {
+				result += 'Fragmented';
+			}
+			
+			result += ', Interstellar: ';
+			die = roll(6) + roll(6);
+			if(elem.port == 'A') { die -= 2; }
+			if(elem.port == 'B') { die -= 1; }
+			if(elem.port == 'D') { die += 1; }
+			if(elem.port == 'E') { die += 2; }
+			if(elem.port == 'X') { die += 3; }
+			if(prog.includes('Conservative')) { die += 2; }
+			if(prog.includes('Reactionary')) { die += 4; }
+			if(elem.law >= 10) { die += 1; }
+			
+			if(die < 4) {
+				result += 'Xenophilic';
+			} else if(die < 7) {
+				result += 'Friendly';
+			} else if(die < 9) {
+				result += 'Neutral';
+			} else if(die < 12) {
+				result += 'Aloof';
+			} else {
+				result += 'Xenophobic';
+			}
+			
+			return result;
+		}
+		
+		function getLocalCustoms(elem) {
+			
+		}
+		
+		function getShipTraffic(elem) {
+			switch(getImportance(elem)) {
+			case -3: case -2:
+				return "Little to none, 1 monthly at most.";
+			case -1:
+				return "Little, 1 weekly.";
+			case 0:
+				return "Little, 2 weekly.";
+			case 1:
+				return "Some, 10 weekly, 1~2 per day.";
+			case 2:
+				return "Some, 20 weekly, 2~4 per day.";
+			case 3:
+				return "More, 30 weekly, 3~6 daily.";
+			case 4:
+				return "High traffic, 100 weekly, 15~20 per day.";
+			case 5:
+				return "Hub, 1000 weekly, 100+ per day.";
+			default:
+				return "Unknown"
+			}
+		}
+		
+		function getPatrons(elem) {
+			var result = '';
+			var num = roll(3) - roll(3) + elem.population;
+			if(elem.population < 1 || num < 1) {
+				return '<div class="patron-container">None</div>';
+			}
+			for(var i = 0; i < num; i++) {
+				result += '<div class="patron-container">' + generatePatron() + '</div>';
+			}
+			return result;
+		}
+		
+		function getInPort(elem) {
+			var base = roll(6);
+			var mod = flux();
+			switch(getImportance(elem)) {
+			case -3: case -2:
+				if(mod > 3) {
+					return getShipFull();
+				}
+				break;
+			case -1:
+				if(mod > 0) {
+					return getShipFull();
+				}
+				break;
+			case 0:
+				if(base > 5) {
+					return getShipFull() + getShipFull();
+				}
+				if(base > 4) {
+					return getShipFull();
+				}
+				break;
+			case 1:
+				if(mod > -3) {
+					return getShipFull();
+				}
+				if(mod > 1) {
+					return getShipFull() + getShipFull();
+				}
+				if(mod > 4) {
+					return getShipFull() + getShipFull() + getShipFull();
+				}
+				break;
+			case 2:
+				var ships = '';
+				for(var i = 0; i < Math.ceil(base * 0.5); i++) {
+					ships += getShipFull();
+				}
+				return ships;
+			case 3:
+				var ships = '';
+				for(var i = 0; i < Math.ceil(base * 0.5) + 2; i++) {
+					ships += getShipFull();
+				}
+				return ships;
+			case 4:
+				var ships = '';
+				for(var i = 0; i < base + 14; i++) {
+					ships += getShipFull();
+				}
+				return ships;
+			case 5:
+				var ships = '';
+				for(var i = 0; i < (roll(50) + 75); i++) {
+					ships += getShipFull();
+				}
+				return ships;
+			default:
+				return "Unknown"
+			}
+			return "No other ships in system.";
+		}
+
+		function getShipFull() {
+            var ship = getRandomShip();
+            return '<div class="ship-container">' + getShipName() + ' - ' + ship.name + ' (' + ship.tons + ' tons)</div>';
+		}
+
+		function pickPart(idx) {
+			return Math.floor(Math.random() * NAMEPARTS[idx].length);
+		}
+		
+		function getRandomShip() {
+			return SHIPS[Math.floor(Math.random() * SHIPS.length)];
+		}
+		
+		function getShipName() {
+			var name = '',
+			comp = NAMECONNECTS[Math.floor(Math.random() * NAMECONNECTS.length)];
+			for(var i = 0; i < comp.length; i++) {
+				if(isNaN(comp[i])) {
+					name += " " + comp[i] + " ";
+				} else {
+					if(name.length > 0) {
+						name += " ";
+					}
+					name += NAMEPARTS[comp[i]][pickPart(comp[i])];
+				}
+			}
+			return name;
+		}
+		
+		function niceSystemCargos(elem) {
+			var cargos = getSystemCargos(elem);
+			var result = '';
+			
+			if(cargos.length < 1) {
+				return '<div class="cargo-container">No Cargo</div>';
+			}
+			for(var i = 0; i < cargos.length; i++) {
+				result += '<div class="cargo-container">' + cargos[i] + '</div>'
+			}
+			
+			return result;
+		}
+
+		function buildSystemSelector() {
+			Math.seedrandom();
+			var vals = Object.getOwnPropertyNames(sysDict);
+			var sel = $('#system-select');
+			vals.forEach(function(elem) {
+				sysDict[elem].sysRandom = rand(1000000000) + sysDict[elem].remarks;
+				sel.append('<option value="' + elem + '">' + sysDict[elem].column + sysDict[elem].row + ' ' + elem + '</option>');
+			});
+			$('#system-select').selectpicker('refresh');
+		}
+	</script>
+</html>

@@ -1,0 +1,320 @@
+Crown Subsector (0, 0)
+0101 Scathitea                      E6565AA-2  -941  F3D/M9D                Ag Ga Lt NI 
+0102 Udrion                         A000873-F  -A21  F7D          SRTI      As Ht Na Va 
+0103 Gunope                         B100634-9  -650  M2III/G0V    SRT       Na NI Va 
+0104 Sheulia                        C200757-8  -C20  M7V          SR        Na Va 
+0110 Chulara                        C400472-E  -532  G9V          S         Ht NI Va 
+0202 Estea                          A876354-C  -940  G4D/M9D      TI        Ga Ht Lo 
+0203 Ospinda                        C100000-0  A620  M5VI/K3V     S         Ba Lt Va 
+0204 Bunus                          C556267-8  -941  F3D                    Ga Lo 
+0208 Swyklef                        C997935-8  -B42  F8V                    Ga Hi In 
+0209 Aylearu                        B200867-8  -710  G2D          S         Na Va 
+0301 Yprov                          B9A0365-D  -731  M6V          RT        De Ht Lo 
+0303 Iyctania                       E575773-3  -540  F4V                    Ag Ga Lt 
+0307 Utriyes                        A300157-F  -820  G8V          T         Ht Lo Va 
+0309 Edravis                        C4A5000-0  AA41  F9V                    Ba Fl Lt 
+0401 Prioyama                       A200157-D  -331  M8IV/K5V     STI       Ht Lo Va 
+0404 Brusides                       B410837-B  -821  F4VI         SRT       Na 
+0408 Sulea                          D543156-5  -621  F4D          S         Lo Lt Po 
+0501 Sirilia                        B8B0174-D  -C12  M8V/K6V      ST        De Ht Lo 
+0502 Esteron                        B100183-A  -830  F3IV         ST        Lo Va 
+0503 Ueterky                        D77A484-4  -731  F8V          S         Lt NI Wa 
+0504 Nutis                          B566645-9  -720  F1VI         SRT       Ag Ga NI Ri 
+0505 Iuhivo                         C400296-A  -430  M5III        SI        Lo Va 
+0508 Scylaoria                      D000773-7  -231  G0III/K2V    S         As Na Va 
+0509 Spyurn                         C533625-9  -A51  M0V/G1V      STI       Po 
+0510 Visao                          B5476A9-A  -600  M6VI         S         Ga 
+0601 Ariaga                         D523486-7  -450  F0V          S         NI Po 
+0603 Ytaje                          X554939-0  R312  F0D          P         Ga Hi Lt 
+0605 Tycaroosie                     C411256-7  -420  K2V/M3V      SI        IC Lo 
+0606 Ryliv                          B869773-8  -A02  F7D          TI        Ri 
+0608 Oterapo                        CAA3394-6  -B00  F6V          I         Fl Lo 
+0609 Styzun                         B8A0466-C  -832  M8V/G1VI     SI        De Ht 
+0701 Eviszu                         D4A1000-0  A740  F4V          S         Ba Fl Lt 
+0702 Auxtepso                       A510597-F  -B30  M0V          NSTI      Ht NI 
+0704 Raguagawa                      D644195-3  -A40  F9D          S         Ga Lo Lt 
+0707 Oygnusars                      C7885A7-4  -A30  G8D          S         Ag Ga Lt NI 
+0801 Wheiippe                       A663556-D  -542  F3D          TI        Ht NI 
+0802 Kunerth                        C98A673-B  -840  F4D                    NI Ri Wa 
+0804 Bruade                         C100497-A  -B41  M1IV         S         NI Va 
+0808 Izhirion                       E580468-6  -C30  G1VI                   De NI 
+0810 Waozrus                        C674875-7  -341  K6VI/M4V     S         Ga 
+
+Hashi Subsector (0, 1)
+0103 Iaturnia                       D98A242-4  -500  F1V          S         Lo Lt Wa 
+0104 Anethnu                        B771000-0  AA51  F0D                    Ba Lt 
+0105 Plioyso                        D410000-0  A940  M0V          S         Ba Lt 
+0106 Windeliv                       X574485-3  -530  F8V                    Ga Lt NI 
+0108 Ajars                          C310155-8  -C00  M1VI         S         Lo 
+0110 Stradectnia                    C8C0554-9  -F41  M0V/G7VI     S         De NI 
+0201 Slauter                        C656271-9  -831  F5VI         S         Ga Lo 
+0202 Ducetre                        B510746-9  -541  G3V/M4V      S         Na 
+0206 Anidesio                       E663684-5  -532  M1V                    Lt NI Ri 
+0209 Iyewy                          C410455-A  -940  M3V          ST        NI 
+0210 Swoupra                        D000575-A  -A22  M2V          S         As NI Va 
+0301 Hulea                          C89A000-0  A610  F8VI         P         Ba Lt Wa 
+0304 Obloth                         D4005BD-6  A950  K1III        P         NI Va 
+0305 Torezhea                       D4A0365-A  -821  M0V/K1V      S         De Lo 
+0308 Zuter                          X847383-0  R552  F1V                    Ga Lo Lt 
+0309 Aliviu                         D9B0386-8  -F10  M9III                  De Lo 
+0310 Tronision                      B79A172-B  -820  F9D/M5VI     TI        Lo Wa 
+0401 Ychichi                        D765564-2  -630  F2V                    Ag Ga Lt NI 
+0402 Taniallon                      E859585-8  -741  F2D                    NI 
+0403 Egroth                         D400000-0  A742  F2V                    Ba Lt Va 
+0404 Strarvisxgantu                 C7A11FB-6  R921  M6V                    Fl Lo 
+0405 Unovia                         C560485-9  -C42  F6V/M5V      SR        De NI 
+0407 Imcleora                       DAA0000-0  AC51  M7V                    Ba De Lt 
+0408 Plunov                         E661A46-6  -B40  G9VI                   Hi 
+0409 Ucgawaomia                     D531242-6  -630  G7V                    Lo Po 
+0410 Ytov                           D410000-0  A532  M8V/G7V      S         Ba Lt 
+0501 Scaieon                        C998800-9  -932  F7VI                   Ga 
+0502 Wo                             C889282-9  -840  F5V          S         Lo 
+0505 Oxweiso                        E5957A8-1  -751  F5D                    Ag Ga Lt 
+0507 Itheiny                        C987385-4  -641  F0D          S         Ga Lo Lt 
+0508 Einussu                        C884266-9  -930  F5V/M5D      S         Ga Lo 
+0509 Ostroth                        B9845FA-5  A940  G6V          T         Ag Ga Lt NI 
+0510 Uxasmo                         D1001BB-7  -B41  F9V/A6D                Lo Va 
+0601 Auriba                         D200000-0  A950  M5V          S         Ba Lt Va 
+0602 Eablu                          B2004BA-6  -640  M0III                  NI Va 
+0604 Bophus                         C69A666-8  -942  F5V          SR        NI Wa 
+0605 Troythea                       B798342-A  -810  G1D/M9V                Ga Lo 
+0606 Uterabo                        D9A0000-0  A920  A2IV         S         Ba De Lt 
+0608 Iyriava                        C200567-8  -640  M8V/G7V      S         NI Va 
+0609 Puyama                         D644774-4  -340  K4V          S         Ag Ga Lt 
+0703 Priontera                      B676000-0  A541  F3V          S         Ba Ga Lt 
+0708 Spylarion                      D300855-6  -603  F7V/M4D                Na Va 
+0709 Amclienda                      EA9A182-7  -901  G2V/M2V                Lo Wa 
+0710 Swu                            C555497-7  -820  F8V          S         Ga NI 
+0801 Melia                          D410372-8  -731  M4V          S         Lo 
+0802 Fynope                         D4A24D9-6  A840  M3IV/K8V     S         Fl NI 
+0808 Yturn                          D657157-7  -852  F9D/M2V      P         Ga Lo 
+0809 Aoniarth                       X86A894-0  R830  F2V          P         Lt Ri Wa 
+
+Capella Subsector (1, 0)
+0103 Treorth                        D8C3000-0  AD31  M4V                    Ba Fl Lt 
+0104 Cleilles                       C310647-8  -421  M3V/M5V      S         Na NI 
+0105 Blatis                         D530786-5  -841  M8V          S         De Lt Na Po 
+0107 Thiorn                         X7575E9-0  R330  F0D                    Ag Ga Lt NI 
+0202 Yamaeshan                      D642543-4  -640  F4D          P         Lt NI Po 
+0204 Inethnu                        D400000-0  A840  K8III/K3V    S         Ba Lt Va 
+0205 Ocygla                         D000245-B  -651  F8V          S         As Lo Va 
+0207 Preriao                        D3005C6-A  -841  M2V          S         NI Va 
+0209 Plaishiri                      C662756-7  -941  F3V          SI        Ri 
+0210 Stynupsu                       C86AA37-B  -210  G0D          S         Hi Wa 
+0303 Uchomia                        B4005FC-6  R720  M2V/K9V                NI Va 
+0305 Ystarth                        D000674-8  -631  M3V          S         As Na NI Va 
+0306 Brabosono                      C648395-4  -630  F2V          S         Ga Lo Lt 
+0402 Odefla                         D3102D9-6  -740  M6III        S         Lo 
+0404 Bloraxov                       D300400-8  -B51  M5V          S         NI Va 
+0408 Shianone                       B556272-C  -330  G8VI         STI       Ga Ht Lo 
+0410 Pluvis                         B000000-0  A411  M6V          R         As Ba Lt Va 
+0502 Sliora                         C636568-9  -641  M0V                    NI 
+0503 Wauruda                        D410556-9  -302  M3V          S         NI 
+0505 Ietune                         C75A214-7  -631  F0D/M6V      S         Lo Wa 
+0506 Dryhiriora                     B8866BD-4  A950  F4V          STI       Ag Ga Lt NI Ri 
+0507 Athea                          C87A1BB-7  -620  F2D          SI        Lo Wa 
+0509 Trippemia                      X77A423-2  -850  F2V/M1V                Lt NI Wa 
+0510 Sideseon                       D863700-5  -C31  F6D/M4V      S         Lt Ri 
+0601 Amippe                         C789486-6  -820  F2D/M0D      S         NI 
+0603 Ocosto                         X766114-0  -330  M8V                    Ga Lo Lt 
+0604 Soner                          C401285-6  -840  M4V/G7IV     ST        IC Lo Va 
+0605 Oatheaku                       E546343-6  -940  F2V/M5D                Ga Lo 
+0606 Lotania                        E6664FE-0  R801  F6D                    Ga Lt NI 
+0608 Storixter                      E646685-6  -320  F9D                    Ag Ga NI 
+0609 Weive                          D8C6253-9  -900  M4V/M6V                Fl Lo 
+0610 Aunovu                         D7B02D9-8  -F30  M5V          S         De Lo 
+0702 Taerilia                       D6A0145-7  -910  F3IV         S         De Lo 
+0706 Tytania                        X682575-4  AA22  F8V                    Lt NI 
+0710 Namia                          C866A65-A  -740  F3VI                   Ga Hi 
+0801 Iopugly                        D653575-5  -650  F1VI/M2VI    S         Lt NI Po 
+0802 Ophines                        E89A684-5  -430  F6D                    Lt NI Wa 
+0805 Ioasma                         B787866-6  -620  F5VI/M0V     S         Ga Ri 
+0807 Glarus                         E666474-4  -610  F2VI                   Ga Lt NI 
+0809 Uryblo                         D2001D8-6  -732  M0V          S         Lo Va 
+
+Kandra Subsector (1, 1)
+0101 Banerth                        D649395-8  -540  F3VI         S         Lo 
+0103 Dezuno                         D4A2146-6  -841  K4IV         S         Fl Lo 
+0105 Iepbosade                      D100584-7  -B31  M3III                  NI Va 
+0106 Rusarius                       D4A3473-9  A542  M3V          S         Fl NI 
+0108 Chiytis                        C536000-0  A621  G8V          S         Ba Lt 
+0204 Wiarth                         D2001A9-6  -B41  F6V                    Lo Va 
+0206 Zonov                          D300000-0  A720  M2V          S         Ba Lt Va 
+0301 Striarth                       D7585DA-0  R530  F7V          S         Ag Ga Lt NI 
+0302 Cathea                         A542364-A  -740  F7V          I         Lo Po 
+0305 Waonov                         B768886-7  -440  F0V/M8D      ST        Ga Ri 
+0306 Waecliffe                      B77A6A9-B  -930  M3D          SI        NI Wa 
+0310 Olhusilles                     E677000-0  A600  K1D/M6VI               Ba Ga Lt 
+0401 Aoplo                          C7B1000-0  AB41  M9V/M6V                Ba Fl Lt 
+0405 Yqurn                          C520000-0  A522  G7V                    Ba De Lt Po 
+0407 Ciuna                          D311745-8  -431  F1V          S         IC Na 
+0501 Iymeplu                        B100000-0  A740  G1V          S         Ba Lt Va 
+0505 Oftuneade                      D510744-8  -442  M9V          S         Na 
+0506 Annoperia                      D000485-A  -A32  K0V          S         As NI Va 
+0507 Ularabo                        B4103D8-8  -721  M4IV         S         Lo 
+0604 Whaion                         D200194-A  -250  K9V/F0V                Lo Va 
+0605 Sytania                        A8B0455-E  -F30  M7III        TI        De Ht NI 
+0606 Bruelara                       B4A3254-B  -740  M2V                    Fl Lo 
+0607 Wenerthomia                    C864696-3  -331  F5D                    Ag Ga Lt NI Ri 
+0608 Achars                         C310425-B  -541  M6V                    NI 
+0609 Planus                         A200145-B  -730  M3IV         TI        Lo Va 
+0610 Spiadus                        X646116-0  -A30  F7D                    Ga Lo Lt 
+0702 Swoubos                        D767295-5  -940  F9VI         S         Ga Lo Lt 
+0704 Fregawa                        D4A1357-6  -740  G3V          S         Fl Lo 
+0705 Stetania                       B796145-7  -930  F4V          S         Ga Lo 
+0708 Aeobra                         D3003FB-6  A220  M4IV                   Lo Va 
+0709 Waopra                         E786487-7  -730  F0VI/M1V               Ga NI 
+0710 Ganovion                       C555870-7  -401  F6D/M6D      S         Ga Hi 
+0801 Stouon                         E799353-7  -610  F4D/M4VI               Lo 
+0803 Tarus                          X67A474-7  A740  F9V                    NI Wa 
+0804 Stoarth                        D2005FD-6  R440  K7V/M3V                NI Va 
+0806 Fryteraeon                     C310696-9  -531  A8V/K1V      S         Na NI 
+0808 Uaneyu                         X84A464-5  -140  F6V                    Lt NI Wa 
+0809 Nidesiri                       D8A03A6-7  -A42  F4V/F6V                De Lo 
+0810 Hines                          C200200-C  -340  M6V                    Ht Lo Va 
+
+Kursk Subsector (1, 2)
+0101 Arutaia                        B510758-B  -550  K9VI         S         Na 
+0103 Iosys                          C978527-5  -940  F2D/K1VI     S         Ag Ga Lt NI 
+0106 Clauri                         X544000-0  AB51  F4VI/M8V               Ba Ga Lt 
+0108 Ceyama                         D310000-0  R632  M7V          S         Ba Lt 
+0109 Shauhines                      C893225-4  -D40  K6V/M5V                Lo Lt 
+0201 Hutov                          D200000-0  AB30  M5V/M2V                Ba Lt Va 
+0203 Xystea                         E6886BA-3  -731  F2V                    Ag Ga Lt NI Ri 
+0204 Rucarro                        D2002F9-6  -532  M3V          S         Lo Va 
+0206 Ypraade                        D1002A9-8  -632  M3V          S         Lo Va 
+0207 Shinesone                      D400193-7  -322  M4VI/M5V               Lo Va 
+0208 Agara                          B100153-B  -840  M5V/G9V      S         Lo Va 
+0210 Sceynus                        B000397-E  -732  G1V                    As Ht Lo Va 
+0301 Iaria                          D2004E7-6  -843  M9VI         S         NI Va 
+0302 Scarviscarro                   D200000-0  AA20  G6V/M8V                Ba Lt Va 
+0307 Oslides                        E565355-8  -332  K1D                    Ga Lo 
+0308 Ibla                           E668636-6  -742  F3V          P         Ag Ga NI Ri 
+0309 Auvifle                        D3A1000-0  A940  K5V          S         Ba Fl Lt 
+0310 Eknope                         B578185-B  -430  F5D          ST        Ga Lo 
+0403 Inusdi                         C8A0275-D  -502  M1V                    De Ht Lo 
+0405 Swooth                         D510324-9  -951  M5VI         P         Lo 
+0406 Sheyides                       C310000-0  A622  M6V          P         Ba Lt 
+0407 Erosmy                         D6971C7-2  -520  F7V                    Ga Lo Lt 
+0408 Scawei                         B565646-9  -230  F1V                    Ag Ga NI Ri 
+0409 Fliaeon                        D410000-0  A640  F1V                    Ba Lt 
+0501 Spabosyp                       E8D9000-0  A950  K0V                    Ba Fl Lt 
+0502 Tynia                          A583665-8  -942  F4D          T         NI Ri 
+0504 Tarthea                        C762466-5  -740  K4VI/M2V               Lt NI 
+0505 Opoplu                         D100443-A  -A00  G3V                    NI Va 
+0506 Eysawa                         D67A3A7-7  -930  F8VI/M8D               Lo Wa 
+0507 Oworth                         C5533D8-5  -B42  F1V/K1D      S         Lo Lt Po 
+0508 Trelivora                      E64A200-6  -640  F6V                    Lo Wa 
+0510 Oaliha                         X565534-4  R410  K9VI                   Ag Ga Lt NI 
+0602 Oscuna                         C2003A9-9  -541  K9III                  Lo Va 
+0604 Skeuna                         C4003E6-6  -830  F0V          S         Lo Va 
+0607 Jiyavus                        D5244C9-7  -120  M0VI                   NI 
+0608 Jiuturn                        B410214-9  -B41  M6VI         STI       Lo 
+0701 Onorix                         D676133-6  -721  G7VI/M7D               Ga Lo 
+0702 Skilless                       X694286-4  R641  K4D                    Ga Lo Lt 
+0703 Ebrilauna                      D684545-6  -B41  F1V/M9D      S         Ag Ga NI 
+0704 Scuaars                        A7B01C9-C  -C31  A7IV/M1V     RI        De Ht Lo 
+0706 Cheynerth                      D200524-9  -810  G3V/K8D      S         NI Va 
+0707 Skialea                        D410000-0  A800  A0V/K0V                Ba Lt 
+0708 Droyter                        D7A06BD-6  A600  M6V/K6V                De NI 
+0709 Breides                        E775100-8  -431  F9V/M5V                Ga Lo 
+0710 Glamiayke                      D4002D7-6  -430  M7V/G4V      S         Lo Va 
+0803 Whiuwei                        D946000-0  A750  F8D          S         Ba Ga Lt 
+0806 Brophus                        C4111B8-6  -530  M0V                    IC Lo 
+0807 Swepraadus                     E546317-5  -930  F9V/M1D                Ga Lo Lt 
+0809 Lyhiri                         X66A800-1  A640  G6D                    Lt Ri Wa 
+0810 Uagaspo                        A575600-A  -732  F9VI/M3D     R         Ag Ga NI 
+
+Hatti Subsector (2, 1)
+0102 Acuroth                        C200000-0  A812  F4V/K3V                Ba Lt Va 
+0103 Chaycury                       XA68000-0  A812  F7D/M6D      P         Ba Ga Lt 
+0108 Slaore                         D787486-4  -331  M1D/M5D      S         Ga Lt NI 
+0201 Liawei                         E753584-5  -633  F3V                    Lt NI Po 
+0202 Wioclite                       D5254E9-5  -030  A2V          S         Lt NI 
+0203 Granusurn                      E5441FC-0  R831  F1V/M7D                Ga Lo Lt 
+0205 Shanycarro                     C8C0000-0  AD41  K3V                    Ba De Lt 
+0207 Oskeon                         B9E9345-D  -300  M5V/M8V                Fl Ht Lo 
+0209 Siri                           D758486-2  -240  F7V                    Ga Lt NI 
+0303 Sporiwei                       D74A455-9  -930  F2D          S         NI Wa 
+0305 Upry                           D7A0114-6  -840  K4II         S         De Lo 
+0306 Imacru                         D895000-0  A741  G6V          S         Ba Ga Lt 
+0307 Triars                         D7232FD-5  R732  M3V          S         Lo Lt Po 
+0308 Yjoth                          D0003FC-6  R432  G6III                  As Lo Va 
+0401 Chaeron                        X658000-0  A830  F9D/M2D      P         Ba Ga Lt 
+0402 Yaman                          D100243-9  -742  M4III        S         Lo Va 
+0405 Drumia                         C76A464-A  -852  F1VI/M6D               NI Wa 
+0406 Atreth                         D510524-6  -940  M6V                    NI 
+0409 Plorix                         D200525-A  -950  M0V          S         NI Va 
+0502 Ogora                          B587928-7  -801  F5D/K9D      S         Ga Hi 
+0505 Oxiris                         D200000-0  A700  K6V          S         Ba Lt Va 
+0507 Ashuna                         B5103E5-6  -740  M7V                    Lo 
+0509 Anhirion                       C5742FC-1  R631  F9V          S         Ga Lo Lt 
+0510 Oiluqa                         XA6A373-6  A610  F4V                    Lo Wa 
+0603 Chenus                         B6A2000-0  A910  M5V/G3V      S         Ba Fl Lt 
+0604 Kuphus                         D300415-8  -702  K4V          P         NI Va 
+0605 Esterun                        X680000-0  AC40  M5D          P         Ba De Lt 
+0606 Cethea                         C8898C9-4  -332  F1V                    Lt Ri 
+0607 Yarth                          C5556BD-2  A810  F3V/M0VI               Ag Ga Lt NI 
+0701 Staov                          D300494-A  -B51  K3V          S         NI Va 
+0702 Ayhascu                        D3106FC-6  R520  F9V                    Na NI 
+0703 Inafla                         B785000-0  A821  F5D          S         Ba Ga Lt 
+0704 Dutho                          D5732A7-3  -A40  F9VI         S         Lo Lt 
+0707 Aputaiq                        B6B0357-A  -F41  A6V                    De Lo 
+0708 Qostea                         E87A2E8-2  -230  F0D                    Lo Lt Wa 
+0710 Bruyvis                        X5646BD-4  R643  F9V                    Ag Ga Lt NI Ri 
+0802 Orzunis                        C4004BB-6  -741  M9V                    NI Va 
+0803 Brystis                        D200798-6  -620  K8V                    Na Va 
+0804 Hoigantu                       D300697-6  -540  M5V/G8V                Na NI Va 
+0805 Regina                         D100000-0  AA32  M6V/K6V                Ba Lt Va 
+0806 Frianus                        E79A225-4  -920  F1V                    Lo Lt Wa 
+0807 Regawa                         B2003BC-A  AA30  M9V                    Lo Va 
+0808 Glonovars                      X554425-3  R431  F3V                    Ga Lt NI 
+0810 Ozoshu                         D200694-9  -840  G2IV         S         Na NI Va 
+
+Samos Subsector (2, 2)
+0101 Otun                           CA58000-0  A940  G2D                    Ba Ga Lt 
+0104 Glakury                        E5656BC-1  AA00  F4D                    Ag Ga Lt NI Ri 
+0107 Onopeurn                       C680156-7  -C42  F3D          S         De Lo 
+0108 Askon                          C2001C9-8  -740  F6V/M6V                Lo Va 
+0109 Euilea                         A557100-C  -541  G9V/M2D      TI        Ga Ht Lo 
+0201 Gorilia                        C3003D9-6  -800  M9V          S         Lo Va 
+0202 Eflyk                          E977000-0  A940  F0V/M6D                Ba Ga Lt 
+0204 Suterion                       D310394-6  -550  M8V          S         Lo 
+0206 Bromianus                      D400725-6  -440  M3V/M8V      S         Na Va 
+0207 Karus                          B645410-C  -640  G3V          ST        Ga Ht Lo 
+0209 Tunethorix                     E6755DA-0  R542  G4VI                   Ag Ga Lt NI 
+0210 Stioshan                       D8A1000-0  AB30  M5IV                   Ba Fl Lt 
+0302 Unospo                         C6656D7-1  -A21  G2V/M7D                Ag Ga Lt NI Ri 
+0303 Skuides                        D756243-7  -441  F9V/M6VI     P         Ga Lo 
+0304 Iheslu                         X5622B9-1  R232  F8V/G6D                Lo Lt 
+0307 Chothotera                     D100000-0  A742  K5V/G4V                Ba Lt Va 
+0308 Oweron                         D400000-0  A520  M7V/M8V      S         Ba Lt Va 
+0309 Gruillon                       D4A4275-A  A732  M7V          S         Fl Lo 
+0310 Ulaska                         X5826DB-3  RB40  F7V                    Lt NI Ri 
+0403 Fonis                          B100537-B  -740  M1V/G8V                Va 
+0404 Smeste                         X788669-7  A150  G2V                    Ga Lt 
+0407 Xynus                          E995000-0  AD40  F0V/M2D                Ba Ga Lt 
+0408 Niaypso                        D411000-0  A721  M6VI         S         Ba IC Lt 
+0409 Yplapus                        C510000-0  A801  F2II                   Ba Lt 
+0410 Bravisov                       D5A03E6-6  -A30  M3V                    De Lo 
+0502 Lynus                          C6731A5-5  -730  F4V/M0V                Lo Lt 
+0505 Oikusno                        X557473-3  A720  G1V                    Ga Lt NI 
+0506 Whenidesiea                    C4101E6-8  -A22  F1V/F0V      S         Lo 
+0508 Stanides                       X597265-2  R930  F4V          P         Ga Lo Lt 
+0509 Eyriste                        C310116-C  -A31  G2V                    Ht Lo 
+0510 Uzecho                         DAB1000-0  AC30  M4VI/K9V               Ba Fl Lt 
+0602 Ystomia                        C200615-B  -A41  M9V                    Na NI Va 
+0604 Xuplu                          B100537-B  -B30  M5V          S         Va 
+0605 Oshurn                         D3105E8-6  -640  M5V/G5IV     S         NI 
+0608 Freyilles                      D3A1624-6  -702  K2III/G4II             Fl NI 
+0609 Aterapa                        D2002A6-6  -B30  M4V          S         Lo Va 
+0701 Cheinda                        B754000-0  A210  F4D                    Ba Ga Lt 
+0702 Cralarn                        C5825A7-A  -B02  F6D/G1V      P         
+0705 Liambos                        D76A616-8  -950  F4V                    NI Ri Wa 
+0709 Proath                         C200295-7  -751  M4V/G1V                Lo Va 
+0802 Clenides                       B3005E9-9  -340  F6II         SI        NI Va 
+0803 Osbone                         E6547A6-2  A721  F9D                    Ag Ga Lt 
+0805 Eruxe                          C3102E8-6  -623  M1V          S         Lo 
+0806 Druarth                        D8872FA-3  RB30  F8V/M9V                Ga Lo Lt 
+0808 Prynuseron                     D9B0000-0  AC40  M7V          S         Ba De Lt 
+0810 Shiyomia                       D522000-0  A740  K1VI/M9V     S         Ba Lt Po 

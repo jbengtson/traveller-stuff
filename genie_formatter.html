@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Genie Formatter</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	</head>
+	<body>
+        <div class="container">
+            <div class="row" style="padding-top: 10px;">
+                <div class="col">
+                    <div class="input">
+						<textarea id="main-input" rows="20" cols="50"></textarea>
+						<div>
+							<input type="text" id="coloff" /> Column offset
+						</div>
+						<div>
+							<input type="text" id="rowoff" /> Row offset
+						</div>
+						<button id="execute">Convert</button>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="controls">
+                        <pre id="main-output"></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+	</body>
+	<script>
+	function stellar(string) {
+		var out = '';
+		var stell = string.substring(52, 64);
+		stell = stell.split('/');
+		out += stell[0].substring(0, 2);
+		out += ' ';
+		out += stell[0].substring(2);
+		return out;
+	}
+	
+	function column(string, offset) {
+		var num = Number(string.substring(0, 2));
+		num += offset * 8;
+		console.log(num);
+		return num.toString().padStart(2, '0');
+	}
+	
+	function row(string, offset) {
+		var num = Number(string.substring(2, 4));
+		num += offset * 10;
+		return num.toString().padStart(2, '0');
+	}
+	
+	$(document).ready(function() {
+		$('#execute').click(function() {
+			var out = [];
+			var lines = $('#main-input').val().split('\n');
+			var rowoff = Number($('#rowoff').val());
+			if(isNaN(rowoff)) { rowoff = 0; }
+			var coloff = Number($('#coloff').val());
+			if(isNaN(coloff)) { coloff = 0; }
+			
+			$.each(lines, function(idx, item) {
+				var text = '';
+/*
+0123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789
+0104 Astoria                        XADA000-0  A040  A0V                    Ba Fl Lt Wa 
+0106 Strieara                       D301352-8  -030  M8VI         S         IC Lo Va 
+0108 Oslor                          D510420-8  -000  M4IV/K6II    S         NI 
+
+name          hex  UWP       B Remarks          T  PBG Al Stellar
+Astoria       0104 XADA000-0 N Ba Fl Lt Wa      A  #40 Im A0 V
+*/
+				text += item.substring(5, 18); // Name
+				text += ' ';
+				text += column(item, coloff);
+				text += row(item, rowoff);
+				text += ' ';
+				text += item.substring(36, 45); // UWP
+				text += '  ';
+				text += item.substring(66, 67); // Base, choose first
+				text += ' ';
+				text += (item.substring(76) + '                ').substring(0, 16); // Remarks
+				text += ' ';
+				text += (item.substring(47, 48) != '-' ? item.substring(47, 48) : ' '); // Travel Zone
+				text += ' ';
+				text += Math.floor(Math.random() * 10); // Population multiplier
+				text += item.substring(50, 51); // Asteroid Belts
+				text += item.substring(49, 50); // Gas Giants
+				text += ' in'; // Basic allegiance
+				text += stellar(item); // Stellar Class
+				out.push(text);
+			});
+			var outtext = '';
+			for(var i = 0; i < out.length; i++) {
+				if(i > 0) { outtext += '\n'; }
+				outtext += out[i];
+			}
+			$('#main-output').text(outtext);
+		});
+	});
+
+	</script>
+</html>

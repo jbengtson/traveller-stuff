@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Traveller Ship Generator</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	</head>
+	<body>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="input">
+						<textarea id="main-input" rows="20" cols="50"></textarea>
+						<div>
+							<input type="text" id="coloff" /> Column offset
+						</div>
+						<div>
+							<input type="text" id="rowoff" /> Row offset
+						</div>
+						<button id="execute">Convert</button>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="controls">
+                        <pre id="main-output"></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+	</body>
+	<script>
+	function column(string, offset) {
+		var num = Number(string.substring(0, 2));
+		num += offset * 8;
+		return num.toString().padStart(2, '0');
+	}
+	
+	function row(string, offset) {
+		var num = Number(string.substring(2, 4));
+		num += offset * 10;
+		return num.toString().padStart(2, '0');
+	}
+	
+	function techLevel(uwp) {
+		var btl = uwp.substring(8)
+		var tl = parseInt(btl, 16);
+		if(isNaN(tl)) { return 0; }
+		return tl;
+	}
+	
+	function spaceport(uwp) {
+		return uwp.substring(0, 1);
+	}
+	
+	function population(uwp) {
+		var bpop = uwp.substring(4, 5);
+		var pop = parseInt(bpop, 16);
+		if(isNaN(pop)) { return 0; }
+		return pop;
+	}
+	
+	function WTN(tl, pop, port) {
+		var wtn = 0.0;
+		if(tl < 1) {
+			wtn = -0.5;
+		} else if(tl < 4) {
+			wtn = 0.0;
+		} else if(tl < 9) {
+			wtn = 0.5;
+		} else if(tl < 15) {
+			wtn = 1.0;
+		} else {
+			wtn = 1.5;
+		}
+		
+		wtn += pop / 2;
+		
+		if(wtn < 1) {
+			switch(port) {
+			case 'A':
+				wtn += 1.5;
+				break;
+			case 'B': case 'C':
+				wtn += 1.0;
+				break;
+			case 'D': case 'E':
+				wtn += 0.5;
+				break;
+			}
+		} else if(wtn < 2) {
+			switch(port) {
+			case 'A': case 'B':
+				wtn += 1.0;
+				break;
+			case 'C': case 'D':
+				wtn += 0.5;
+				break;
+			}
+		} else if(wtn < 3) {
+			switch(port) {
+			case 'A':
+				wtn += 1.0;
+				break;
+			case 'B': case 'C':
+				wtn += 0.5;
+				break;
+			case 'X':
+				wtn -= 2.5;
+				break;
+			}
+		} else if(wtn < 4) {
+			switch(port) {
+			case 'A': case 'B':
+				wtn += 0.5;
+				break;
+			case 'E':
+				wtn -= 0.5;
+				break;
+			case 'X':
+				wtn -= 3.0;
+				break;
+			}
+		} else if(wtn < 5) {
+			switch(port) {
+			case 'A':
+				wtn += 0.5;
+				break;
+			case 'D':
+				wtn -= 0.5;
+				break;
+			case 'E':
+				wtn -= 1.0;
+				break;
+			case 'X':
+				wtn -= 3.5;
+				break;
+			}
+		} else if(wtn < 6) {
+			switch(port) {
+			case 'C':
+				wtn -= 0.5;
+				break;
+			case 'D':
+				wtn -= 1.0;
+				break;
+			case 'E':
+				wtn -= 1.5;
+				break;
+			case 'X':
+				wtn -= 4.0;
+				break;
+			}
+		} else if(wtn < 7) {
+			switch(port) {
+			case 'B':
+				wtn -= 0.5;
+				break;
+			case 'C':
+				wtn -= 1.0;
+				break;
+			case 'D':
+				wtn -= 1.5;
+				break;
+			case 'E':
+				wtn -= 2.0;
+				break;
+			case 'X':
+				wtn -= 4.5;
+				break;
+			}
+		} else {
+			switch(port) {
+			case 'B':
+				wtn -= 1.0;
+				break;
+			case 'C':
+				wtn -= 1.5;
+				break;
+			case 'D':
+				wtn -= 2.0;
+				break;
+			case 'E':
+				wtn -= 2.5;
+				break;
+			case 'X':
+				wtn -= 5.0;
+				break;
+			}
+		}
+		
+		return wtn.toFixed(1);
+	}
+	
+	function basePerCapitaIncome(techLevel) {
+	}
+	
+	function perCapitaModifier(tradeCodes) {
+	}
+	
+	function grossWorldProduct(population, PCI) {
+	}
+	
+	$(document).ready(function() {
+		$('#execute').click(function() {
+			var out = [];
+			var lines = $('#main-input').val().split('\n');
+			var rowoff = Number($('#rowoff').val());
+			if(isNaN(rowoff)) { rowoff = 0; }
+			var coloff = Number($('#coloff').val());
+			if(isNaN(coloff)) { coloff = 0; }
+			
+			$.each(lines, function(idx, item) {
+				var text = '';
+/*
+0123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789
+0104 Astoria                        XADA000-0  A40  A0V                    Ba Fl Lt Wa 
+0106 Strieara                       D301352-8  -30  M8VI         S         IC Lo Va 
+0108 Oslor                          D510420-8  -00  M4IV/K6II    S         NI 
+
+0104 Astoria                   99.9 XADA000-0  A409  A0V                    Ba Fl Lt Wa   999 GCr
+0106 Strieara                  99.9 D301352-8  -309  M8VI         S         IC Lo Va 
+0108 Oslor                     99.9 D510420-8  -009  M4IV/K6II    S         NI 
+*/
+				// extract the UWP
+				var uwp = item.substring(36, 45);
+				var tl = techLevel(uwp);
+				var pop = population(uwp);
+				var port = spaceport(uwp);
+				
+				// calculate the new information.
+				var wtn = WTN(tl, pop, port);
+				// var popMult = Math.floor(Math.random() * 10);
+				// var PCI = basePerCapitaIncome(tl) * perCapitaModifier(codes);
+				// var grossWorldProduct = (pop * popMult) * PCI;
+				
+				// add the new information
+				wtn = '    ' + wtn.toString();
+				wtn = wtn.substring(wtn.length - 6, wtn.length);
+				
+				text += column(item, coloff);
+				text += row(item, rowoff);
+				text += ' ' + item.substring(5, 28);
+				text += wtn + '  ';
+				text += item.substring(36);
+
+				out.push(text);
+			});
+			var outtext = '';
+			for(var i = 0; i < out.length; i++) {
+				if(i > 0) { outtext += '\n'; }
+				outtext += out[i];
+			}
+			$('#main-output').text(outtext);
+		});
+	});
+
+	</script>
+</html>

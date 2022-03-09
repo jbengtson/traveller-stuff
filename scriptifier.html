@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>System Javascript-ifier</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	</head>
+	<body>
+        <div class="container">
+            <div class="row" style="padding-top: 10px;">
+                <div class="col">
+                    <div class="input">
+						<textarea id="main-input" rows="20" cols="45"></textarea>
+						<div>
+							<input type="text" id="subsector" /> Subsector Name
+						</div>
+						<div>
+							<input type="text" id="rowoff" /> Row offset
+						</div>
+						<div>
+							<input type="text" id="coloff" /> Column offset
+						</div>
+						<button id="execute">Convert</button>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="controls">
+                        <pre id="main-output"></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+	</body>
+	<script>
+	$(document).ready(function() {
+		$('#execute').click(function() {
+			var out = [];
+			var rowoff = Number($('#rowoff').val());
+			if(isNaN(rowoff)) { rowoff = 0; }
+			rowoff *= 10;
+			var coloff = Number($('#coloff').val());
+			if(isNaN(coloff)) { coloff = 0; }
+			coloff *= 8;
+			var lines = $('#main-input').val().split('\n');
+			
+			$.each(lines, function(idx, item) {
+				var text = '';
+
+				text += 'sysDict["' + item.substring(5, 29).trim() + '"] = {\n';
+				text += '    subsector: "' + $('#subsector').val().trim() + '",\n';
+				text += '    column: ' + (Number(item.substring(0, 2)) + coloff) + ',\n';
+				text += '    row: ' + (Number(item.substring(2, 4)) + rowoff) + ',\n';
+				text += '    name: "' + item.substring(5, 29).trim() + '",\n';
+				text += '    port: "' + item.substring(36, 37) + '",\n';
+				text += '    size: ' + parseInt(item.substring(37, 38), 16) + ',\n';
+				text += '    atmosphere: ' + parseInt(item.substring(38, 39), 16) + ',\n';
+				text += '    hydrosphere: ' + parseInt(item.substring(39, 40), 16) + ',\n';
+				text += '    population: ' + parseInt(item.substring(40, 41), 16) + ',\n';
+				text += '    government: ' + parseInt(item.substring(41, 42), 16) + ',\n';
+				text += '    law: ' + parseInt(item.substring(42, 43), 16) + ',\n';
+				text += '    techlevel: ' + parseInt(item.substring(44, 45), 16) + ',\n';
+				text += '    travelzone: "' + item.substring(47, 48) + '",\n';
+				text += '    temperature: ' + parseInt(item.substring(48, 49), 16) + ',\n';
+				text += '    gasgiants: ' + item.substring(49, 50) + ',\n';
+				text += '    asteroidbelts: ' + item.substring(50, 51) + ',\n';
+				text += '    stars: "' + item.substring(52, 65).trim() + '",\n';
+				text += '    populationmult: ' + Math.floor(Math.random() * 10) + ',\n';
+				text += '    basenaval: ' + (item.substring(65, 75).includes('N') ? 'true' : 'false') + ',\n';
+				text += '    basescout: ' + (item.substring(65, 75).includes('S') ? 'true' : 'false') + ',\n';
+				text += '    baseresearch: ' + (item.substring(65, 75).includes('R') ? 'true' : 'false') + ',\n';
+				text += '    basetas: ' + (item.substring(65, 75).includes('T') ? 'true' : 'false') + ',\n';
+				text += '    baseconsulate: ' + (item.substring(65, 75).includes('I') ? 'true' : 'false') + ',\n';
+				text += '    basepirate: ' + (item.substring(65, 75).includes('P') ? 'true' : 'false') + ',\n';
+				text += '    remarks: "' + item.substring(75, 90).trim() + '"\n';
+				text += '};\n';
+
+				out.push(text);
+			});
+			var outtext = '';
+			for(var i = 0; i < out.length; i++) {
+				outtext += out[i];
+			}
+			$('#main-output').text(outtext);
+		});
+	});
+	</script>
+</html>

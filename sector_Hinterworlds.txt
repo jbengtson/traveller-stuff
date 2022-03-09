@@ -1,0 +1,671 @@
+Generating Sector using Custom options
+#################### Subsector Adar 0,0 ####################
+0101 Shetovov                  3.0  D200559-8  -32  F6V          S         NI Va 
+0102 Ablosie                   2.5  D310335-A  -20  M7V          S         Lo 
+0105 Eatisgy                   3.5  D7958AE-3  A20  F4D/M6D      S         Ga Lt 
+0108 Usyglo                    2.5  D621401-6  -00  K6V          P         NI Po 
+0109 Oimosce                   3.5  D3A0645-8  -41  M0V                    De NI 
+0110 Swiuqstov                 2.5  D520410-5  -40  F1V          S         De Lt NI Po 
+0203 Snyterinda                2.5  E666566-2  -51  K3D                    Ag Ga Lt NI 
+0204 Sweozuno                  1.5  X958466-0  R30  M7V                    Ga Lt NI 
+0208 Oebsteainda               3.0  D4A2412-9  -20  K0V                    Fl NI 
+0301 Sheytera                  2.0  E875320-4  -41  F8VI                   Ga Lo Lt 
+0305 Iofudru                   2.0  D100254-8  -40  M5V/M5V                Lo Va 
+0307 Ecliteie                  4.0  B991500-B  -40  G9V          ST        NI 
+0308 Amiara                   -0.5  X591444-3  -01  M8D                    Lt NI 
+0310 Friainda                  4.5  B66288B-5  -12  F4V/M9V      T         Lt Ri 
+0401 Iubos                     3.0  D510536-8  -30  M2V          S         NI 
+0403 Iuturnne                  2.0  D000321-8  -11  K0V/G5V      S         As Lo Va 
+0404 Oahnusade                 4.0  C400730-8  -42  F9V/K9V      S         Na Va 
+0405 Atriea                    2.5  D20045C-8  A50  M6V          S         NI Va 
+0408 Owhion                    2.5  D100423-8  -40  M8V                    NI Va 
+0501 Chaeora                  -0.5  X9A1000-0  A00  M5V                    Ba Fl Lt 
+0502 Iomysmy                   4.5  C65495A-8  -31  F2D/K0D                Ga Hi 
+0503 Aukewa                   -0.5  X9A2000-0  A01  G1V/M2III              Ba Fl Lt 
+0504 Oniaxe                    3.5  D642797-3  -51  F3D/K9VI     S         Lt Po 
+0506 Spoaoth                   2.5  D410364-9  -10  M7V/K9V      S         Lo 
+0507 Straduscvis               3.5  D61275C-8  A20  K0III        S         IC Na 
+0508 Ouvteriri                 3.5  C410540-A  -20  K7D          S         NI 
+0509 Espuna                    3.5  DAB0647-9  -40  M6V          S         De NI 
+0510 Criucarro                 2.5  E591522-4  -02  F1D/M4V                Lt NI 
+0601 Etriailles                2.5  E550437-5  -11  F8V                    De Lt NI Po 
+0604 Sciuyama                  3.5  D87A667-7  -31  F5D          S         NI Wa 
+0606 Gronoefnope               2.5  D000332-9  -21  M0V          S         As Lo Va 
+0607 Scyniauna                 1.5  D300143-8  -41  G5V/K0V      S         Lo Va 
+0702 Dryriaore                -0.5  XAA5000-0  A41  M5IV                   Ba Fl Lt 
+0704 Scirilnov                 2.5  D000362-B  -32  M2IV         S         As Lo Va 
+0705 Ocrora                    3.0  C510564-8  -00  F3V          STI       NI 
+0706 Snichihmia               -0.5  X530000-0  A11  M3V/M3V                Ba De Lt Po 
+0707 Afrides                   5.5  A555998-D  -40  F4D/M2V      TI        Ga Hi Ht 
+0709 Ecasha                    1.5  D4A3120-8  -00  M0V                    Fl Lo 
+0710 Skunidesypso              3.0  D574536-4  -30  K1VI                   Ag Ga Lt NI 
+0802 Droieshan                 4.5  C558964-5  -10  F2D          SI        Ga Hi Lt 
+0803 Eularaxe                  2.5  D400416-8  -12  M8V/K3VI               NI Va 
+0804 Aslara                    3.5  D674669-6  -51  F5D/M9V      S         Ag Ga NI 
+0806 Iuiache                   6.0  A667AAC-E  A42  F6V          SRT       Ga Hi Ht 
+0810 Pryterapus               -0.5  XAC0000-0  A31  M9V/F2V                Ba De Lt 
+    Worlds: 44, sparse: 0
+#################### Subsector Tlianke 1,0 ####################
+0901 Thyriadtov                4.0  B778783-8  -00  F1V          T         Ag Ga 
+0902 Plerutainda               3.0  C6B0336-9  -50  M9V                    De Lo 
+0903 Smonevcury               -0.5  X974000-0  A40  F8D                    Ba Ga Lt 
+0904 Oizunore                  4.0  B784652-B  -21  F2D          NRTI      Ag Ga NI Ri 
+0907 Yjion                     4.0  D200842-8  -33  K0V          S         Na Va 
+0909 Uyteraxu                  4.5  C56688B-5  -20  F7D          SR        Ga Lt Ri 
+0910 Drulia                    3.5  D886879-3  -30  F4V          S         Ga Lt Ri 
+1005 Shucury                   1.5  D3A0110-8  -21  M5V                    De Lo 
+1007 Glarthdnia               -0.5  X000000-0  A32  F8V                    As Ba Lt Va 
+1009 Spuerth                   2.5  D7B0336-9  -40  F8V                    De Lo 
+1105 Scuthea                   1.5  D530116-6  -40  G7V                    De Lo Po 
+1109 Iedablo                   0.5  X543120-3  -10  F5D/M7D                Lo Lt Po 
+1201 Uydepre                   5.0  C77A979-9  -20  F2V                    Hi In Wa 
+1202 Aliato                    3.5  D40065C-8  A20  M8V          S         Na NI Va 
+1204 Aydagle                   0.5  X78A131-3  -21  K5D                    Lo Lt Wa 
+1206 Aybosya                   2.5  D200449-8  -20  F5V          S         NI Va 
+1209 Uglagua                   4.0  B613667-8  -20  K6V          T         IC Na NI 
+1210 Swosiehwei                4.0  B667695-6  -30  K2D          TI        Ag Ga NI Ri 
+1301 Eudnidesilia              2.5  D500414-8  -32  M3V          S         NI Va 
+1302 Therthxria                3.5  C968635-7  -30  F2D          SI        Ag Ga NI Ri 
+1305 Jiarus                    4.0  C9C0641-A  -42  M6V          S         De NI 
+1306 Eswone                    3.0  D754577-5  -20  M7V/G0V      S         Ag Ga Lt NI 
+1309 Eigesna                   2.0  D836359-6  -40  M6V                    Lo 
+1310 Jionbcury                 1.5  X778313-3  -30  F6V                    Ga Lo Lt 
+1401 Aysosho                   4.0  B548646-8  -30  F6V          STI       Ag Ga NI 
+1406 Spindagria                4.0  D400776-A  -40  M1V          S         Na Va 
+1410 Uenbosov                  1.5  X890300-3  A11  M0V                    De Lo Lt 
+1501 Whytaniaara               3.5  D500658-9  -40  K6V          S         Na NI Va 
+1502 Ugromia                   1.5  D663242-3  -10  K4V                    Lo Lt 
+1503 Aubebro                   2.0  D621210-5  -01  K1V/G2D      S         Lo Lt Po 
+1504 Uedyple                   4.0  B544523-9  -32  F0D          TI        Ag Ga NI 
+1505 Obcuryillon               2.0  D7B0204-9  -10  G2V                    De Lo 
+1507 Oizunobo                  2.0  D100339-8  -30  M0V          S         Lo Va 
+1509 Skaowei                   4.0  D65899B-7  -02  G5D                    Ga Hi 
+1601 Qetovara                  2.5  D10045B-8  -52  M6V          S         NI Va 
+1603 Vuhiri                    4.0  D57498D-3  A51  F9V          S         Ga Hi In Lt 
+1604 Mathea                    2.0  D200200-9  -30  K0V          S         Lo Va 
+1605 Bostea                   -0.5  X300000-0  A42  K4V                    Ba Lt Va 
+1606 Ieyeje                    3.0  C525566-8  -41  M2IV                   NI 
+1608 Cluhinesomia              2.5  D200400-8  -50  G2III/G0V              NI Va 
+1609 Iypriliaion               4.0  C6587AD-7  A40  F4D          T         Ag Ga 
+1610 Spionnnov                 2.0  D4A0265-9  -40  M3V/F9V      S         De Lo 
+    Worlds: 42, sparse: 0
+#################### Subsector Anubis 2,0 ####################
+1702 Euvisky                   2.0  D410314-8  -40  M1V          S         Lo 
+1703 Uscilles                  3.0  D100459-C  -41  G6IV/M0V               Ht NI Va 
+1704 Jiylara                   1.5  D100113-8  -11  M8V/G8III              Lo Va 
+1705 Iabacle                   3.0  E543785-3  -00  K4V/M3V                Lt Po 
+1706 Croriaytis                4.0  D410889-8  -40  F1VI         S         Na 
+1708 Prilleshvis               1.0  X895100-4  A20  K9V                    Ga Lo Lt 
+1710 Iynliaeshan               3.0  D648556-7  -31  F2D          S         Ag Ga NI 
+1802 Ebrapus                   3.5  D8A0775-8  -20  F5V/M4V                De 
+1803 Ystrore                   2.0  D510336-8  -30  M4V          S         Lo 
+1806 Pruyphus                  5.5  B3009BF-C  A40  F3D          SI        Hi Ht In Na Va 
+1807 Strieadus                 2.5  D300300-A  -40  M3V/F4V                Lo Va 
+1901 Peyama                    3.0  D3A0597-8  -51  M8IV         S         De NI 
+1903 Qosteaichi                3.0  D311516-8  -42  K6V                    IC NI 
+1904 Voliv                     3.0  C310485-8  -30  M9V          S         NI 
+1906 Eacleaurn                 2.0  E694300-7  -22  K0VI/M0D               Ga Lo 
+2001 Eonusbe                   3.0  D310456-A  -32  M7IV/M2V     S         NI 
+2002 Eyxnusinda                2.0  D200100-B  -10  M4V          S         Lo Va 
+2003 Uomnusyke                -0.5  X300000-0  A30  M1VI/F3V               Ba Lt Va 
+2004 Uerutave                  2.0  D410200-A  -01  M1V/M4VI               Lo 
+2005 Hotune                   -0.5  X97A000-0  A31  F0D          P         Ba Lt Wa 
+2007 Slaiturn                  2.0  D3A0247-8  -41  M0V                    De Lo 
+2010 Jiacarro                  2.0  D76A303-7  -20  F8V                    Lo Wa 
+2101 Oshapus                   3.0  D767542-5  -01  G5D/K6V      S         Ag Ga Lt NI 
+2104 Hyclite                   4.5  B556755-A  -31  M4VI         SRT       Ag Ga 
+2106 Skeoyama                  2.5  E642577-5  -40  F7V/M4VI               Lt NI Po 
+2107 Yclomia                   1.0  X691234-3  -20  F6V                    Lo Lt 
+2203 Aevisyy                   3.5  D96A776-7  -31  G4V                    Ri Wa 
+2205 Swoeter                   2.5  D622441-6  -30  A5V                    NI Po 
+2209 Anubis                    7.0  A88AB79-F  -22  F5VI         NRI       Hi Ht Wa 
+2210 Gleyamaion                2.5  C311311-8  -40  M3VI         S         IC Lo 
+2301 Blaobos                   2.0  D100222-B  -12  M8V          S         Lo Va 
+2302 Oavhinesosie              3.0  D100579-8  -20  G5V                    NI Va 
+2303 Fonia                    -0.5  X545000-0  A42  G7D/M2D      P         Ba Ga Lt 
+2305 Reclite                   2.5  D000496-8  -32  M0VI/K1V     S         As NI Va 
+2306 Iyvnidesapus              2.5  E697557-3  -12  G1VI                   Ag Ga Lt NI 
+2309 Skeiippe                  3.5  D410748-8  -21  F3V          S         Na 
+2310 Gyzuno                    4.0  B874676-7  -21  F0D          NSRT      Ag Ga NI 
+2402 Memia                     3.0  D30048D-A  A20  M1V          S         NI Va 
+2406 Fladusltis                2.0  D000132-B  -41  M9III                  As Lo Va 
+2408 Uescarroiuq               2.0  D632320-8  -22  F1V          S         Lo Po 
+2409 Yblyria                   2.0  E646344-6  -30  F1VI                   Ga Lo 
+    Worlds: 41, sparse: 0
+#################### Subsector Pendiash Ginshar 3,0 ####################
+2502 Jidesszuno                3.0  D400535-8  -40  G5V                    NI Va 
+2506 Cloecarro                -0.5  X310000-0  A01  F7V/M5V                Ba Lt 
+2509 Eglilles                  2.0  D99A320-6  -30  F9D          S         Lo Wa 
+2510 Praoypso                  3.0  C84A48B-B  -40  F0V/M6V                NI Wa 
+2603 Gruyilia                  4.5  B310677-F  -30  K9V          T         Ht Na NI 
+2604 Gotis                     2.5  E682546-3  -10  F6VI                   Lt NI 
+2605 Oscides                   2.0  D553452-3  -00  F3V          S         Lt NI Po 
+2609 Dathea                    2.5  C3A2221-9  -31  K0IV         S         Fl Lo 
+2706 Snyterapus                5.0  A5A0876-B  -00  F3VI         NRTI      De 
+2707 Outunexe                  3.0  D627517-5  -40  M1V          S         Lt NI 
+2709 Ayyniaoria                0.0  X886657-0  R20  F8VI         P         Ag Ga Lt NI Ri 
+2802 Uitaniate                 1.5  D520112-5  -20  G4D                    De Lo Lt Po 
+2803 Iyvzunoilia               4.0  D200999-8  -21  F9V          S         Hi In Na Va 
+2807 Wiliatpra                 3.5  E65886A-4  -20  F8V                    Ga Lt 
+2809 Qauoth                    1.0  X896234-3  -32  F9V                    Ga Lo Lt 
+2902 Croregzuno                2.5  E556458-7  -40  F9D/M9V                Ga NI 
+2907 Choremnia                 3.0  D734544-5  -20  M4V                    Lt NI 
+2909 Bawei                     1.5  E77A200-5  -31  F9V                    Lo Lt Wa 
+3001 Gluleaonoe                1.5  XA76323-3  -40  F0D                    Ga Lo Lt 
+3003 Uacarropo                 4.0  D55189A-5  -10  M0D                    Lt Po 
+3004 Uastaniauna               3.0  D311511-8  -30  M3III        S         IC NI 
+3010 Willesktis                3.5  D77A653-9  -41  F0V                    NI Wa 
+3101 Striaosie                -0.5  XAB0000-0  A31  M7III                  Ba De Lt 
+3106 Quorilia                 -0.5  XAB0000-0  A01  M8V                    Ba De Lt 
+3110 Yprillon                  3.0  D530523-6  -20  M0V/G3V      S         De NI Po 
+3201 Flaiippe                 -0.5  XA99000-0  A50  F7D                    Ba Lt 
+3202 Eunerthka                 2.5  D795444-4  -40  F5D                    Ga Lt NI 
+3204 Frealea                   2.0  D8A1315-8  -21  F9V                    Fl Lo 
+3205 Cratoviea                 4.0  C9947BC-6  A20  K6V          ST        Ag Ga 
+3209 Ayvriaolla                3.5  D634726-6  -50  M8V/G6V                
+    Worlds: 30, sparse: 0
+#################### Subsector Cimeon 0,1 ####################
+0112 Smoriashines              2.5  D551454-7  -40  M4VI/M4V     S         NI Po 
+0113 Uorupro                   3.5  D410744-8  -30  F8V                    Na 
+0119 Chorthhgawa               2.5  D200303-9  -20  F6V          S         Lo Va 
+0211 Smindadhiri               1.5  X545322-3  -30  F9V/M2D                Ga Lo Lt 
+0212 Ebosne                    2.5  D783488-4  -32  F6V          S         Lt NI 
+0215 Driailles                 0.0  X756645-2  -40  M9V                    Ag Ga Lt NI 
+0220 Eyyamapy                 -0.5  X3A0000-0  A41  G9V/K1V                Ba De Lt 
+0311 Qauhines                  3.5  D734688-5  -30  F3V          S         Lt NI 
+0313 Thuclitearvis             2.0  D200300-8  -20  G5V          S         Lo Va 
+0318 Spiuliv                   2.5  E884557-7  -40  F4V          P         Ag Ga NI 
+0319 Stroviseon                3.0  E66A660-5  -31  K4V                    Lt NI Ri Wa 
+0320 Scaiilles                 2.0  D4A0368-8  -42  M6V                    De Lo 
+0411 Brarthtphus               1.5  E768365-2  -11  G8D                    Ga Lo Lt 
+0413 Smunamter                 2.0  D300337-8  -21  M0V/M3V      S         Lo Va 
+0419 Myria                     3.5  C200574-9  -40  F3V                    NI Va 
+0420 Trichimnus                4.0  B502644-B  -40  M3V          SRT       IC Na NI Va 
+0512 Ayniaru                   3.0  D3A0462-9  -23  M2V                    De NI 
+0518 Oiniacu                   2.0  D3A2336-8  -32  K4V                    Fl Lo 
+0519 Monus                     1.5  D532112-5  -40  K2III/G7V              Lo Lt Po 
+0520 Glaoolla                  1.5  E654201-7  -10  K9V/M4VI               Ga Lo 
+0613 Wheithea                  3.5  D3A0523-A  -32  M3V                    De NI 
+0614 Eonidesby                 2.0  D8A0100-9  -20  G6V/G4V      S         De Lo 
+0616 Snaybos                   2.5  D100324-A  -20  K5II/M9V     S         Lo Va 
+0619 Plaiarth                  3.0  C200317-A  -10  M6V          S         Lo Va 
+0620 Zonerth                   1.5  D530110-5  -01  G9V          S         De Lo Lt Po 
+0714 Broyyama                  1.5  X883336-3  -20  K0VI         P         Lo Lt 
+0715 Agreon                    3.5  C64A689-8  -32  F9V/M0V                NI Wa 
+0717 Swuruta                   0.5  X757100-1  A10  F9V                    Ga Lo Lt 
+0811 Croacury                  2.0  D311332-8  -22  G6V          S         IC Lo 
+0813 Scotheayria               1.5  D89A100-7  -20  F4V          P         Lo Wa 
+0814 Oepraho                   2.5  D949455-6  -21  F2VI         S         NI 
+0819 Pluyyama                  4.0  C534732-5  -40  M8V          T         Lt 
+0820 Snutis                    2.0  D520221-5  -42  K8V          S         De Lo Lt Po 
+    Worlds: 33, sparse: 0
+#################### Subsector Darvis 1,1 ####################
+0911 Thuoter                   2.0  D410148-9  -21  K1IV                   Lo 
+0912 Traniaosie                4.0  C200643-B  -41  K5IV/K6V               Na NI Va 
+0914 Spanovippe                4.0  B652649-6  -40  F1V          TI        NI Po 
+0917 Prathea                   3.0  C985477-9  -21  K1V          R         Ga NI 
+0918 Whaarvis                  4.0  C6A07BE-8  A42  M0V                    De 
+0920 Frorahlea                 3.0  E552756-6  -31  M0VI                   Po 
+1011 Shaterore                 4.5  C989878-A  -50  F5V/M8V      T         Ri 
+1013 Uetaniaxy                 5.0  A567969-8  -41  F9VI         RTI       Ga Hi 
+1015 Criecarro                 2.0  D4A2257-8  -20  M0V          S         Fl Lo 
+1018 Osmorix                  -0.5  X8C2000-0  A20  M3IV/K8VI              Ba Fl Lt 
+1019 Dronusuna                 3.5  D3107BF-8  A30  M5V                    Na 
+1111 Unerthko                  3.5  D400663-8  -42  F4V          S         Na NI Va 
+1112 Skiyter                   2.0  D410310-8  -20  M5III        S         Lo 
+1117 Quohiri                   4.0  B57565B-6  -10  G0V/M4VI     NTI       Ag Ga NI 
+1120 Crupraone                 1.0  X9D7100-5  R40  M1VI         P         Fl Lo Lt 
+1212 Oecuryya                 -0.5  X89A464-3  -43  F3D          P         Lt NI Wa 
+1213 Aoxefla                   2.0  D200220-8  -32  M7V          S         Lo Va 
+1214 Slorixxnerth              3.5  D524765-7  -30  M5V                    
+1219 Steleaadus                2.5  D731400-7  -30  G0V          S         NI Po 
+1311 Sharthlnia                2.0  D573497-3  -50  F0VI         S         Lt NI 
+1312 Creoiea                   4.5  C3009A9-8  -42  F3V/M9VI               Hi In Na Va 
+1314 Uiheja                    4.0  B567699-7  -20  F9D/M0V      NR        Ag Ga NI Ri 
+1317 Cluoter                   2.0  D400300-8  -21  F8V                    Lo Va 
+1320 Uiboske                   2.0  D100247-8  -21  F7III/F4VI             Lo Va 
+1411 Aukrutaao                -0.5  X300000-0  A40  M8V/M2III              Ba Lt Va 
+1414 Druuna                    2.0  D100210-8  -30  M0II         S         Lo Va 
+1415 Fruavis                   5.0  C88AAAB-B  -30  M0V/M1V      S         Hi Wa 
+1416 Thioilia                  2.0  E675315-4  -10  F7V/M6V                Ga Lo Lt 
+1419 Panope                    3.0  D310447-A  -10  M2V          S         NI 
+1420 Ouluswy                   5.0  A86688B-A  -21  F5V          RTI       Ga Ri 
+1512 Plurncbos                 2.0  D522242-5  -31  M4IV                   Lo Lt Po 
+1513 Smaiolla                  1.0  X747243-3  -41  F1D                    Ga Lo Lt 
+1516 Iyguglo                   0.5  X746144-3  -31  F2D                    Ga Lo Lt 
+1517 Skoahiri                  3.0  D300425-9  -10  M6IV                   NI Va 
+1519 Scindalliv               -0.5  X679488-3  -20  M6D                    Lt NI 
+1520 Eafupre                   3.0  C77257A-6  A40  F6D/K1VI               NI 
+1611 Prykecwei                 2.0  D4A3200-8  A21  M2V/M6V                Fl Lo 
+1612 Trioion                   3.5  D200787-8  -40  K0V/F3V      S         Na Va 
+1614 Oskilia                   2.5  D301412-8  -30  K7V/M7IV     S         IC NI Va 
+1615 Anaqa                     4.0  C000786-8  -31  G8V/G7V      T         As Na Va 
+1618 Ystrone                   2.5  C543385-4  -12  F4V                    Lo Lt Po 
+1620 Segantu                   3.5  D3A2689-8  -50  M6VI/A2V               Fl NI 
+    Worlds: 42, sparse: 0
+#################### Subsector Cromar 2,1 ####################
+1711 Iatusty                  -0.5  X310000-0  A02  M4VI                   Ba Lt 
+1717 Cloutera                 -0.5  X7A0000-0  A40  M3V/F7V                Ba De Lt 
+1720 Frauone                   2.0  D400110-A  -41  K0D/K4V                Lo Va 
+1811 Iugefra                   3.5  D658774-6  -31  G1D                    Ag Ga 
+1812 Slippekhiri               2.0  D310304-8  -21  M9IV         S         Lo 
+1813 Aoturnsy                  4.0  B100536-A  -40  M6V          NSTI      NI Va 
+1814 Oitphuserth               3.5  D5A0543-9  -22  A8V          P         De NI 
+1912 Slubosarvis               1.0  X544234-3  -42  F6VI                   Ga Lo Lt 
+1914 Yplerth                   2.5  E580545-8  -52  F9V                    De NI 
+1915 Straogantu                3.0  D6B0400-9  -30  K3IV/K5V     S         De NI 
+1919 Snacuryiri                3.0  E775620-4  -50  F4VI                   Ag Ga Lt NI 
+1920 Plucuryippe               2.5  D200323-9  -30  M1IV/K3V               Lo Va 
+2015 Snoliaiea                 2.5  E677635-3  -42  F9D                    Ag Ga Lt NI 
+2016 Oevycha                   3.5  D00055B-B  -42  M5V/M8VI     S         As NI Va 
+2112 Uebychu                   3.5  C782657-8  -20  F0V          S         NI Ri 
+2114 Ashars                    3.0  D411536-8  -40  M5V                    IC NI 
+2115 Iyvnidesadus              2.5  E676663-3  -41  F5V                    Ag Ga Lt NI 
+2118 Cronidesinda              2.5  D100417-8  -30  F7V          S         NI Va 
+2120 Wheshanistea              2.5  D6B0335-9  -20  M4V/G3VI     S         De Lo 
+2214 Ialiabo                   1.5  X658457-0  R20  F4D                    Ga Lt NI 
+2215 Straradgantu              3.0  D633520-5  -40  M7II         S         Lt NI Po 
+2218 Ywiea                    -0.5  X412000-0  A41  K2V/G7V                Ba IC Lt 
+2219 Osethe                    4.0  C624721-5  -30  M1VI/G9V               Lt 
+2311 Bunides                  -0.5  X4A5000-0  A30  M7V                    Ba Fl Lt 
+2314 Gobos                     1.5  D630100-8  -31  F9V          S         De Lo Po 
+2316 Weamia                    2.0  D100301-8  -30  K4V          S         Lo Va 
+2317 Shollahgantu              4.5  C87988B-4  -40  F2D/M2D                Lt 
+2318 Praeclite                 2.5  D9C0320-A  -00  M3V          S         De Lo 
+2319 Oeyywe                    2.0  D520343-8  -40  G2V          S         De Lo Po 
+2411 Xecury                   -0.5  X84A000-0  A32  F9V                    Ba Lt Wa 
+2413 Ystronoe                  2.0  D89A333-6  -32  F0V                    Lo Wa 
+2414 Ethiea                   -0.5  X300000-0  A42  M8III                  Ba Lt Va 
+2415 Uytaniano                 4.0  C310764-8  -30  F1V                    Na 
+2417 Nycury                    2.0  D3A2300-8  A30  G5V          S         Fl Lo 
+2418 Strieyria                 0.0  X763664-0  R21  F8D                    Lt NI Ri 
+2420 Iuriano                   5.0  B554988-7  -32  F8V          NTI       Ga Hi 
+    Worlds: 36, sparse: 0
+#################### Subsector Menere's Reach 3,1 ####################
+2511 Uolivko                   2.0  D200112-9  -20  M9V          S         Lo Va 
+2512 Aiychy                    0.5  XA8A100-1  A40  F6V                    Lo Lt Wa 
+2513 Snacliteinda              3.5  C683622-8  -00  K7D          T         NI Ri 
+2514 Spiaosie                 -0.5  X510000-0  A40  K0D                    Ba Lt 
+2515 Drouerth                  1.5  X579313-3  -32  F0V                    Lo Lt 
+2516 Glomiaov                  4.0  B9C1664-A  -30  M4V          NSI       Fl NI 
+2517 Crollaggantu              2.5  D612439-8  -40  M0IV         S         IC NI 
+2612 Quelia                    4.5  B5788BB-7  -30  F5VI/K4V     STI       Ga 
+2613 Gruiea                    4.0  C3007BD-8  A41  M4III                  Na Va 
+2616 Oiniaty                   2.0  D3A6224-8  -31  K0V          S         Fl Lo 
+2617 Xacury                    2.0  D400374-8  -10  F9V/G9V      S         Lo Va 
+2618 Glirixnerth               3.0  D200416-9  -41  K0V          S         NI Va 
+2619 Strorasnerth              2.0  D000211-9  -31  K4V/F6VI     S         As Lo Va 
+2620 Briavis                   3.0  D8C0442-A  -21  K3III                  De NI 
+2711 Cruterorth                1.5  D4A1110-8  -50  M9V          S         Fl Lo 
+2712 Strauichi                 2.5  D787558-3  -30  M2V          S         Ag Ga Lt NI 
+2714 Uasteany                  4.5  A3A0627-C  -20  M3V          RTI       De Ht NI 
+2715 Jiuoth                    3.5  D100562-B  -40  K1V                    NI Va 
+2811 Oprion                    2.0  D410336-8  -31  A0V                    Lo 
+2812 Puclite                   1.5  D410112-8  -20  M4V          S         Lo 
+2813 Ucrerth                   2.0  E555414-3  -31  F2D                    Ga Lt NI 
+2817 Hubos                     3.0  E878786-5  -42  M2D                    Ag Ga Lt 
+2818 Ienusfa                   2.0  D310235-8  -30  G6V          S         Lo 
+2820 Agawamu                   2.0  D410101-9  -42  M6V                    Lo 
+2912 Clytheaapus               3.5  DAA0699-8  -53  M8II         S         De NI 
+2913 Smichibstea               2.5  D535420-5  -42  M3II         S         Lt NI 
+2914 Qapraao                   2.5  D612427-8  -42  F6V                    IC NI 
+2917 Uanerthle                 3.5  D764742-2  -11  F5V/M6V      S         Ag Ga Lt Ri 
+2918 Smaecury                  2.5  D400357-9  -30  F6III        S         Lo Va 
+2919 Aeturnsa                  5.5  B5829BE-B  A20  M1D/M5VI     S         Hi 
+3012 Uatriaorth               -0.5  X549000-0  A22  F0D                    Ba Lt 
+3017 Uegawaru                  1.0  X97A221-3  -02  G6V                    Lo Lt Wa 
+3018 Grugawa                   4.5  B66389E-5  A50  G6V/M1D      ST        Lt Ri 
+3020 Uocarroky                 2.5  D9A247B-8  R31  K5V          S         Fl NI 
+3111 Qiaarvis                  2.5  D632431-8  -10  K7D/F1V                NI Po 
+3113 Shupraeron                3.0  C300434-9  -40  G8V          S         NI Va 
+3114 Cytania                   2.0  D000100-A  -41  M6V          S         As Lo Va 
+3115 Skoaiuq                   2.0  D400346-8  -20  K1V          S         Lo Va 
+3116 Osmore                   -0.5  XAA0000-0  A40  F4V                    Ba De Lt 
+3117 Braottov                  2.5  D6A0356-9  -42  M9V                    De Lo 
+3118 Qiaturn                   0.5  X577122-3  -41  F2VI                   Ga Lo Lt 
+3119 Oimyshe                   1.5  D511113-8  -40  G8V                    IC Lo 
+3120 Matera                    4.0  D310864-8  -30  F6D                    Na 
+3211 Ietheanu                  3.0  C310425-A  -40  M0V/G7II               NI 
+3212 Chieonoe                  5.5  A6589A6-D  -32  F1D          TI        Ga Hi Ht 
+3213 Aiyliviri                 2.0  D200157-9  -10  M5V          S         Lo Va 
+3214 Oelgantuolla             -0.5  X000000-0  A21  M1V/A2V                As Ba Lt Va 
+3215 Uspone                    2.0  D300388-8  -31  M1V                    Lo Va 
+3216 Blanopeerth               2.5  D200432-8  -00  M0V                    NI Va 
+3217 Usnides                   1.5  D100134-8  -20  M9V          S         Lo Va 
+3218 Ausatry                   3.5  D300525-A  -42  M0V                    NI Va 
+3219 Aigantuxu                 1.5  X540200-4  A20  F4V                    De Lo Lt Po 
+3220 Gronehnov                 3.5  D556799-1  -40  F6V                    Ag Ga Lt 
+    Worlds: 53, sparse: 1
+#################### Subsector Nullia 0,2 ####################
+0121 Oaioblu                   2.5  D7A0446-8  -40  G2V/K2V      S         De NI 
+0125 Skaourn                   2.5  E574477-8  -10  M2D                    Ga NI 
+0126 Praobos                   1.5  E843317-3  -40  F7V                    Lo Lt Po 
+0128 Iavisse                   2.0  D200204-A  -22  M9V                    Lo Va 
+0130 Oglarth                   3.0  C586462-5  -42  F8V/M7D      S         Ga Lt NI 
+0221 Smykexnus                 2.5  D410446-8  -41  M9V/M4V      S         NI 
+0222 Ahcuryapus                3.5  E96A896-8  -20  F7D/M9D                Ri Wa 
+0226 Streiiuq                  3.0  D41045A-B  -40  F8V          S         NI 
+0227 Smeonnpra                 4.5  C86999A-5  -50  F2V          SR        Hi Lt 
+0321 Aoseplo                   2.5  D410466-8  -10  G9V/K8V      S         NI 
+0323 Sanus                    -0.5  X100000-0  A30  G5V                    Ba Lt Va 
+0325 Joiri                     2.0  D8B0142-9  -22  G8V          S         De Lo 
+0326 Iyvgantuade               2.5  D000339-9  -31  G0II/K1V               As Lo Va 
+0327 Uiniaie                   2.5  E554520-2  -42  F7D                    Ag Ga Lt NI 
+0330 Uynovdo                  -0.5  X6A2000-0  A40  G6IV                   Ba Fl Lt 
+0421 Spenusurn                -0.5  X200000-0  A30  G5V          P         Ba Lt Va 
+0422 Shacuryurn                4.5  C00083B-8  -41  K0V/M6D                As Na Va 
+0425 Fluotov                   2.5  E561532-4  -42  F5V                    Lt NI 
+0427 Shaosrus                 -0.5  X756435-3  -41  F7V                    Ga Lt NI 
+0428 Owapus                   -0.5  X200000-0  A51  F8D/K4V                Ba Lt Va 
+0429 Oyturnlo                  4.5  C300722-A  -30  F7III        S         Na Va 
+0430 Eplion                    3.0  D200531-8  -41  G3V          S         NI Va 
+0521 Groagantu                 1.5  D3A0137-8  -00  F0V/K0V      S         De Lo 
+0522 Juiter                    3.5  D100664-A  -32  M8IV/K3V     S         Na NI Va 
+0524 Fucury                    2.0  D410335-8  -21  K8V          S         Lo 
+0527 Snueion                   1.5  D100110-8  -50  G4V                    Lo Va 
+0528 Smatovoria               -0.5  XAC3000-0  A00  F0IV                   Ba Fl Lt 
+0529 Uygawano                  2.0  DAB0101-9  -30  M2V          S         De Lo 
+0530 Camia                     3.5  D40068A-8  -40  K8V          S         Na NI Va 
+0622 Stiogantu                 2.0  D9A0134-9  -50  G5V/M2V      S         De Lo 
+0623 Aibteraadus               0.5  X565211-0  R43  G7V                    Ga Lo Lt 
+0625 Iyinusara                -0.5  X66749B-3  A00  F1V                    Ga Lt NI 
+0626 Creyeshan                 3.5  D400624-8  -50  F7V                    Na NI Va 
+0628 Stoeichi                  5.5  B687ACD-A  A41  F7D/M2V      NST       Ga Hi 
+0629 Strotheaippe              3.5  D530668-8  -40  A8V          S         De Na NI Po 
+0722 Stroynia                  3.0  D410442-9  -32  M3V                    NI 
+0723 Droyhines                 2.0  D5A0324-8  -40  M8V                    De Lo 
+0725 Utunebu                   2.0  D411363-8  -31  M8II         S         IC Lo 
+0730 Sworthhnides              4.0  C411646-A  -41  G1V                    IC Na NI 
+0821 Blanusypso               -0.5  XAA2000-0  A42  F9V                    Ba Fl Lt 
+0823 Einovvo                   2.0  D534305-5  -00  M2IV                   Lo Lt 
+    Worlds: 41, sparse: 0
+#################### Subsector Bruia 1,2 ####################
+0921 Faria                     2.0  D200240-A  -40  K5III        S         Lo Va 
+0922 Prularaoria               3.5  D9C2688-A  -50  G6V                    Fl NI 
+0924 Craeilles                 5.5  B76597B-B  A42  F3V          NSRT      Ga Hi 
+0925 Gluogantu                 1.5  X999354-3  -20  F2D                    Lo Lt 
+0928 Fretov                    3.5  DAB0511-9  -30  K0V          S         De NI 
+0930 Cluweiorix                3.5  C300543-9  -31  F4V          S         NI Va 
+1021 Ugrore                    1.0  X675215-3  -40  F5V                    Ga Lo Lt 
+1022 Aeztaniaade               4.0  B310563-C  -50  M3V          NS        Ht NI 
+1025 Nozuno                   -0.5  X844000-0  A20  M3D                    Ba Ga Lt 
+1026 Oitisra                   2.5  D200446-8  -00  G8V                    NI Va 
+1029 Staterichi                3.0  D4A0548-8  -11  K9III/M8V    S         De NI 
+1122 Uoriliase                -0.5  X545000-0  A00  F5V                    Ba Ga Lt 
+1126 Quyilia                   2.0  D4A0102-B  -22  M7III/K7V    S         De Lo 
+1128 Clippestania              2.0  E574385-6  -31  G1V                    Ga Lo 
+1221 Fleides                   2.0  D411344-8  -30  G9V/A4V      S         IC Lo 
+1222 Blaturnion                3.5  D78A68B-4  -30  F9D          S         Lt NI Ri Wa 
+1223 Fluahiri                 -0.5  X8B0000-0  A51  M7V                    Ba De Lt 
+1224 Zocury                    4.0  C555731-5  -11  G5D                    Ag Ga Lt 
+1225 Xegantu                   4.0  B985733-7  -30  F4D          NSTI      Ag Ga Ri 
+1230 Aplars                    3.5  C300699-8  -30  F0V                    Na NI Va 
+1322 Whailea                   3.5  C89879B-3  -40  F3D/M3D      RI        Ag Ga Lt 
+1324 Thorthzzuno               1.5  D300100-8  -31  K9V          S         Lo Va 
+1328 Aizaplo                   2.0  D100320-8  -30  M7V/F9V                Lo Va 
+1421 Auptereon                 2.0  D9A0202-8  -41  F3III                  De Lo 
+1422 Welarailia                1.5  D300126-8  -42  M7V/K7V      S         Lo Va 
+1424 Quacury                   0.0  X87A524-3  -52  F5D/M8D                Lt NI Wa 
+1425 Mohines                   3.5  E6618BD-5  A30  F2D                    Lt Ri 
+1428 Egrusars                  0.5  X89A116-3  -30  F0V                    Lo Lt Wa 
+1523 Snotovora                 1.5  X649334-3  -20  F4D/M5D                Lo Lt 
+1527 Unuspa                    2.0  D300255-8  -30  G4V/G1VI     S         Lo Va 
+1621 Oimysmu                   3.0  C7886BA-3  -42  G8VI         S         Ag Ga Lt NI Ri 
+1622 Scuowei                   2.5  C856324-4  -30  F4VI                   Ga Lo Lt 
+1628 Memia                     1.5  D62415A-5  -30  M3V          S         Lo Lt 
+    Worlds: 33, sparse: 0
+#################### Subsector Silver Laurel 2,2 ####################
+1721 Oadnopeeshan             -0.5  X677000-0  A30  F5D                    Ba Ga Lt 
+1722 Woriarnides               0.0  X8646BC-1  R40  M7D/M1V                Ag Ga Lt NI Ri 
+1725 Aufyamaeon                3.5  D5786AC-5  A43  F9V                    Ag Ga Lt NI 
+1726 Crorusilles               0.5  X98A100-3  A30  F9V/M7VI               Lo Lt Wa 
+1727 Ontheaade                 2.0  D410220-A  -00  A6V                    Lo 
+1729 Iofugly                   0.5  X777152-3  -52  F0D                    Ga Lo Lt 
+1821 Eovisva                   2.5  E766665-1  -31  F4D                    Ag Ga Lt NI Ri 
+1823 Sciontnerth               0.0  X988571-2  A30  F2D                    Ag Ga Lt NI 
+1824 Praadus                   0.5  XA78111-3  -20  F2V/M7V                Ga Lo Lt 
+1827 Etnopearvis               5.0  A5908A9-D  -42  F2D/M2VI     NSRI      De Ht 
+1828 Trotheaides               2.5  E563556-5  -40  F3V                    Lt NI 
+1922 Zuhines                   4.5  C4007C8-B  -31  M2V          S         Na Va 
+1923 Oylaraco                  3.5  D631734-5  -10  G0V/M4V      S         Lt Na Po 
+1925 Traucarro                 2.5  E688444-5  -31  G0D                    Ga Lt NI 
+1926 Nohines                   2.0  D410334-8  -11  F0VI         S         Lo 
+1927 Heclite                   0.0  X97A579-3  A50  F2V                    Lt NI Wa 
+1930 Ploastea                  3.5  C310645-8  -20  M6V                    Na NI 
+2021 Uoprahy                   0.5  X685223-0  R30  F0V                    Ga Lo Lt 
+2025 Ospilia                   4.0  C85465A-9  -41  F2VI/M6VI    T         Ag Ga NI 
+2026 Oiyniaippe                1.5  D532112-7  -31  M4V/F0V                Lo Po 
+2030 Methea                    2.5  D4A1464-8  -30  F1V          S         Fl NI 
+2121 Ashilles                  2.0  D400202-8  -21  M3IV         S         Lo Va 
+2122 Glyleayke                 1.5  D6A0112-8  -21  G6VI         S         De Lo 
+2123 Aeclitele                 1.5  E87A213-6  -10  F5VI/K2D               Lo Wa 
+2124 Ostosie                   5.0  A310777-C  -30  M4V          SRT       Ht Na 
+2128 Grunusippe                3.0  D624542-5  -40  M5V                    Lt NI 
+2129 Trillonfmia               4.0  B410665-8  -40  F8V          TI        Na NI 
+2130 Eayniaagua                4.5  B666775-C  -40  F2D          T         Ag Ga Ht Ri 
+2221 Iomiata                   2.5  D300436-8  -31  M7V          S         NI Va 
+2222 Sweuara                   3.5  D8A0699-8  -31  F9V          S         De NI 
+2223 Iytismu                   2.5  E574497-5  -40  K9VI                   Ga Lt NI 
+2228 Skovblara                 2.0  D9C4110-A  -31  M5V                    Fl Lo 
+2230 Plidesxlia                5.0  B76A874-E  -22  G6D          NTI       Ht Ri Wa 
+2324 Glaiillon                -0.5  X874000-0  A00  F8V                    Ba Ga Lt 
+2325 Shoustea                  4.0  D526844-7  -21  F6VI                   
+2326 Qeaeshan                  3.5  D300562-A  -41  A4V          S         NI Va 
+2327 Xeyama                    2.0  D520316-7  -41  K4V          S         De Lo Po 
+2329 Yglonoe                   2.0  D3A3200-9  A40  K1V          S         Fl Lo 
+2424 Troliaore                 4.0  D41077B-9  A20  M9V/M5V                Na 
+2425 Ealeaby                   3.0  C790532-7  -50  G0D          I         De NI 
+2429 Uinovco                   2.0  D530200-5  -22  M9V                    De Lo Lt Po 
+2430 Eglippe                   3.0  D100587-8  -40  M1V          S         NI Va 
+    Worlds: 42, sparse: 0
+#################### Subsector Sontra 3,2 ####################
+2521 Spienus                   5.0  C4009BD-A  A20  F6D          I         Hi In Na Va 
+2523 Scurnhtune                2.5  D410467-8  -42  M0V          S         NI 
+2527 Oyzvisov                  2.0  D100240-8  -20  M2V          S         Lo Va 
+2530 Briaars                   3.0  C868444-5  -50  F7D          S         Ga Lt NI 
+2621 Quoone                    3.0  D000424-B  -31  A4V          S         As NI Va 
+2622 Oatisco                   2.0  D691332-5  -32  F3V          S         Lo Lt 
+2623 Wiynope                   1.5  D4A3100-8  A31  M5V          S         Fl Lo 
+2624 Thanusides                2.0  D401113-9  -30  M2V                    IC Lo Va 
+2625 Nyrilia                   2.5  D520457-8  -30  M2VI         S         De NI Po 
+2626 Iolastra                  2.5  C310247-9  -40  F2V          I         Lo 
+2627 Joragcarro                3.0  D4A4467-9  -40  M2VI         S         Fl NI 
+2628 Ounopeya                  2.0  D8B0101-9  -20  G0V                    De Lo 
+2629 Grauion                   2.5  D4A0322-A  -31  M1IV                   De Lo 
+2630 Axcarroonoe              -0.5  X200000-0  A41  M9V                    Ba Lt Va 
+2725 Ploaagua                  3.0  C781456-7  -40  G0D          TI        NI 
+2822 Pluhines                  4.5  C65489A-8  -20  F0VI         S         Ga 
+2826 Drustea                   3.0  D4A7566-8  -20  M3V                    Fl NI 
+2827 Gloeeshan                 2.5  E573556-7  -22  F1D/M7D                NI 
+2828 Skidesyruta              -0.5  X693000-0  A32  F7D/M5VI               Ba Lt 
+2922 Oehrutainda               3.0  D84A561-6  -40  F5V          S         NI Wa 
+2924 Uoxleaara                 2.5  D7A0486-8  -11  F3V                    De NI 
+2926 Uyllarailles              4.0  D6668CB-4  -20  F6V          S         Ga Lt Ri 
+2930 Doria                     5.5  A5959AC-C  A20  F8D/M1VI     NRTI      Ga Hi Ht In 
+3021 Smuaarvis                 2.5  E785459-6  -40  F5V                    Ga NI 
+3024 Crahines                  3.0  E7787BF-6  A10  F8V                    Ag Ga 
+3025 Pronoebturn               1.5  D4A7157-8  -40  M8V                    Fl Lo 
+3027 Wuhinesion                4.5  C310757-9  -31  M7IV                   Na 
+3030 Iuiesnu                   3.0  C769443-8  -10  K3D                    NI 
+3124 Elsteaerth               -0.5  X4A1000-0  A41  M9VI/K2D               Ba Fl Lt 
+3125 Druomia                   2.5  D300457-8  -02  F9VI                   NI Va 
+3126 Snorecnov                 2.5  C555312-4  -00  F3V          S         Ga Lo Lt 
+3127 Tririktov                 2.0  D574335-4  -40  F9V                    Ga Lo Lt 
+3128 Anovvo                    0.5  X697100-3  A21  F4V                    Ga Lo Lt 
+3222 Snaiter                   2.5  D523422-5  -11  M7V          S         Lt NI Po 
+3224 Fraenus                   3.5  D783756-6  -40  F7V                    Ri 
+3226 Pliuqigawa                4.5  C10084B-8  -40  F6VI         T         Na Va 
+3227 Thotaniaade              -0.5  X697000-0  A31  F0D/M8V                Ba Ga Lt 
+3228 Swanovora                 2.0  D3A3200-8  A20  M9III        P         Fl Lo 
+3230 Uzuspo                    3.0  B584420-6  -22  F3D/M9D      SRTI      Ga NI 
+    Worlds: 39, sparse: 0
+#################### Subsector Hashi 0,3 ####################
+0131 Xeturn                    3.0  D410466-A  -40  M4V/K7V      S         NI 
+0132 Scohisomia                3.5  D400536-9  -30  M7III        S         NI Va 
+0134 Astoria                  -0.5  XADA000-0  A40  A0V                    Ba Fl Lt Wa 
+0135 Oailles                   3.0  E662764-6  -30  F7V                    Ri 
+0136 Strieara                  2.0  D301352-8  -30  M8VI         S         IC Lo Va 
+0138 Oslor                     2.5  D510420-8  -00  M4IV/K6II    S         NI 
+0139 Weitania                  3.5  D000561-B  -32  M0III                  As NI Va 
+0233 Hyiri                    -0.5  X579000-0  A30  F6D                    Ba Lt 
+0234 Streronx                  3.5  D100644-9  -21  M2II         S         Na NI Va 
+0235 Flieabus                  2.5  D400463-8  -31  K7V          P         NI Va 
+0236 Oyntovides               -0.5  X200000-0  A30  F1V                    Ba Lt Va 
+0237 Oblagua                   4.0  D6859BD-5  A10  M3V          S         Ga Hi Lt 
+0238 Nunope                    3.0  D54855B-5  -51  F2D          S         Ag Ga Lt NI 
+0333 Ewonoe                    3.0  D200434-9  -41  M6V                    NI Va 
+0335 Ionopeia                  3.5  D410577-A  -40  M3V                    NI 
+0336 Ofragus                   2.0  D100104-B  -41  M0V/M0IV     S         Lo Va 
+0337 Korilia                   2.0  D100200-A  -00  M4V          S         Lo Va 
+0338 Wuanerth                  1.5  E865359-3  -10  F2V/M9D                Ga Lo Lt 
+0339 Quion                     2.5  D410379-B  -30  M5V          S         Lo 
+0340 Wyamaonoe                 2.0  D5A0332-8  -20  G9V          S         De Lo 
+0431 Bonerth                   4.0  D76499A-6  -20  F0D          S         Ga Hi 
+0433 Sladlia                   3.5  D410755-8  -30  M5V                    Na 
+0434 Trerilia                  3.5  D7B0534-9  -40  K9V/K9V      S         De NI 
+0436 Aurutaiu                  2.0  D300257-9  -21  M1IV         S         Lo Va 
+0438 Otromia                   2.0  D530267-8  -41  M7V          S         De Lo Po 
+0533 Qarthtov                  4.5  C78989E-6  A42  K0V          S         Ri 
+0538 Lahinesoria               3.0  D410405-A  -20  F5V/F1V      S         NI 
+0540 Broapus                   5.5  A553989-9  -51  G5D          STI       Hi Po 
+0632 Scoabos                   1.5  E982220-7  -42  F1D                    Lo 
+0633 Ueterna                   3.5  C4106A7-8  -01  G1V/G9V      R         Na NI 
+0634 Prubosov                  4.0  B747758-7  -30  F5V/M5D      NSI       Ag Ga 
+0637 Driastea                  3.0  C310300-9  -12  F9V/M0II               Lo 
+0638 Konus                     1.5  X866400-0  R30  F5VI         P         Ga Lt NI 
+0639 Struyuna                  2.0  D3A0100-A  -40  G4V          S         De Lo 
+0731 Geioria                   1.5  X648323-3  -40  F2V                    Ga Lo Lt 
+0732 Novilia                   2.0  D696200-6  -33  F2D          S         Ga Lo 
+0737 Shanopea                  5.5  B856964-B  -30  F3V          T         Ga Hi 
+0739 Achara                    3.5  C733589-9  -41  F0V/M6III              NI Po 
+0832 Stisade                   3.0  E888620-6  -31  G0VI                   Ag Ga NI Ri 
+0834 Eczunoarth                1.5  D401130-8  -01  M1V          S         IC Lo Va 
+0835 Aonusse                   3.5  D730644-6  -30  F2V/M2V      S         De Na NI Po 
+0837 Spionrhi                  3.5  D9A068B-8  -10  A4II         S         De NI 
+0838 Aotereth                  4.5  C10089E-B  A21  G4V          SRTI      Na Va 
+0839 Trouora                   4.5  C410774-A  -40  M6II/A4V     SRT       Na 
+    Worlds: 44, sparse: 0
+#################### Subsector Kandra 1,3 ####################
+0931 Shayter                   3.0  C874436-7  -40  F1D/M2VI     SI        Ga NI 
+0934 Fraboshan                 5.0  C765B8A-8  -30  K8D/K1V                Ga Hi 
+0935 Slenusoth                 3.0  D55753A-5  -40  F9VI                   Ag Ga Lt NI 
+0936 Aohiriomia               -0.5  X4A0000-0  A40  M4V                    Ba De Lt 
+0937 Heter                     3.5  C668678-8  -20  K5D          I         Ag Ga NI Ri 
+1031 Dawei                     3.5  D200762-8  -22  M8V          S         Na Va 
+1032 Gradeygawa                4.0  C856772-6  -31  G2V                    Ag Ga 
+1033 Hunus                     2.0  D200200-8  -10  M8III        S         Lo Va 
+1034 Oynussu                   3.5  C5556A9-6  -32  M1D          I         Ag Ga NI 
+1036 Jyriairi                 -0.5  X656560-0  R22  F4D                    Ag Ga Lt NI 
+1037 Clotovara                -0.5  X736000-0  A31  F6V                    Ba Lt 
+1038 Uyketro                   2.0  D510202-8  -42  M0V/G8VI               Lo 
+1131 Strougawa                 2.5  E565689-1  -02  F7V/M6V                Ag Ga Lt NI Ri 
+1133 Lutune                    2.5  D8A0467-8  -02  F8V/M5V      S         De NI 
+1231 Edrypso                  -0.5  X610000-0  A20  M0V/K5V                Ba Lt 
+1236 Spamiaarth                4.0  B310636-A  -11  M0V          ST        Na NI 
+1237 Graftera                 -0.5  X4A0000-0  A42  K0V                    Ba De Lt 
+1239 Iutaniavu                 2.5  D530464-8  -40  M5IV         S         De NI Po 
+1334 Eypygro                   4.5  C200845-A  -00  F7V          I         Na Va 
+1337 Euliailles                3.0  D9B0443-9  -00  M6V          S         De NI 
+1338 Brulears                  1.5  D200132-8  -32  M1V                    Lo Va 
+1340 Blaytis                   2.0  DAB0211-9  -51  M7V                    De Lo 
+1432 Yslomia                   1.0  X641220-3  -30  F6D                    Lo Lt Po 
+1434 Blypsonstea               3.5  D534667-5  -40  M0V                    Lt NI 
+1435 Eprion                    2.0  D300242-8  -50  G0V          S         Lo Va 
+1436 Wezuno                    1.5  E745200-7  -31  F4D                    Ga Lo 
+1439 Ustrore                   3.5  D8B0524-9  -20  M2V                    De NI 
+1531 Uypewa                   -0.5  XADA000-0  A30  G1II                   Ba Fl Lt Wa 
+1533 Spidamstea                2.0  D200244-8  -22  F7V          S         Lo Va 
+1535 Ostade                    4.0  C5267AB-7  -20  F1VI                   
+1536 Dreonides                 4.0  D30089E-8  A12  K3D/M4V      S         Na Va 
+1631 Eycliteka                -0.5  X410000-0  A32  F7III        P         Ba Lt 
+1633 Oabosfe                   3.5  D6787AB-5  -40  F6D/M1V      S         Ag Ga Lt 
+1634 Uycopry                   3.5  D403626-8  -50  M8V          S         IC Na NI Va 
+1635 Uceplo                    1.0  X645276-3  A22  F4V                    Ga Lo Lt 
+1637 Aynopelo                  2.0  D310100-B  -40  M6V          S         Lo 
+1638 Grippevhines              3.5  D5647BF-4  A00  F6D/K1V                Ag Ga Lt Ri 
+1639 Wuophus                  -0.5  X300000-0  A31  M0V          P         Ba Lt Va 
+1640 Ayrgantuion               3.5  D9788CD-3  A20  F0D                    Ga Lt 
+    Worlds: 39, sparse: 0
+#################### Subsector Tempri 2,3 ####################
+1731 Euiaspe                   0.0  X66659A-1  A12  F6V                    Ag Ga Lt NI 
+1732 Odriuq                   -0.5  X643411-3  -32  F6V                    Lt NI Po 
+1734 Flocarroao                2.5  D310435-8  -41  M7V          S         NI 
+1736 Wiuone                    2.0  E585400-3  -20  F2V                    Ga Lt NI 
+1737 Smipperbos               -0.5  X5A0000-0  A42  M0V                    Ba De Lt 
+1738 Trulivapus                2.0  E8D8300-5  A20  M0V/G4III              Fl Lo Lt 
+1835 Zutania                   3.5  D4106BA-8  -42  M9VI                   Na NI 
+1836 Slunerth                  4.5  C76575A-9  -41  F1D                    Ag Ga Ri 
+1838 Askora                    2.5  D000300-C  -31  M2V          S         As Ht Lo Va 
+1839 Uelhiriarvis              3.5  C578635-6  -42  F6D/M4VI     ST        Ag Ga NI 
+1931 Esmiri                    4.5  B410754-D  -51  G2V/K7V      NST       Ht Na 
+1933 Tranerthapus              3.5  D685759-6  -42  F5D                    Ag Ga Ri 
+1935 Shiuolla                  3.5  D9B0676-9  -31  M0V          S         De NI 
+1937 Ietera                    4.5  C85884B-5  -41  F0VI         S         Ga Lt 
+1938 Thoteraonoe              -0.5  X4A7000-0  A30  M6IV                   Ba Fl Lt 
+1939 Jeprainda                 3.5  D410661-8  -32  M3V                    Na NI 
+2033 Aterde                   -0.5  X000000-0  A41  K8V/G3V                As Ba Lt Va 
+2034 Sehiri                    1.5  X780318-1  -30  F4V/M2V                De Lo Lt 
+2035 Streiiea                  3.0  C768585-5  -40  K1VI/K1VI              Ag Ga Lt NI 
+2036 Oyterapo                  3.5  D30079E-8  A02  K0V          S         Na Va 
+2038 Lurus                     2.0  D200203-9  -20  M5V          S         Lo Va 
+2039 Eyktuneiri                3.0  D20045C-B  A52  K3V          S         NI Va 
+2040 Ogloria                   2.5  E54959B-8  -30  F3VI                   NI 
+2131 Cloacarro                 2.0  D200256-8  -21  M9V                    Lo Va 
+2133 Thiyoria                  1.5  D675230-3  -02  F9D/M4D      S         Ga Lo Lt 
+2134 Druiilia                  3.5  D5A0660-8  -40  M6III        S         De NI 
+2136 Eiliazy                   2.0  D8B0100-9  -30  F4V                    De Lo 
+2137 Ayleaiu                   2.0  D733246-8  -30  F9D          S         Lo Po 
+2233 Thauides                  2.5  D658568-2  -50  G1VI                   Ag Ga Lt NI 
+2234 Thaterurn                -0.5  X530000-0  A00  F1V                    Ba De Lt Po 
+2235 Acrao                     2.5  D310487-8  -32  G5III        S         NI 
+2238 Zoturn                    4.0  B6346AC-8  A50  G0V/M6V      RT        NI 
+2240 Snieiuq                   3.0  CAA0530-8  -20  M5V                    De NI 
+2336 Thypsodtania              4.5  C66698A-8  -31  F2D/M5V      I         Ga Hi 
+2338 Uniasu                    3.0  D99A557-7  -40  F8V                    NI Wa 
+2340 Buhiri                    0.5  X643120-3  -10  K8D                    Lo Lt Po 
+2431 Kuthea                    3.5  D8A3503-9  A50  M2V                    Fl NI 
+2433 Flypsotnov               -0.5  X200000-0  A30  G1VI         P         Ba Lt Va 
+2435 Treuhines                 3.5  D767673-7  -30  F0D          S         Ag Ga NI Ri 
+2436 Aizunoku                  2.0  D510212-8  -20  M6V/M0V                Lo 
+2437 Oflapus                   1.0  X75A223-2  -21  F1V                    Lo Lt Wa 
+    Worlds: 41, sparse: 0
+#################### Subsector Aquila 3,3 ####################
+2531 Eamydra                   5.0  C858ACF-9  A40  K3V                    Ga Hi 
+2539 Greaoria                  3.0  D664554-5  -31  F0VI                   Ag Ga Lt NI 
+2540 Greonerth                 3.5  C654640-8  -42  F7V                    Ag Ga NI 
+2632 Uakniaadus                4.5  A798663-B  -41  M3D          RT        Ag Ga NI 
+2634 Uscapus                   2.5  E564436-7  -40  F6V/M4V                Ga NI 
+2636 Athore                    2.5  D41049A-8  -40  M6V          S         NI 
+2639 Chiuqvliv                 1.5  D3A0136-8  -32  M2V          S         De Lo 
+2733 Stomiadthea               1.5  D410122-8  -30  G9V          S         Lo 
+2737 Ewhov                     3.5  D200502-A  -41  K3V/G1V      S         NI Va 
+2738 Munerth                   2.5  D310317-9  -40  K4V/G4V      S         Lo 
+2739 Shiyillon                 1.5  EA7A214-4  -42  F0VI                   Lo Lt Wa 
+2832 Stairuta                  4.0  B3105A8-B  -41  K8V          NR        NI 
+2833 Sloenov                  -0.5  X300000-0  A20  K4V          P         Ba Lt Va 
+2834 Uicewy                   -0.5  XAE8000-0  A31  M9V                    Ba Fl Lt 
+2840 Dreongtera               -0.5  X7A0000-0  A20  G8V          P         Ba De Lt 
+2933 Bliunov                   1.5  D747104-4  -40  F2V                    Ga Lo Lt 
+2934 Batov                     2.5  D8B0335-9  -30  M9V/G6V                De Lo 
+2935 Eptheaora                 5.5  B868AB9-B  -30  F5V          NSRT      Ga Hi 
+2939 Oizewha                   3.5  D41067A-B  A00  M0V          S         Na NI 
+3032 Spurniter                 2.0  D200313-8  -31  G4VI         S         Lo Va 
+3034 Juaao                     2.0  D9B1210-9  -40  K4V          S         Fl Lo 
+3035 Muliv                     4.5  C665889-5  -40  F0V/M9D                Ga Lt Ri 
+3037 Wiehiri                   3.0  E78A663-7  -42  F3V                    NI Ri Wa 
+3038 Uydtaniaars               3.0  D100445-9  -21  F4V                    NI Va 
+3131 Uaterata                  3.0  D200443-9  -41  K0V                    NI Va 
+3133 Ayphusne                  3.5  C583764-3  -30  F5D                    Lt Ri 
+3134 Oafestro                  4.0  C77A754-8  -42  F7V                    Wa 
+3135 Udasle                    2.0  D200234-8  -40  M3III        S         Lo Va 
+3136 Uolarana                  2.0  E568365-4  -01  F7V/M9D                Ga Lo Lt 
+3138 Aoiebly                   3.5  D300514-9  -30  F7V/M3V      S         NI Va 
+3139 Smeriliaadus              0.5  X597112-3  -51  M5D                    Ga Lo Lt 
+3231 Ubliuq                    2.0  D200103-A  -22  G3V/G5VI               Lo Va 
+3233 Weulea                    2.5  D744599-3  -40  F4D          S         Ag Ga Lt NI 
+3234 Bretision                 4.5  B200797-D  -52  M3V          STI       Ht Na Va 
+3236 Omopra                    3.0  D200410-9  -02  M7V          S         NI Va 
+3237 Scuycarro                 1.0  X898212-3  -22  G6V                    Ga Lo Lt 
+3238 Motis                     4.0  BAD8632-A  -20  G5III        S         Fl NI 
+3239 Oumiany                   2.0  D100200-C  -40  M5IV/K6V     S         Ht Lo Va 
+    Worlds: 38, sparse: 0

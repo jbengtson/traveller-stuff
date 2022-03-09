@@ -1,0 +1,638 @@
+Shetovov      0101 D200559-8 S NI Va               623 IN F6 V         
+Ablosie       0102 D310335-A S Lo                  402 IN M7 V         
+Eatisgy       0105 D7958AE-3 S Ga Lt            A  902 IN F4 D
+Usyglo        0108 D621401-6 P NI Po               800 IN K6 V         
+Oimosce       0109 D3A0645-8   De NI               114 IN M0 V         
+Swiuqstov     0110 D520410-5 S De Lt NI Po         304 IN F1 V         
+Snyterinda    0203 E666566-2   Ag Ga Lt NI         315 IN K3 D         
+Sweozuno      0204 X958466-0   Ga Lt NI         R  103 IN M7 V         
+Oebsteainda   0208 D4A2412-9   Fl NI               802 IN K0 V         
+Sheytera      0301 E875320-4   Ga Lo Lt            114 IN F8 VI        
+Iofudru       0305 D100254-8   Lo Va               904 IN M5 V
+Ecliteie      0307 B991500-B S NI                  204 IN G9 V         
+Amiara        0308 X591444-3   Lt NI               810 IN M8 D         
+Friainda      0310 B66288B-5 T Lt Ri               821 IN F4 V
+Iubos         0401 D510536-8 S NI                  303 IN M2 V         
+Iuturnne      0403 D000321-8 S As Lo Va            511 IN K0 V
+Oahnusade     0404 C400730-8 S Na Va               124 IN F9 V
+Atriea        0405 D20045C-8 S NI Va            A  405 IN M6 V         
+Owhion        0408 D100423-8   NI Va               904 IN M8 V         
+Chaeora       0501 X9A1000-0   Ba Fl Lt         A  100 IN M5 V         
+Iomysmy       0502 C65495A-8   Ga Hi               813 IN F2 D
+Aukewa        0503 X9A2000-0   Ba Fl Lt         A  610 IN G1 V
+Oniaxe        0504 D642797-3 S Lt Po               215 IN F3 D
+Spoaoth       0506 D410364-9 S Lo                  501 IN M7 V
+Straduscvis   0507 D61275C-8 S IC Na            A  402 IN K0 III       
+Ouvteriri     0508 C410540-A S NI                  702 IN K7 D         
+Espuna        0509 DAB0647-9 S De NI               004 IN M6 V         
+Criucarro     0510 E591522-4   Lt NI               820 IN F1 D
+Etriailles    0601 E550437-5   De Lt NI Po         011 IN F8 V         
+Sciuyama      0604 D87A667-7 S NI Wa               713 IN F5 D         
+Gronoefnope   0606 D000332-9 S As Lo Va            612 IN M0 V         
+Scyniauna     0607 D300143-8 S Lo Va               114 IN G5 V
+Dryriaore     0702 XAA5000-0   Ba Fl Lt         A  014 IN M5 IV        
+Scirilnov     0704 D000362-B S As Lo Va            723 IN M2 IV        
+Ocrora        0705 C510564-8 S NI                  900 IN F3 V         
+Snichihmia    0706 X530000-0   Ba De Lt Po      A  211 IN M3 V
+Afrides       0707 A555998-D T Ga Hi Ht            004 IN F4 D
+Ecasha        0709 D4A3120-8   Fl Lo               200 IN M0 V         
+Skunidesypso  0710 D574536-4   Ag Ga Lt NI         603 IN K1 VI        
+Droieshan     0802 C558964-5 S Ga Hi Lt            001 IN F2 D         
+Eularaxe      0803 D400416-8   NI Va               221 IN M8 V
+Aslara        0804 D674669-6 S Ag Ga NI            515 IN F5 D
+Iuiache       0806 A667AAC-E S Ga Hi Ht         A  024 IN F6 V         
+Pryterapus    0810 XAC0000-0   Ba De Lt         A  813 IN M9 V
+Smoriashines  0112 D551454-7 S NI Po               804 IN M4 VI
+Uorupro       0113 D410744-8   Na                  603 IN F8 V         
+Chorthhgawa   0119 D200303-9 S Lo Va               402 IN F6 V         
+Smindadhiri   0211 X545322-3   Ga Lo Lt            203 IN F9 V
+Ebosne        0212 D783488-4 S Lt NI               223 IN F6 V         
+Driailles     0215 X756645-2   Ag Ga Lt NI         104 IN M9 V         
+Eyyamapy      0220 X3A0000-0   Ba De Lt         A  514 IN G9 V
+Qauhines      0311 D734688-5 S Lt NI               003 IN F3 V         
+Thuclitearvis 0313 D200300-8 S Lo Va               002 IN G5 V         
+Spiuliv       0318 E884557-7 P Ag Ga NI            104 IN F4 V         
+Stroviseon    0319 E66A660-5   Lt NI Ri Wa         213 IN K4 V         
+Scaiilles     0320 D4A0368-8   De Lo               924 IN M6 V         
+Brarthtphus   0411 E768365-2   Ga Lo Lt            911 IN G8 D         
+Smunamter     0413 D300337-8 S Lo Va               212 IN M0 V
+Myria         0419 C200574-9   NI Va               904 IN F3 V         
+Trichimnus    0420 B502644-B S IC Na NI Va         004 IN M3 V         
+Ayniaru       0512 D3A0462-9   De NI               932 IN M2 V         
+Oiniacu       0518 D3A2336-8   Fl Lo               023 IN K4 V         
+Monus         0519 D532112-5   Lo Lt Po            704 IN K2 III
+Glaoolla      0520 E654201-7   Ga Lo               601 IN K9 V
+Wheithea      0613 D3A0523-A   De NI               123 IN M3 V         
+Eonidesby     0614 D8A0100-9 S De Lo               802 IN G6 V
+Snaybos       0616 D100324-A S Lo Va               802 IN K5 II
+Plaiarth      0619 C200317-A S Lo Va               101 IN M6 V         
+Zonerth       0620 D530110-5 S De Lo Lt Po         910 IN G9 V         
+Broyyama      0714 X883336-3 P Lo Lt               002 IN K0 VI        
+Agreon        0715 C64A689-8   NI Wa               623 IN F9 V
+Swuruta       0717 X757100-1   Ga Lo Lt         A  001 IN F9 V         
+Croacury      0811 D311332-8 S IC Lo               322 IN G6 V         
+Scotheayria   0813 D89A100-7 P Lo Wa               002 IN F4 V         
+Oepraho       0814 D949455-6 S NI                  912 IN F2 VI        
+Pluyyama      0819 C534732-5 T Lt                  704 IN M8 V         
+Snutis        0820 D520221-5 S De Lo Lt Po         224 IN K8 V 
+Oaioblu       0121 D7A0446-8 S De NI               304 IN G2 V
+Skaourn       0125 E574477-8   Ga NI               801 IN M2 D         
+Praobos       0126 E843317-3   Lo Lt Po            504 IN F7 V         
+Iavisse       0128 D200204-A   Lo Va               022 IN M9 V         
+Oglarth       0130 C586462-5 S Ga Lt NI            424 IN F8 V
+Smykexnus     0221 D410446-8 S NI                  514 IN M9 V
+Ahcuryapus    0222 E96A896-8   Ri Wa               002 IN F7 D
+Streiiuq      0226 D41045A-B S NI                  304 IN F8 V         
+Smeonnpra     0227 C86999A-5 S Hi Lt               205 IN F2 V         
+Aoseplo       0321 D410466-8 S NI                  301 IN G9 V
+Sanus         0323 X100000-0   Ba Lt Va         A  603 IN G5 V         
+Joiri         0325 D8B0142-9 S De Lo               622 IN G8 V         
+Iyvgantuade   0326 D000339-9   As Lo Va            213 IN G0 II
+Uiniaie       0327 E554520-2   Ag Ga Lt NI         524 IN F7 D         
+Uynovdo       0330 X6A2000-0   Ba Fl Lt         A  104 IN G6 IV        
+Spenusurn     0421 X200000-0 P Ba Lt Va         A  403 IN G5 V         
+Shacuryurn    0422 C00083B-8   As Na Va            714 IN K0 V
+Fluotov       0425 E561532-4   Lt NI               824 IN F5 V         
+Shaosrus      0427 X756435-3   Ga Lt NI            614 IN F7 V         
+Owapus        0428 X200000-0   Ba Lt Va         A  915 IN F8 D
+Oyturnlo      0429 C300722-A S Na Va               303 IN F7 III       
+Eplion        0430 D200531-8 S NI Va               314 IN G3 V         
+Groagantu     0521 D3A0137-8 S De Lo               500 IN F0 V
+Juiter        0522 D100664-A S Na NI Va            323 IN M8 IV
+Fucury        0524 D410335-8 S Lo                  712 IN K8 V         
+Snueion       0527 D100110-8   Lo Va               905 IN G4 V         
+Smatovoria    0528 XAC3000-0   Ba Fl Lt         A  400 IN F0 IV        
+Uygawano      0529 DAB0101-9 S De Lo               603 IN M2 V         
+Camia         0530 D40068A-8 S Na NI Va            004 IN K8 V         
+Stiogantu     0622 D9A0134-9 S De Lo               605 IN G5 V
+Aibteraadus   0623 X565211-0   Ga Lo Lt         R  034 IN G7 V         
+Iyinusara     0625 X66749B-3   Ga Lt NI         A  100 IN F1 V         
+Creyeshan     0626 D400624-8   Na NI Va            805 IN F7 V         
+Stoeichi      0628 B687ACD-A N Ga Hi            A  514 IN F7 D
+Strotheaippe  0629 D530668-8 S De Na NI Po         504 IN A8 V         
+Stroynia      0722 D410442-9   NI                  623 IN M3 V         
+Droyhines     0723 D5A0324-8   De Lo               204 IN M8 V         
+Utunebu       0725 D411363-8 S IC Lo               713 IN M8 II        
+Sworthhnides  0730 C411646-A   IC Na NI            314 IN G1 V         
+Blanusypso    0821 XAA2000-0   Ba Fl Lt         A  224 IN F9 V         
+Einovvo       0823 D534305-5   Lo Lt               600 IN M2 IV 
+Xeturn        0131 D410466-A S NI                  504 IN M4 V
+Scohisomia    0132 D400536-9 S NI Va               803 IN M7 III       
+Astoria       0134 XADA000-0   Ba Fl Lt Wa      A  604 IN A0 V         
+Oailles       0135 E662764-6   Ri                  203 IN F7 V         
+Strieara      0136 D301352-8 S IC Lo Va            903 IN M8 VI        
+Oslor         0138 D510420-8 S NI                  600 IN M4 IV
+Weitania      0139 D000561-B   As NI Va            223 IN M0 III       
+Hyiri         0233 X579000-0   Ba Lt            A  703 IN F6 D         
+Streronx      0234 D100644-9 S Na NI Va            912 IN M2 II        
+Flieabus      0235 D400463-8 P NI Va               913 IN K7 V         
+Oyntovides    0236 X200000-0   Ba Lt Va         A  503 IN F1 V         
+Oblagua       0237 D6859BD-5 S Ga Hi Lt         A  801 IN M3 V         
+Nunope        0238 D54855B-5 S Ag Ga Lt NI         115 IN F2 D         
+Ewonoe        0333 D200434-9   NI Va               814 IN M6 V         
+Ionopeia      0335 D410577-A   NI                  304 IN M3 V         
+Ofragus       0336 D100104-B S Lo Va               314 IN M0 V
+Korilia       0337 D100200-A S Lo Va               900 IN M4 V         
+Wuanerth      0338 E865359-3   Ga Lo Lt            701 IN F2 V
+Quion         0339 D410379-B S Lo                  103 IN M5 V         
+Wyamaonoe     0340 D5A0332-8 S De Lo               002 IN G9 V         
+Bonerth       0431 D76499A-6 S Ga Hi               502 IN F0 D         
+Sladlia       0433 D410755-8   Na                  603 IN M5 V         
+Trerilia      0434 D7B0534-9 S De NI               504 IN K9 V
+Aurutaiu      0436 D300257-9 S Lo Va               312 IN M1 IV        
+Otromia       0438 D530267-8 S De Lo Po            314 IN M7 V         
+Qarthtov      0533 C78989E-6 S Ri               A  824 IN K0 V         
+Lahinesoria   0538 D410405-A S NI                  102 IN F5 V
+Broapus       0540 A553989-9 S Hi Po               115 IN G5 D         
+Scoabos       0632 E982220-7   Lo                  224 IN F1 D         
+Ueterna       0633 C4106A7-8 R Na NI               110 IN G1 V
+Prubosov      0634 B747758-7 N Ag Ga               903 IN F5 V
+Driastea      0637 C310300-9   Lo                  621 IN F9 V
+Konus         0638 X866400-0 P Ga Lt NI         R  603 IN F5 VI        
+Struyuna      0639 D3A0100-A S De Lo               204 IN G4 V         
+Geioria       0731 X648323-3   Ga Lo Lt            004 IN F2 V         
+Novilia       0732 D696200-6 S Ga Lo               033 IN F2 D         
+Shanopea      0737 B856964-B T Ga Hi               203 IN F3 V         
+Achara        0739 C733589-9   NI Po               014 IN F0 V
+Stisade       0832 E888620-6   Ag Ga NI Ri         313 IN G0 VI        
+Eczunoarth    0834 D401130-8 S IC Lo Va            710 IN M1 V         
+Aonusse       0835 D730644-6 S De Na NI Po         403 IN F2 V
+Spionrhi      0837 D9A068B-8 S De NI               301 IN A4 II        
+Aotereth      0838 C10089E-B S Na Va            A  712 IN G4 V         
+Trouora       0839 C410774-A S Na                  204 IN M6 II
+Thyriadtov    0901 B778783-8 T Ag Ga               500 IN F1 V         
+Plerutainda   0902 C6B0336-9   De Lo               705 IN M9 V         
+Smonevcury    0903 X974000-0   Ba Ga Lt         A  504 IN F8 D         
+Oizunore      0904 B784652-B N Ag Ga NI Ri         212 IN F2 D         
+Yjion         0907 D200842-8 S Na Va               033 IN K0 V         
+Uyteraxu      0909 C56688B-5 S Ga Lt Ri            002 IN F7 D         
+Drulia        0910 D886879-3 S Ga Lt Ri            903 IN F4 V         
+Shucury       1005 D3A0110-8   De Lo               212 IN M5 V         
+Glarthdnia    1007 X000000-0   As Ba Lt Va      A  423 IN F8 V         
+Spuerth       1009 D7B0336-9   De Lo               204 IN F8 V         
+Scuthea       1105 D530116-6   De Lo Po            104 IN G7 V         
+Iedablo       1109 X543120-3   Lo Lt Po            401 IN F5 D
+Uydepre       1201 C77A979-9   Hi In Wa            402 IN F2 V         
+Aliato        1202 D40065C-8 S Na NI Va         A  102 IN M8 V         
+Aydagle       1204 X78A131-3   Lo Lt Wa            512 IN K5 D         
+Aybosya       1206 D200449-8 S NI Va               702 IN F5 V         
+Uglagua       1209 B613667-8 T IC Na NI            502 IN K6 V         
+Swosiehwei    1210 B667695-6 T Ag Ga NI Ri         603 IN K2 D         
+Eudnidesilia  1301 D500414-8 S NI Va               823 IN M3 V         
+Therthxria    1302 C968635-7 S Ag Ga NI Ri         903 IN F2 D         
+Jiarus        1305 C9C0641-A S De NI               024 IN M6 V         
+Eswone        1306 D754577-5 S Ag Ga Lt NI         502 IN M7 V
+Eigesna       1309 D836359-6   Lo                  104 IN M6 V         
+Jionbcury     1310 X778313-3   Ga Lo Lt            703 IN F6 V         
+Aysosho       1401 B548646-8 S Ag Ga NI            803 IN F6 V         
+Spindagria    1406 D400776-A S Na Va               304 IN M1 V         
+Uenbosov      1410 X890300-3   De Lo Lt         A  911 IN M0 V         
+Whytaniaara   1501 D500658-9 S Na NI Va            004 IN K6 V         
+Ugromia       1502 D663242-3   Lo Lt               201 IN K4 V         
+Aubebro       1503 D621210-5 S Lo Lt Po            610 IN K1 V
+Uedyple       1504 B544523-9 T Ag Ga NI            823 IN F0 D         
+Obcuryillon   1505 D7B0204-9   De Lo               001 IN G2 V         
+Oizunobo      1507 D100339-8 S Lo Va               803 IN M0 V         
+Skaowei       1509 D65899B-7   Ga Hi               820 IN G5 D         
+Qetovara      1601 D10045B-8 S NI Va               225 IN M6 V         
+Vuhiri        1603 D57498D-3 S Ga Hi In Lt      A  415 IN F9 V         
+Mathea        1604 D200200-9 S Lo Va               803 IN K0 V         
+Bostea        1605 X300000-0   Ba Lt Va         A  624 IN K4 V         
+Ieyeje        1606 C525566-8   NI                  614 IN M2 IV        
+Cluhinesomia  1608 D200400-8   NI Va               205 IN G2 III
+Iypriliaion   1609 C6587AD-7 T Ag Ga            A  504 IN F4 D         
+Spionnnov     1610 D4A0265-9 S De Lo               104 IN M3 V
+Thuoter       0911 D410148-9   Lo                  412 IN K1 IV        
+Traniaosie    0912 C200643-B   Na NI Va            714 IN K5 IV
+Spanovippe    0914 B652649-6 T NI Po               204 IN F1 V         
+Prathea       0917 C985477-9 R Ga NI               412 IN K1 V         
+Whaarvis      0918 C6A07BE-8   De               A  024 IN M0 V         
+Frorahlea     0920 E552756-6   Po                  113 IN M0 VI        
+Shaterore     1011 C989878-A T Ri                  105 IN F5 V
+Uetaniaxy     1013 A567969-8 R Ga Hi               814 IN F9 VI        
+Criecarro     1015 D4A2257-8 S Fl Lo               002 IN M0 V         
+Osmorix       1018 X8C2000-0   Ba Fl Lt         A  402 IN M3 IV
+Dronusuna     1019 D3107BF-8   Na               A  403 IN M5 V         
+Unerthko      1111 D400663-8 S Na NI Va            524 IN F4 V         
+Skiyter       1112 D410310-8 S Lo                  302 IN M5 III       
+Quohiri       1117 B57565B-6 N Ag Ga NI            201 IN G0 V
+Crupraone     1120 X9D7100-5 P Fl Lo Lt         R  004 IN M1 VI        
+Oecuryya      1212 X89A464-3 P Lt NI Wa            734 IN F3 D         
+Aoxefla       1213 D200220-8 S Lo Va               023 IN M7 V         
+Slorixxnerth  1214 D524765-7                       803 IN M5 V         
+Steleaadus    1219 D731400-7 S NI Po               403 IN G0 V         
+Sharthlnia    1311 D573497-3 S Lt NI               805 IN F0 VI        
+Creoiea       1312 C3009A9-8   Hi In Na Va         324 IN F3 V
+Uiheja        1314 B567699-7 N Ag Ga NI Ri         902 IN F9 D
+Cluoter       1317 D400300-8   Lo Va               212 IN F8 V         
+Uiboske       1320 D100247-8   Lo Va               812 IN F7 III
+Aukrutaao     1411 X300000-0   Ba Lt Va         A  904 IN M8 V
+Druuna        1414 D100210-8 S Lo Va               103 IN M0 II        
+Fruavis       1415 C88AAAB-B S Hi Wa               203 IN M0 V
+Thioilia      1416 E675315-4   Ga Lo Lt            101 IN F7 V
+Panope        1419 D310447-A S NI                  001 IN M2 V         
+Ouluswy       1420 A86688B-A R Ga Ri               112 IN F5 V         
+Plurncbos     1512 D522242-5   Lo Lt Po            913 IN M4 IV        
+Smaiolla      1513 X747243-3   Ga Lo Lt            914 IN F1 D         
+Iyguglo       1516 X746144-3   Ga Lo Lt            213 IN F2 D         
+Skoahiri      1517 D300425-9   NI Va               901 IN M6 IV        
+Scindalliv    1519 X679488-3   Lt NI               302 IN M6 D         
+Eafupre       1520 C77257A-6   NI               A  804 IN F6 D
+Prykecwei     1611 D4A3200-8   Fl Lo            A  912 IN M2 V
+Trioion       1612 D200787-8 S Na Va               804 IN K0 V
+Oskilia       1614 D301412-8 S IC NI Va            703 IN K7 V
+Anaqa         1615 C000786-8 T As Na Va            613 IN G8 V
+Ystrone       1618 C543385-4   Lo Lt Po            721 IN F4 V         
+Segantu       1620 D3A2689-8   Fl NI               005 IN M6 VI
+Faria         0921 D200240-A S Lo Va               004 IN K5 III       
+Prularaoria   0922 D9C2688-A   Fl NI               905 IN G6 V         
+Craeilles     0924 B76597B-B N Ga Hi            A  424 IN F3 V         
+Gluogantu     0925 X999354-3   Lo Lt               802 IN F2 D         
+Fretov        0928 DAB0511-9 S De NI               703 IN K0 V         
+Cluweiorix    0930 C300543-9 S NI Va               313 IN F4 V         
+Ugrore        1021 X675215-3   Ga Lo Lt            104 IN F5 V         
+Aeztaniaade   1022 B310563-C N Ht NI               805 IN M3 V         
+Nozuno        1025 X844000-0   Ba Ga Lt         A  602 IN M3 D         
+Oitisra       1026 D200446-8   NI Va               900 IN G8 V         
+Staterichi    1029 D4A0548-8 S De NI               511 IN K9 III
+Uoriliase     1122 X545000-0   Ba Ga Lt         A  400 IN F5 V         
+Quyilia       1126 D4A0102-B S De Lo               422 IN M7 III
+Clippestania  1128 E574385-6   Ga Lo               313 IN G1 V         
+Fleides       1221 D411344-8 S IC Lo               003 IN G9 V
+Blaturnion    1222 D78A68B-4 S Lt NI Ri Wa         803 IN F9 D         
+Fluahiri      1223 X8B0000-0   Ba De Lt         A  615 IN M7 V         
+Zocury        1224 C555731-5   Ag Ga Lt            511 IN G5 D         
+Xegantu       1225 B985733-7 N Ag Ga Ri            103 IN F4 D         
+Aplars        1230 C300699-8   Na NI Va            903 IN F0 V         
+Whailea       1322 C89879B-3 R Ag Ga Lt            704 IN F3 D
+Thorthzzuno   1324 D300100-8 S Lo Va               813 IN K9 V         
+Aizaplo       1328 D100320-8   Lo Va               003 IN M7 V
+Auptereon     1421 D9A0202-8   De Lo               314 IN F3 III       
+Welarailia    1422 D300126-8 S Lo Va               524 IN M7 V
+Quacury       1424 X87A524-3   Lt NI Wa            425 IN F5 D
+Mohines       1425 E6618BD-5   Lt Ri            A  603 IN F2 D         
+Egrusars      1428 X89A116-3   Lo Lt Wa            903 IN F0 V         
+Snotovora     1523 X649334-3   Lo Lt               902 IN F4 D
+Unuspa        1527 D300255-8 S Lo Va               803 IN G4 V
+Oimysmu       1621 C7886BA-3 S Ag Ga Lt NI Ri      724 IN G8 VI        
+Scuowei       1622 C856324-4   Ga Lo Lt            603 IN F4 VI        
+Memia         1628 D62415A-5 S Lo Lt               803 IN M3 V         
+Shayter       0931 C874436-7 S Ga NI               704 IN F1 D
+Fraboseshan   0934 C765B8A-8   Ga Hi               903 IN K8 D
+Slenusoth     0935 D55753A-5   Ag Ga Lt NI         204 IN F9 VI        
+Aofhiriomia   0936 X4A0000-0   Ba De Lt         A  604 IN M4 V         
+Heter         0937 C668678-8 I Ag Ga NI Ri         802 IN K5 D         
+Dawei         1031 D200762-8 S Na Va               822 IN M8 V         
+Gradeygawa    1032 C856772-6   Ag Ga               213 IN G2 V         
+Hunus         1033 D200200-8 S Lo Va               701 IN M8 III       
+Oynussu       1034 C5556A9-6 I Ag Ga NI            723 IN M1 D         
+Jyriairi      1036 X656560-0   Ag Ga Lt NI      R  922 IN F4 D         
+Clotovara     1037 X736000-0   Ba Lt            A  713 IN F6 V         
+Uyketro       1038 D510202-8   Lo                  224 IN M0 V
+Strougawa     1131 E565689-1   Ag Ga Lt NI Ri      620 IN F7 V
+Lutune        1133 D8A0467-8 S De NI               020 IN F8 V
+Edrypso       1231 X610000-0   Ba Lt            A  602 IN M0 V
+Spamiaarth    1236 B310636-A S Na NI               311 IN M0 V         
+Graraftera    1237 X4A0000-0   Ba De Lt         A  224 IN K0 V         
+Iutaniavu     1239 D530464-8 S De NI Po            304 IN M5 IV        
+Eypygro       1334 C200845-A I Na Va               500 IN F7 V         
+Euiliailles   1337 D9B0443-9 S De NI               600 IN M6 V         
+Bruleaars     1338 D200132-8   Lo Va               723 IN M1 V         
+Blaytis       1340 DAB0211-9   De Lo               215 IN M7 V         
+Yslomia       1432 X641220-3   Lo Lt Po            903 IN F6 D         
+Blypsonstea   1434 D534667-5   Lt NI               704 IN M0 V         
+Eprion        1435 D300242-8 S Lo Va               905 IN G0 V         
+Wezuno        1436 E745200-7   Ga Lo               513 IN F4 D         
+Ustrore       1439 D8B0524-9   De NI               302 IN M2 V         
+Uypewa        1531 XADA000-0   Ba Fl Lt Wa      A  903 IN G1 II        
+Spindamstea   1533 D200244-8 S Lo Va               422 IN F7 V         
+Ostade        1535 C5267AB-7                       202 IN F1 VI        
+Dreonides     1536 D30089E-8 S Na Va            A  421 IN K3 D
+Eycliteka     1631 X410000-0 P Ba Lt            A  423 IN F7 III       
+Oabosfe       1633 D6787AB-5 S Ag Ga Lt            704 IN F6 D
+Uycopry       1634 D403626-8 S IC Na NI Va         105 IN M8 V         
+Uceplo        1635 X645276-3   Ga Lo Lt         A  122 IN F4 V         
+Aynopelo      1637 D310100-B S Lo                  504 IN M6 V         
+Grippevhines  1638 D5647BF-4   Ag Ga Lt Ri      A  400 IN F6 D
+Wuophus       1639 X300000-0 P Ba Lt Va         A  413 IN M0 V         
+Ayrgantuion   1640 D9788CD-3   Ga Lt            A  102 IN F0 D  
+Euvisky       1702 D410314-8 S Lo                  004 IN M1 V         
+Uscilles      1703 D100459-C   Ht NI Va            714 IN G6 IV
+Jiylara       1704 D100113-8   Lo Va               511 IN M8 V
+Iabacle       1705 E543785-3   Lt Po               800 IN K4 V
+Croriaytis    1706 D410889-8 S Na                  204 IN F1 VI        
+Prilleshvis   1708 X895100-4   Ga Lo Lt         A  302 IN K9 V         
+Iynliaeshan   1710 D648556-7 S Ag Ga NI            813 IN F2 D         
+Ebrapus       1802 D8A0775-8   De                  402 IN F5 V
+Ystrore       1803 D510336-8 S Lo                  403 IN M4 V         
+Pruyphus      1806 B3009BF-C S Hi Ht In Na Va   A  904 IN F3 D         
+Strieadus     1807 D300300-A   Lo Va               304 IN M3 V
+Peyama        1901 D3A0597-8 S De NI               115 IN M8 IV        
+Qosteaichi    1903 D311516-8   IC NI               724 IN K6 V         
+Voliv         1904 C310485-8 S NI                  403 IN M9 V         
+Eacleaurn     1906 E694300-7   Ga Lo               222 IN K0 VI
+Eonusbe       2001 D310456-A S NI                  923 IN M7 IV
+Eyxnusinda    2002 D200100-B S Lo Va               601 IN M4 V         
+Uomnusyke     2003 X300000-0   Ba Lt Va         A  903 IN M1 VI
+Uerutave      2004 D410200-A   Lo                  610 IN M1 V
+Hotune        2005 X97A000-0 P Ba Lt Wa         A  413 IN F0 D         
+Slaiturn      2007 D3A0247-8   De Lo               814 IN M0 V         
+Jiacarro      2010 D76A303-7   Lo Wa               602 IN F8 V         
+Oshapus       2101 D767542-5 S Ag Ga Lt NI         210 IN G5 D
+Hyclite       2104 B556755-A S Ag Ga               213 IN M4 VI        
+Skeoyama      2106 E642577-5   Lt NI Po            404 IN F7 V
+Yclomia       2107 X691234-3   Lo Lt               102 IN F6 V         
+Aevisyy       2203 D96A776-7   Ri Wa               613 IN G4 V         
+Swoeter       2205 D622441-6   NI Po               303 IN A5 V         
+Snauyke       2209 A88ABCC-F N Hi Ht Wa         A  322 IN F5 VI        
+Gleyamaion    2210 C311311-8 S IC Lo               904 IN M3 VI        
+Blaobos       2301 D100222-B S Lo Va               221 IN M8 V         
+Oavhinesosie  2302 D100579-8   NI Va               602 IN G5 V         
+Fonia         2303 X545000-0 P Ba Ga Lt         A  724 IN G7 D
+Reclite       2305 D000496-8 S As NI Va            323 IN M0 VI
+Iyvnidesapus  2306 E697557-3   Ag Ga Lt NI         521 IN G1 VI        
+Skeiippe      2309 D410748-8 S Na                  012 IN F3 V         
+Gyzuno        2310 B874676-7 N Ag Ga NI            812 IN F0 D         
+Memia         2402 D30048D-A S NI Va            A  102 IN M1 V         
+Fladusltis    2406 D000132-B   As Lo Va            114 IN M9 III       
+Uescarroiuq   2408 D632320-8 S Lo Po               822 IN F1 V         
+Yblyria       2409 E646344-6   Ga Lo               303 IN F1 VI  
+Iatusty       1711 X310000-0   Ba Lt            A  420 IN M4 VI        
+Cloutera      1717 X7A0000-0   Ba De Lt         A  204 IN M3 V
+Frauone       1720 D400110-A   Lo Va               014 IN K0 D
+Iugefra       1811 D658774-6   Ag Ga               313 IN G1 D         
+Slippekhiri   1812 D310304-8 S Lo                  612 IN M9 IV        
+Aoturnsy      1813 B100536-A N NI Va               104 IN M6 V         
+Oitphuserth   1814 D5A0543-9 P De NI               622 IN A8 V         
+Slubosarvis   1912 X544234-3   Ga Lo Lt            424 IN F6 VI        
+Yplerth       1914 E580545-8   De NI               325 IN F9 V         
+Straogantu    1915 D6B0400-9 S De NI               103 IN K3 IV
+Snacuryiri    1919 E775620-4   Ag Ga Lt NI         205 IN F4 VI        
+Plucuryippe   1920 D200323-9   Lo Va               203 IN M1 IV
+Snoliaiea     2015 E677635-3   Ag Ga Lt NI         424 IN F9 D         
+Oevycha       2016 D00055B-B S As NI Va            324 IN M5 V
+Uebychu       2112 C782657-8 S NI Ri               402 IN F0 V         
+Ashars        2114 D411536-8   IC NI               004 IN M5 V         
+Iyvnidesadus  2115 E676663-3   Ag Ga Lt NI         414 IN F5 V         
+Cronidesinda  2118 D100417-8 S NI Va               803 IN F7 V         
+Wheshanistea  2120 D6B0335-9 S De Lo               402 IN M4 V
+Ialiabo       2214 X658457-0   Ga Lt NI         R  202 IN F4 D         
+Straradgantu  2215 D633520-5 S Lt NI Po            504 IN M7 II        
+Ywiea         2218 X412000-0   Ba IC Lt         A  314 IN K2 V
+Osethe        2219 C624721-5   Lt                  703 IN M1 VI
+Bunides       2311 X4A5000-0   Ba Fl Lt         A  203 IN M7 V         
+Gobos         2314 D630100-8 S De Lo Po            613 IN F9 V         
+Weamia        2316 D100301-8 S Lo Va               103 IN K4 V         
+Shollahgantu  2317 C87988B-4   Lt                  404 IN F2 D
+Praeclite     2318 D9C0320-A S De Lo               600 IN M3 V         
+Oeyywe        2319 D520343-8 S De Lo Po            904 IN G2 V         
+Xecury        2411 X84A000-0   Ba Lt Wa         A  223 IN F9 V         
+Ystronoe      2413 D89A333-6   Lo Wa               423 IN F0 V         
+Ethiea        2414 X300000-0   Ba Lt Va         A  524 IN M8 III       
+Uytaniano     2415 C310764-8   Na                  903 IN F1 V         
+Nycury        2417 D3A2300-8 S Fl Lo            A  203 IN G5 V         
+Strieyria     2418 X763664-0   Lt NI Ri         R  712 IN F8 D         
+Iuriano       2420 B554988-7 N Ga Hi               723 IN F8 V         
+Oadnopeeshan  1721 X677000-0   Ba Ga Lt         A  903 IN F5 D         
+Woriarnides   1722 X8646BC-1   Ag Ga Lt NI Ri   R  904 IN M7 D
+Aufyamaeon    1725 D5786AC-5   Ag Ga Lt NI      A  234 IN F9 V         
+Crorusilles   1726 X98A100-3   Lo Lt Wa         A  603 IN F9 V
+Ontheaade     1727 D410220-A   Lo                  000 IN A6 V         
+Iofugly       1729 X777152-3   Ga Lo Lt            525 IN F0 D         
+Eovisva       1821 E766665-1   Ag Ga Lt NI Ri      013 IN F4 D         
+Sciontnerth   1823 X988571-2   Ag Ga Lt NI      A  503 IN F2 D         
+Praadus       1824 XA78111-3   Ga Lo Lt            902 IN F2 V
+Etnopearvis   1827 A5908A9-D N De Ht               124 IN F2 D
+Trotheaides   1828 E563556-5   Lt NI               604 IN F3 V         
+Zuhines       1922 C4007C8-B S Na Va               113 IN M2 V         
+Oylaraco      1923 D631734-5 S Lt Na Po            101 IN G0 V
+Traucarro     1925 E688444-5   Ga Lt NI            813 IN G0 D         
+Nohines       1926 D410334-8 S Lo                  111 IN F0 VI        
+Heclite       1927 X97A579-3   Lt NI Wa         A  805 IN F2 V         
+Ploastea      1930 C310645-8   Na NI               702 IN M6 V         
+Uoprahy       2021 X685223-0   Ga Lo Lt         R  203 IN F0 V         
+Ospilia       2025 C85465A-9 T Ag Ga NI            014 IN F2 VI
+Oiyniaippe    2026 D532112-7   Lo Po               413 IN M4 V
+Methea        2030 D4A1464-8 S Fl NI               103 IN F1 V         
+Ashilles      2121 D400202-8 S Lo Va               912 IN M3 IV        
+Glyleayke     2122 D6A0112-8 S De Lo               212 IN G6 VI        
+Aeclitele     2123 E87A213-6   Lo Wa               501 IN F5 VI
+Ostosie       2124 A310777-C S Ht Na               703 IN M4 V         
+Grunusippe    2128 D624542-5   Lt NI               204 IN M5 V         
+Trillonfmia   2129 B410665-8 T Na NI               904 IN F8 V         
+Eayniaagua    2130 B666775-C T Ag Ga Ht Ri         104 IN F2 D         
+Iomiata       2221 D300436-8 S NI Va               613 IN M7 V         
+Sweuara       2222 D8A0699-8 S De NI               113 IN F9 V         
+Iytismu       2223 E574497-5   Ga Lt NI            904 IN K9 VI        
+Skovblara     2228 D9C4110-A   Fl Lo               013 IN M5 V         
+Plidesxlia    2230 B76A874-E N Ht Ri Wa            522 IN G6 D         
+Glaiillon     2324 X874000-0   Ba Ga Lt         A  900 IN F8 V         
+Shoustea      2325 D526844-7                       212 IN F6 VI        
+Qeaeshan      2326 D300562-A S NI Va               014 IN A4 V         
+Xeyama        2327 D520316-7 S De Lo Po            514 IN K4 V         
+Yglonoe       2329 D3A3200-9 S Fl Lo            A  704 IN K1 V         
+Troliaore     2424 D41077B-9   Na               A  902 IN M9 V
+Ealeaby       2425 C790532-7 I De NI               605 IN G0 D         
+Uinovco       2429 D530200-5   De Lo Lt Po         722 IN M9 V         
+Eglippe       2430 D100587-8 S NI Va               404 IN M1 V         
+Euiaspe       1731 X66659A-1   Ag Ga Lt NI      A  521 IN F6 V         
+Odriuq        1732 X643411-3   Lt NI Po            723 IN F6 V         
+Flocarroao    1734 D310435-8 S NI                  114 IN M7 V         
+Wiuone        1736 E585400-3   Ga Lt NI            202 IN F2 V         
+Smipperbos    1737 X5A0000-0   Ba De Lt         A  324 IN M0 V         
+Trulivapus    1738 E8D8300-5   Fl Lo Lt         A  502 IN M0 V
+Zutania       1835 D4106BA-8   Na NI               324 IN M9 VI        
+Slunerth      1836 C76575A-9   Ag Ga Ri            114 IN F1 D         
+Askora        1838 D000300-C S As Ht Lo Va         913 IN M2 V         
+Uelhiriarvis  1839 C578635-6 S Ag Ga NI            324 IN F6 D
+Esmiri        1931 B410754-D N Ht Na               715 IN G2 V
+Tranerthapus  1933 D685759-6   Ag Ga Ri            424 IN F5 D         
+Shiuolla      1935 D9B0676-9 S De NI               213 IN M0 V         
+Ietera        1937 C85884B-5 S Ga Lt               414 IN F0 VI        
+Thoteraonoe   1938 X4A7000-0   Ba Fl Lt         A  803 IN M6 IV        
+Jeprainda     1939 D410661-8   Na NI               523 IN M3 V         
+Aterde        2033 X000000-0   As Ba Lt Va      A  614 IN K8 V
+Sehiri        2034 X780318-1   De Lo Lt            603 IN F4 V
+Streiiea      2035 C768585-5   Ag Ga Lt NI         004 IN K1 VI
+Oyterapo      2036 D30079E-8 S Na Va            A  520 IN K0 V         
+Lurus         2038 D200203-9 S Lo Va               402 IN M5 V         
+Eyktuneiri    2039 D20045C-B S NI Va            A  325 IN K3 V         
+Ogloria       2040 E54959B-8   NI                  703 IN F3 VI        
+Cloacarro     2131 D200256-8   Lo Va               012 IN M9 V         
+Thiyoria      2133 D675230-3 S Ga Lo Lt            620 IN F9 D
+Druiilia      2134 D5A0660-8 S De NI               004 IN M6 III       
+Eiliazy       2136 D8B0100-9   De Lo               903 IN F4 V         
+Ayleaiu       2137 D733246-8 S Lo Po               803 IN F9 D         
+Thauides      2233 D658568-2   Ag Ga Lt NI         305 IN G1 VI        
+Thaterurn     2234 X530000-0   Ba De Lt Po      A  500 IN F1 V         
+Acrao         2235 D310487-8 S NI                  723 IN G5 III       
+Zoturn        2238 B6346AC-8 R NI               A  705 IN G0 V
+Snieiuq       2240 CAA0530-8   De NI               402 IN M5 V         
+Thypsodtania  2336 C66698A-8 I Ga Hi               113 IN F2 D
+Uniasu        2338 D99A557-7   NI Wa               104 IN F8 V         
+Buhiri        2340 X643120-3   Lo Lt Po            201 IN K8 D         
+Kuthea        2431 D8A3503-9   Fl NI            A  005 IN M2 V         
+Flypsotnov    2433 X200000-0 P Ba Lt Va         A  803 IN G1 VI        
+Treuhines     2435 D767673-7 S Ag Ga NI Ri         903 IN F0 D         
+Aizunoku      2436 D510212-8   Lo                  402 IN M6 V
+Oflapus       2437 X75A223-2   Lo Lt Wa            512 IN F1 V    
+Jidesszuno    2502 D400535-8   NI Va               104 IN G5 V         
+Cloecarro     2506 X310000-0   Ba Lt            A  310 IN F7 V
+Eglilles      2509 D99A320-6 S Lo Wa               403 IN F9 D         
+Praoypso      2510 C84A48B-B   NI Wa               704 IN F0 V
+Gruyilia      2603 B310677-F T Ht Na NI            203 IN K9 V         
+Gotis         2604 E682546-3   Lt NI               101 IN F6 VI        
+Oscides       2605 D553452-3 S Lt NI Po            600 IN F3 V         
+Dathea        2609 C3A2221-9 S Fl Lo               513 IN K0 IV        
+Snyterapus    2706 A5A0876-B N De                  000 IN F3 VI        
+Outunexe      2707 D627517-5 S Lt NI               204 IN M1 V         
+Ayyniaoria    2709 X886657-0 P Ag Ga Lt NI Ri   R  602 IN F8 VI        
+Uitaniate     2802 D520112-5   De Lo Lt Po         402 IN G4 D         
+Iyvzunoilia   2803 D200999-8 S Hi In Na Va         912 IN F9 V         
+Wiliatpra     2807 E65886A-4   Ga Lt               502 IN F8 V         
+Qauoth        2809 X896234-3   Ga Lo Lt            023 IN F9 V         
+Croregzuno    2902 E556458-7   Ga NI               104 IN F9 D
+Choremnia     2907 D734544-5   Lt NI               002 IN M4 V         
+Bawei         2909 E77A200-5   Lo Lt Wa            113 IN F9 V         
+Gluleaonoe    3001 XA76323-3   Ga Lo Lt            404 IN F0 D         
+Uacarropo     3003 D55189A-5   Lt Po               301 IN M0 D         
+Uastaniauna   3004 D311511-8 S IC NI               803 IN M3 III       
+Willesktis    3010 D77A653-9   NI Wa               914 IN F0 V         
+Striaosie     3101 XAB0000-0   Ba De Lt         A  113 IN M7 III       
+Quorilia      3106 XAB0000-0   Ba De Lt         A  310 IN M8 V         
+Yprillon      3110 D530523-6 S De NI Po            502 IN M0 V
+Flaiippe      3201 XA99000-0   Ba Lt            A  805 IN F7 D         
+Eunerthka     3202 D795444-4   Ga Lt NI            204 IN F5 D         
+Frealea       3204 D8A1315-8   Fl Lo               212 IN F9 V         
+Cratoviea     3205 C9947BC-6 S Ag Ga            A  302 IN K6 V         
+Ayvriaolla    3209 D634726-6                       905 IN M8 V
+Uolivko       2511 D200112-9 S Lo Va               202 IN M9 V         
+Aiychy        2512 XA8A100-1   Lo Lt Wa         A  704 IN F6 V         
+Snacliteinda  2513 C683622-8 T NI Ri               600 IN K7 D         
+Spiaosie      2514 X510000-0   Ba Lt            A  204 IN K0 D         
+Drouerth      2515 X579313-3   Lo Lt               323 IN F0 V         
+Glomiaov      2516 B9C1664-A N Fl NI               903 IN M4 V         
+Crollaggantu  2517 D612439-8 S IC NI               204 IN M0 IV        
+Quelia        2612 B5788BB-7 S Ga                  403 IN F5 VI
+Gruiea        2613 C3007BD-8   Na Va            A  114 IN M4 III       
+Oiniaty       2616 D3A6224-8 S Fl Lo               413 IN K0 V         
+Xacury        2617 D400374-8 S Lo Va               101 IN F9 V
+Glirixnerth   2618 D200416-9 S NI Va               114 IN K0 V         
+Strorasnerth  2619 D000211-9 S As Lo Va            113 IN K4 V
+Briavis       2620 D8C0442-A   De NI               312 IN K3 III       
+Cruterorth    2711 D4A1110-8 S Fl Lo               305 IN M9 V         
+Strauichi     2712 D787558-3 S Ag Ga Lt NI         303 IN M2 V         
+Uasteany      2714 A3A0627-C R De Ht NI            002 IN M3 V         
+Jiuoth        2715 D100562-B   NI Va               404 IN K1 V         
+Oprion        2811 D410336-8   Lo                  313 IN A0 V         
+Puclite       2812 D410112-8 S Lo                  702 IN M4 V         
+Ucrerth       2813 E555414-3   Ga Lt NI            513 IN F2 D         
+Hubos         2817 E878786-5   Ag Ga Lt            124 IN M2 D         
+Ienusfa       2818 D310235-8 S Lo                  503 IN G6 V         
+Agawamu       2820 D410101-9   Lo                  724 IN M6 V         
+Clytheaapus   2912 DAA0699-8 S De NI               035 IN M8 II        
+Smichibstea   2913 D535420-5 S Lt NI               724 IN M3 II        
+Qapraao       2914 D612427-8   IC NI               024 IN F6 V         
+Uanerthle     2917 D764742-2 S Ag Ga Lt Ri         811 IN F5 V
+Smaecury      2918 D400357-9 S Lo Va               503 IN F6 III       
+Aeturnsa      2919 B5829BE-B S Hi               A  702 IN M1 D
+Uatriaorth    3012 X549000-0   Ba Lt            A  522 IN F0 D         
+Uegawaru      3017 X97A221-3   Lo Lt Wa            220 IN G6 V         
+Grugawa       3018 B66389E-5 S Lt Ri            A  105 IN G6 V
+Uocarroky     3020 D9A247B-8 S Fl NI            R  313 IN K5 V         
+Qiaarvis      3111 D632431-8   NI Po               501 IN K7 D
+Shupraeron    3113 C300434-9 S NI Va               404 IN G8 V         
+Cytania       3114 D000100-A S As Lo Va            214 IN M6 V         
+Skoaiuq       3115 D400346-8 S Lo Va               802 IN K1 V         
+Osmore        3116 XAA0000-0   Ba De Lt         A  704 IN F4 V         
+Braottov      3117 D6A0356-9   De Lo               624 IN M9 V         
+Qiaturn       3118 X577122-3   Ga Lo Lt            114 IN F2 VI        
+Oimyshe       3119 D511113-8   IC Lo               404 IN G8 V         
+Matera        3120 D310864-8   Na                  003 IN F6 D         
+Ietheanu      3211 C310425-A   NI                  304 IN M0 V
+Chieonoe      3212 A6589A6-D T Ga Hi Ht            723 IN F1 D         
+Aiyliviri     3213 D200157-9 S Lo Va               001 IN M5 V         
+Oelgantuolla  3214 X000000-0   As Ba Lt Va      A  212 IN M1 V
+Uspone        3215 D300388-8   Lo Va               613 IN M1 V         
+Blanopeerth   3216 D200432-8   NI Va               200 IN M0 V         
+Usnides       3217 D100134-8 S Lo Va               302 IN M9 V         
+Ausatry       3218 D300525-A   NI Va               124 IN M0 V         
+Aigantuxu     3219 X540200-4   De Lo Lt Po      A  202 IN F4 V         
+Gronehnov     3220 D556799-1   Ag Ga Lt            204 IN F6 V  
+Spienus       2521 C4009BD-A I Hi In Na Va      A  002 IN F6 D         
+Scurnhtune    2523 D410467-8 S NI                  224 IN M0 V         
+Oyzvisov      2527 D100240-8 S Lo Va               702 IN M2 V         
+Briaars       2530 C868444-5 S Ga Lt NI            705 IN F7 D         
+Quoone        2621 D000424-B S As NI Va            713 IN A4 V         
+Oatisco       2622 D691332-5 S Lo Lt               923 IN F3 V         
+Wiynope       2623 D4A3100-8 S Fl Lo            A  213 IN M5 V         
+Thanusides    2624 D401113-9   IC Lo Va            603 IN M2 V         
+Nyrilia       2625 D520457-8 S De NI Po            203 IN M2 VI        
+Iolastra      2626 C310247-9 I Lo                  104 IN F2 V         
+Joragcarro    2627 D4A4467-9 S Fl NI               504 IN M2 VI        
+Ounopeya      2628 D8B0101-9   De Lo               502 IN G0 V         
+Grauion       2629 D4A0322-A   De Lo               813 IN M1 IV        
+Axcarroonoe   2630 X200000-0   Ba Lt Va         A  414 IN M9 V         
+Ploaagua      2725 C781456-7 T NI                  804 IN G0 D         
+Pluhines      2822 C65489A-8 S Ga                  102 IN F0 VI        
+Drustea       2826 D4A7566-8   Fl NI               702 IN M3 V         
+Gloeeshan     2827 E573556-7   NI                  822 IN F1 D
+Skidesyruta   2828 X693000-0   Ba Lt            A  323 IN F7 D
+Oehrutainda   2922 D84A561-6 S NI Wa               304 IN F5 V         
+Uoxleaara     2924 D7A0486-8   De NI               111 IN F3 V         
+Uyllarailles  2926 D6668CB-4 S Ga Lt Ri            102 IN F6 V         
+Doria         2930 A5959AC-C N Ga Hi Ht In      A  102 IN F8 D
+Smuaarvis     3021 E785459-6   Ga NI               204 IN F5 V         
+Crahines      3024 E7787BF-6   Ag Ga            A  501 IN F8 V         
+Pronoebturn   3025 D4A7157-8   Fl Lo               604 IN M8 V         
+Wuhinesion    3027 C310757-9   Na                  713 IN M7 IV        
+Iuiesnu       3030 C769443-8   NI                  701 IN K3 D         
+Elsteaerth    3124 X4A1000-0   Ba Fl Lt         A  214 IN M9 VI
+Druomia       3125 D300457-8   NI Va               420 IN F9 VI        
+Snorecnov     3126 C555312-4 S Ga Lo Lt            200 IN F3 V         
+Tririktov     3127 D574335-4   Ga Lo Lt            704 IN F9 V         
+Anovvo        3128 X697100-3   Ga Lo Lt         A  212 IN F4 V         
+Snaiter       3222 D523422-5 S Lt NI Po            411 IN M7 V         
+Fraenus       3224 D783756-6   Ri                  304 IN F7 V         
+Pliuqigawa    3226 C10084B-8 T Na Va               604 IN F6 VI        
+Thotaniaade   3227 X697000-0   Ba Ga Lt         A  713 IN F0 D
+Swanovora     3228 D3A3200-8 P Fl Lo            A  802 IN M9 III       
+Uzuspo        3230 B584420-6 S Ga NI               422 IN F3 D
+Eamydra       2531 C858ACF-9   Ga Hi            A  104 IN K3 V         
+Greaoria      2539 D664554-5   Ag Ga Lt NI         613 IN F0 VI        
+Greonerth     2540 C654640-8   Ag Ga NI            024 IN F7 V         
+Uakniaadus    2632 A798663-B R Ag Ga NI            014 IN M3 D         
+Uscapus       2634 E564436-7   Ga NI               704 IN F6 V
+Athore        2636 D41049A-8 S NI                  104 IN M6 V         
+Chiuqvliv     2639 D3A0136-8 S De Lo               723 IN M2 V         
+Stomiadthea   2733 D410122-8 S Lo                  903 IN G9 V         
+Ewhov         2737 D200502-A S NI Va               414 IN K3 V
+Munerth       2738 D310317-9 S Lo                  204 IN K4 V
+Shiyillon     2739 EA7A214-4   Lo Lt Wa            324 IN F0 VI        
+Stairuta      2832 B3105A8-B N NI                  614 IN K8 V         
+Sloenov       2833 X300000-0 P Ba Lt Va         A  302 IN K4 V         
+Uicewy        2834 XAE8000-0   Ba Fl Lt         A  913 IN M9 V         
+Dreongtera    2840 X7A0000-0 P Ba De Lt         A  002 IN G8 V         
+Bliunov       2933 D747104-4   Ga Lo Lt            904 IN F2 V         
+Batov         2934 D8B0335-9   De Lo               903 IN M9 V
+Eptheaora     2935 B868AB9-B N Ga Hi               603 IN F5 V         
+Oizewha       2939 D41067A-B S Na NI            A  500 IN M0 V         
+Spurniter     3032 D200313-8 S Lo Va               813 IN G4 VI        
+Juaao         3034 D9B1210-9 S Fl Lo               704 IN K4 V         
+Muliv         3035 C665889-5   Ga Lt Ri            804 IN F0 V
+Wiehiri       3037 E78A663-7   NI Ri Wa            524 IN F3 V         
+Uydtaniaars   3038 D100445-9   NI Va               612 IN F4 V         
+Uaterata      3131 D200443-9   NI Va               014 IN K0 V         
+Ayphusne      3133 C583764-3   Lt Ri               603 IN F5 D         
+Oafestro      3134 C77A754-8   Wa                  924 IN F7 V         
+Udasle        3135 D200234-8 S Lo Va               904 IN M3 III       
+Uolarana      3136 E568365-4   Ga Lo Lt            010 IN F7 V
+Aoiebly       3138 D300514-9 S NI Va               403 IN F7 V
+Smeriliaadus  3139 X597112-3   Ga Lo Lt            915 IN M5 D         
+Ubliuq        3231 D200103-A   Lo Va               722 IN G3 V
+Weulea        3233 D744599-3 S Ag Ga Lt NI         604 IN F4 D         
+Bretision     3234 B200797-D S Ht Na Va            125 IN M3 V         
+Omopra        3236 D200410-9 S NI Va               820 IN M7 V         
+Scuycarro     3237 X898212-3   Ga Lo Lt            022 IN G6 V         
+Motis         3238 BAD8632-A S Fl NI               502 IN G5 III       
+Oumiany       3239 D100200-C S Ht Lo Va            904 IN M5 IV
